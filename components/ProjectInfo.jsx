@@ -1,4 +1,4 @@
-import Reat from "react"
+import Arrow from "./Arrow"
 
 const ProjectInfo = ({title, info}) => {
   return (
@@ -7,7 +7,7 @@ const ProjectInfo = ({title, info}) => {
       <p className="mt-4">{info}</p>
       <a href="#" className="font-bold text-[#37044E] mt-4 block">
         Learn More
-        <span className="w-[.7rem] h-[.7rem] inline-block border-[#37044E] border-solid border-t-[2px] border-r-[2px] transition-all transform rotate-45 ml-1"></span>
+        <Arrow rotation="rotate(45deg)" />
       </a>
     </div>
   )
