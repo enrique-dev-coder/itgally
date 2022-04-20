@@ -6,13 +6,13 @@ import Button from "../components/Button"
 const Contact = () => {
     return (
         <footer className="flex flex-col md:flex-row md:flex-wrap p-12">
-            <div className="footer-nav flex w-full border-b-[1px] border-primary-violet mb-12">
+            <div className="footer-nav flex w-full border-b-[1px] border-[#63257E] border-primary-violet mb-12">
                 <ul className="flex gap-6 ml-auto">
                     <li><a href="" className='text-primary-violet'>Our Network <Arrow width=".5rem" height=".5rem" rotation="rotate(134deg)" /></a></li>
                     <li> <a href="" className='text-primary-violet'>News &amp; events</a> </li>
                     <li> <a href="" className='text-primary-violet'>Project</a></li>
                 </ul>
-                <Button bgColor="bg-[#37044E]" color="text-primary-white" mL="auto" text="Contact us" />
+                <Button bgColor="#8C1D82" color="#FFF8FE" mL="auto" text="Contact us" />
             </div>
 
             <div className="flex w-full justify-between">
@@ -21,7 +21,7 @@ const Contact = () => {
                 </div>
             
                 <div>
-                    <h3 className='text-primary-violet font-bold text-xl mb-6'>ITGALL OFFICE</h3>
+                    <h3 className='text-[#8C1D82] font-bold text-xl mb-6'>ITGALL OFFICE</h3>
                     <p className='text-[#8C1D82]'>Despacho 12 - Edificio FEUGA <br /> Rúa de Lope Gómez de Marzoa <br /> 15706 Santiago de Compostela, A Coruña <br /> Galicia, Spain</p>
                 </div>
 

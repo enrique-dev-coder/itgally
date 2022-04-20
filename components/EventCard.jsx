@@ -4,7 +4,7 @@ import Arrow from "../components/Arrow"
 const EventCard = ({date, title, info, url}) => {
 
     return (
-        <div className="relative border-2 border-[#37044E/50] row-span-1 col-span-1 p-5 pb-[4rem] h-64 lg:h-72 mt-16 flex flex-col justify-between">
+        <div className="relative border-[1px] border-[#37044E] row-span-1 col-span-1 p-5 pb-[4rem] h-64 lg:h-72 mt-16 flex flex-col justify-between z-10">
             <div className="img-container absolute -top-[63px] -left-[1px]">
               <Image src={url} width={100} height={100}/>
             </div>
