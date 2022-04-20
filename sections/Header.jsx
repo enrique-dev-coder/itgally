@@ -16,8 +16,8 @@ const Header = () => {
           <div className="h-screen grid place-content-center md:col-span-2 lg:col-span-1">
 
             <div>
-              <h1 className="text-3xl text-[#37044E] font-bold text-center">TECH FOR PEOPLE</h1>
-              <p className="text-[#37044E] tracking-[.1rem] text-xl">YOUR LIVING LAB NETWORK</p>
+              <h1 className="text-4xl text-primary-violet font-bold text-center">TECH FOR PEOPLE</h1>
+              <p className="text-primary-violet tracking-[.1rem] text-3xl">YOUR LIVING LAB NETWORK</p>
             </div>
 
           </div>

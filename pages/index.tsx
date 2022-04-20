@@ -5,6 +5,7 @@ import Header from "../sections/Header"
 import GallSection from "../sections/GallSection"
 import Projects from "../sections/Projects"
 import Events from "../sections/Events"
+import Contact from "../sections/Contact"
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,8 @@ const Home: NextPage = () => {
         <Projects />
         <Events />
       </main>
+
+      <Contact />
     </div>
   )
 }

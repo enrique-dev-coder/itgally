@@ -4,7 +4,7 @@ import EventCard from "../components/EventCard"
 
 const Events = () => {
     return (
-        <section className="news-and-events h-screen grid grid-rows-3 gap-x-20 grid-cols-3 p-16 pr-[8rem] relative">
+        <section className="news-and-events h-screen grid grid-rows-3 gap-x-20 grid-cols-3 p-16 pr-[8rem] relative mb-40">
 
           <div className="flex items-center col-span-3 justify-between">
             <h2 className="text-[#37044E] font-bold text-3xl">News and events</h2>
