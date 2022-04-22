@@ -5,42 +5,47 @@ import Image from 'next/image'
 const Header = () => {
 
     return (
-        <section className="header relative grid grid-cols-4 lg:grid-cols-3">
-          <div className="w-full block pl-20 pt-1">
-            <Image src="/../public/assets/Logo.png" width={150} height={50}/>
+        <section className="header relative grid grid-cols-2">
+
+          <div className="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2">
+            <img src="assets/Logo.png" className="w-full h-full" />
           </div>
 
-          <div className="absolute -top-[10px]">
-            <Image src="/../public/assets/_itgall LOGOS-04.png" width={300} height={630}/>
+          <div className="absolute top-[7%] w-[216px] h-[360px] md:w-[346px] md:h-[650px] md:top-0">
+          <img src="assets/_itgall LOGOS-04.png" className="w-full h-full" />
           </div>
 
-          <div className="h-screen grid place-content-center md:col-span-2 lg:col-span-1">
+          <div className="h-screen grid place-content-center col-span-2 pt-[5rem]">
 
-            <div className="w-full">
-              <h1 className="text-4xl text-primary-violet font-bold text-center">TECH FOR PEOPLE</h1>
-              <p className="text-primary-violet tracking-[.1rem] text-3xl">YOUR LIVING LAB NETWORK</p>
+            <div className="w-full flex flex-col">
+
+              <div className="">
+                <h1 className="text-3xl md:text-4xl text-primary-violet font-bold text-center">TECH FOR PEOPLE</h1>
+                <p className="text-primary-violet leading-[1.7rem] px-[3rem] text-[1.4rem] md:text-3xl text-center">YOUR LIVING LAB NETWORK</p>
+              </div>
               
-              <div className="circles flex justify-center mt-5 gap-5">
+              
+              <div className="circles flex justify-center mt-16 lg:mt-5 gap-5">
 
-                <div className="circle-box-left transform rotate-[13deg] mr-[.5rem]">
-                  <Circle bgColor="#37044E" height="20px" width="20px" position="relative" left="1.5rem"/>
-                  <Circle bgColor="#37044E" height="35px" width="35px" />
-                  <Circle bgColor="#37044E" height="20px" width="20px" position="relative" left="1.5rem"/>
+                <div className="circle-box-left transform rotate-[21deg] pr-[1rem] xl:pr-[2rem]">
+                  <Circle bgColor="#37044E" height="10px" width="10px" position="relative" left="2rem"/>
+                  <Circle bgColor="#37044E" height="20px" width="20px" position="relative" left="1rem" />
+                  <Circle bgColor="#37044E" height="10px" width="10px" position="relative" left="2rem"/>
                 </div>
 
-                <div className="circle-box flex">
-                  <Circle text="ABOUT US" bgColor="#37044E" height="150px" width="150px" position="relative" left="1rem"/>
-                  <Circle text="OUR OFFER" bgColor="#FFD000" height="150px" width="150px"/>
+                <div className="circle-box flex xl:gap-[20px]">
+                  <Circle text="ABOUT US" bgColor="#37044E" height="100px" width="100px" position="relative" left=".2rem" />
+                  <Circle text="OUR OFFER" bgColor="#FFD000" height="100px" width="100px"/>
                 </div>
 
-                <div className="circle-box-right pt-[5rem] transform rotate-[21deg] ml-[20px]">
+                <div className="circle-box-right pt-[5rem] pl-[1rem] rotate-[21deg] xl:ml-[10px]">
+                  <Circle bgColor="#FFD000" height="10px" width="10px" position="relative" right="1.5rem"/>
                   <Circle bgColor="#FFD000" height="20px" width="20px" position="relative" right="1rem"/>
-                  <Circle bgColor="#FFD000" height="35px" width="35px" />
-                  <Circle bgColor="#FFD000" height="20px" width="20px" position="relative" right="1rem"/>
+                  <Circle bgColor="#FFD000" height="10px" width="10px" position="relative" right="1.5rem"/>
                 </div>
 
-                <div className="absolute right-[0] -bottom-[5px] ">
-                  <Image src="/../public/assets/image 137.png" width={490} height={313}/>
+                <div className="absolute right-[0] -bottom-[5px] w-[320px] h-[220px] hidden lg:block xl:w-[490px] xl:h-[313px]">
+                  <img src="assets/image 137.png" className="w-full h-full" />
                 </div>
                 
               </div>

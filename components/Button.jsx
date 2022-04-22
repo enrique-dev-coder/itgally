@@ -1,4 +1,6 @@
-const Button = ({display, gap, text, color, borderColor, bgColor, mR = "0", mL = "1.75rem", children}) => {
+const Button = ({display, gap, text, color, borderColor, bgColor,mL, mR = "0", children}) => {
+
+    // mL = "1.75rem"
 
     const buttonClass = {
         backgroundColor: bgColor,
@@ -11,7 +13,7 @@ const Button = ({display, gap, text, color, borderColor, bgColor, mR = "0", mL =
     }
 
     return (
-        <button style={buttonClass} className="border py-2 px-7 cursor-pointer">
+        <button style={buttonClass} className="border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">
             <a href="#our-network">{text}</a>
             {children}
         </button>

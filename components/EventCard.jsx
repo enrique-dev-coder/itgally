@@ -1,12 +1,13 @@
-import Image from 'next/image'
 import Arrow from "../components/Arrow"
 
 const EventCard = ({date, title, info, url}) => {
 
     return (
-        <div className="relative border-[1px] border-[#37044E] row-span-1 col-span-1 p-5 pb-[4rem] h-64 lg:h-72 mt-16 flex flex-col justify-between z-10">
-            <div className="img-container absolute -top-[63px] -left-[1px]">
-              <Image src={url} width={100} height={100}/>
+        <div className="relative border-[1px] border-[#37044E] mt-[4rem] pb-[2rem] lg:h-auto lg:mt-0
+
+        row-span-1 col-span-1 p-5 md:mt-16 flex flex-col justify-between z-10">
+            <div className="img-container absolute -top-[40px] -left-[1px] w-[100px] h-[100px]">
+              <img src={url} className="w-full h-full" />
             </div>
 
             <div>

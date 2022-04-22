@@ -1,60 +1,54 @@
 import ScrollPoints from "../components/ScrollPoints"
 import Button from "../components/Button"
-import Image from 'next/image'
 
 const GallSection = () => {
 
     return (
-        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-56">
-          <nav className="border-y border-primary-violet py-[.5rem] col-span-3 bg-white">
-            <ul className="list-none justify-center flex gap-5">
-              <li><a href="" className="text-primary-violet">Our Network</a></li>
-              <li><a href="" className="text-primary-violet">New Events</a></li>
-              <li><a href="" className="text-primary-violet">Project</a></li>
-              <li><a href="" className="text-primary-violet">Contact us</a></li>
-              <Image src="/../public/assets/Subtract.png" width={27} height={27}/>
-            </ul>
-          </nav>
+        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-5 lg:pb-56 overflow-hidden">
 
-          <div className="h-screen flex items-center justify-center col-span-3 z-10">
+          <div className="h-screen flex md:items-center lg:justify-center col-span-3 z-10">
 
-            <div className="it-gall-title text-center flex flex-col w-2/5">
+            <div className="my-auto pt-[4rem] text-center flex flex-col lg:w-2/5 lg:my-0 lg:px-0">
 
-              <h2 className="text-primary-violet font-bold text-4xl mb-9">
-                What is <span className="font-normal">IT</span>GALL?
+              <div className="px-[4rem] lg:px-0">
+              <h2 className="text-primary-violet font-bold text-[1.75rem] md:text-4xl mb-9">
+                What is <span className="font-bold md:font-normal">IT</span>GALL?
               </h2>
 
-              <p className="text-primary-violet text-lg">
+              <p className="text-primary-violet text-[1rem] lg:text-lg">
                 <span className="font-bold">ITGALL</span> is a Living lab network managed by SG spread along all the Galicia geography, combining capabilities for testing solutions within the <span className="font-bold">healthcare, social care</span> and <span className="font-bold">onehealth sectors</span>
               </p>
+              </div>
 
-              <div className="button-box mt-14 flex gap-2 justify-center">
-                <Button text="View More" borderColor="#8C1D82" color="#8C1D82" />
-                <Button text="Watch Video" bgColor="#8C1D82" borderColor="#8C1D82" color="#FFF8FE" />
+              
+
+              <div className="button-box mt-[1.5rem] lg:mt-14 flex gap-[1.5rem] justify-center">
+                <Button text="View More" borderColor="#8C1D82" color="#8C1D82"/>
+                <Button text="Watch Video" bgColor="#8C1D82" borderColor="#8C1D82" color="#FFF8FE"/>
               </div>
               
             </div>
 
           </div>
 
-          <div className="absolute top-[18%]">
-            <Image src="/../public/assets/Layer 32 (2).png" width={197} height={208} />
+          <div className="absolute top-[12%] -left-[24%] sm:-left-[15%] lg:top-[18%] lg:left-[0] h-[197px] h-[208px]">
+            <img src="assets/Layer 32 (2).png" className="w-full h-full" />
           </div>
 
-          <div className="absolute top-[65%] left-[72%]">
-            <Image src="/../public/assets/Layer 27.png" width={172} height={182} />
+          <div className="absolute lg:top-[65%] lg:left-[63%] w-[172px] h-[182px] hidden lg:block xl:top-[42%] xl:left-[70%]">
+            <img src="assets/Layer 27.png" className="w-full h-full" />
           </div>
 
-          <div className="absolute top-[45%] left-[82%]">
-            <Image src="/../public/assets/Layer 29.png" width={84} height={87} />
+          <div className="absolute top-[60%] -right-[5%] lg:top-[45%] lg:left-[82%] lg:right-0 overflow-hidden w-[84px] h-[87px] xl:top-[30%]">
+          <img src="assets/Layer 29.png" className="w-full h-full" />
           </div>
 
-          <div className="absolute top-[62%] right-[0]">
-            <Image src="/../public/assets/Layer 28.png" width={183} height={268} />
+          <div className="absolute top-[62%] -right-[3%] hidden lg:block w-[183px] h-[268px] xl:top-[40%]">
+          <img src="assets/Layer 28.png" className="w-full h-full" />
           </div>
 
-          <div className="absolute top-[1%] left-[27%]">
-            <Image src="/../public/assets/Ellipse 5.png" width={644} height={644}/>
+          <div className="absolute -top-[24%] -left-[35%] sm:-left-0 sm:-top-[5%] lg:-top-[10%] xl:left-[26%] xl:-top-[3%] md:left-[10%] w-[644px] h-[644px]">
+          <img src="assets/Ellipse 5.png" className="w-full h-full" />
           </div>
 
           

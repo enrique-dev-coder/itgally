@@ -6,6 +6,7 @@ import GallSection from "../sections/GallSection"
 import Projects from "../sections/Projects"
 import Events from "../sections/Events"
 import Contact from "../sections/Contact"
+import Navbar from "../components/Navbar"
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
 
       <main>
         <Header />
+        <Navbar />
         <GallSection />
         <Projects />
         <Events />
