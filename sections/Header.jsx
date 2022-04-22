@@ -1,14 +1,21 @@
+import {useRef, useState, useEffect} from "react"
+import { useInView } from "react-intersection-observer"
 import ScrollPoints from "../components/ScrollPoints"
 import Circle from "../components/atoms/Circle"
+import Logo from "../components/atoms/Logo"
 
 const Header = () => {
 
-    return (
-        <section className="header relative grid grid-cols-2">
+    const {ref, inView} = useInView()
 
-          <div className="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2">
-            <img src="assets/Logo.png" className="w-full h-full" />
-          </div>
+    useEffect(()=> {
+      inView === true? console.log("It works") : console.log("Not working")
+    }, [inView])
+
+    return (
+        <section className="header relative grid grid-cols-2" ref={ref}>
+
+          <Logo logoClass="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2"/>
 
           <div className="absolute top-[7%] w-[216px] h-[360px] md:w-[346px] md:h-[650px] md:top-0">
           <img src="assets/_itgall LOGOS-04.png" className="w-full h-full" />
@@ -16,7 +23,7 @@ const Header = () => {
 
           <div className="h-screen grid place-content-center col-span-2 pt-[5rem]">
 
-            <div className="w-full flex flex-col">
+            <div className="w-full flex flex-col items-center">
 
               <div className="">
                 <h1 className="text-3xl md:text-4xl text-primary-violet font-bold text-center">TECH FOR PEOPLE</h1>
@@ -49,11 +56,15 @@ const Header = () => {
                 
               </div>
 
+              <div className="w-[12px] h-[31px]">
+                <img src="assets/Vector 202.png" alt="" className="w-full h-full" />
+              </div>
+
             </div>
 
           </div>
 
-          <ScrollPoints />
+          <ScrollPoints headerView={inView}/>
 
     </section>
     )

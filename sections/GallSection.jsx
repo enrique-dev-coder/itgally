@@ -1,10 +1,15 @@
 import ScrollPoints from "../components/ScrollPoints"
 import Button from "../components/atoms/Button"
+import { useInView } from "react-intersection-observer"
 
 const GallSection = () => {
 
+  const {ref, inView} = useInView({
+    threshold: 0.25
+  })
+
     return (
-        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-5 lg:pb-56 overflow-hidden">
+        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-5 lg:pb-56 overflow-hidden" ref={ref}>
 
           <div className="h-screen flex md:items-center lg:justify-center col-span-3 z-10">
 
@@ -53,7 +58,7 @@ const GallSection = () => {
 
           
 
-          <ScrollPoints />
+          <ScrollPoints gallSectionView={inView} />
           
         </section>
     )

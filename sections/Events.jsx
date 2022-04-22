@@ -1,10 +1,16 @@
 import ScrollPoints from "../components/ScrollPoints"
 import Button from "../components/atoms/Button"
 import EventCard from "../components/EventCard"
+import { useInView } from "react-intersection-observer"
 
 const Events = () => {
+
+  const {ref, inView} = useInView({
+    threshold: 0.25
+  })
+
     return (
-        <section className="news-and-events lg:grid lg:gap-x-[2rem] lg:grid-cols-3 px-[2.5rem] py-[4rem] relative lg:mb-[1rem] lg:pr-[4.5rem] xl:pr-[8rem] xl:pl-[4rem] ">
+        <section className="news-and-events lg:grid lg:gap-x-[2rem] lg:grid-cols-3 px-[2.5rem] py-[4rem] relative lg:mb-[1rem] lg:pr-[4.5rem] xl:pr-[8rem] xl:pl-[4rem] " ref={ref}>
 
           <div className="flex md:items-center lg:col-span-3 lg:justify-between lg:mb-[5rem]">
             <h2 className="text-[#63257E] font-bold text-3xl">News and events</h2>
@@ -35,7 +41,7 @@ const Events = () => {
             <img src="assets/Ellipse 3 (1).png" className="w-full h-full" />
           </div>
 
-          <ScrollPoints top="35%" />
+          <ScrollPoints top="35%" eventsView={inView} />
         </section>
     )
 }

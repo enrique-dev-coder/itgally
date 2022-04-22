@@ -1,6 +1,7 @@
 import GallInfo from "../components/GallInfo"
 import Arrow from "../components/atoms/Arrow"
 import Button from "../components/atoms/Button"
+import Logo from "../components/atoms/Logo"
 
 const Contact = () => {
     return (
@@ -15,9 +16,7 @@ const Contact = () => {
             </div>
 
             <div className="flex justify-between lg:mt-[1rem] lg:mr-[2rem]">
-                    <div className="w-[100px] h-[40px] xl:w-[150px] xl:h-[50px]">
-                        <img src="assets/Logo.png" className="w-full h-full" />
-                    </div>
+                    <Logo logoClass="w-[100px] h-[40px] xl:w-[150px] xl:h-[50px]"/>
                     <div className="w-[28px] h-[23px] md:hidden">
                         <img src="assets/vector 238.png" className="w-full h-full mt-[.5rem]" />
                     </div>

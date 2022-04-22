@@ -1,4 +1,4 @@
-const Circle = ({text, bgColor, height, width, position, left, right}) => {
+const Circle = ({text = "", bgColor, height, width, position, left, right, view}) => {
 
     const circleStyles = {
         height,
@@ -10,7 +10,10 @@ const Circle = ({text, bgColor, height, width, position, left, right}) => {
     }
 
     return (
-        <div style={circleStyles} className="flex justify-center items-center rounded-[50%] mt-[.5rem] xl:transform xl:scale-125">
+        view? <div className={"active-view"}>
+                <div style={circleStyles}  className="rounded-[50%] xl:transform xl:scale-125"></div>
+        </div> 
+        : <div style={circleStyles} className="flex justify-center items-center rounded-[50%] mt-[.5rem] xl:transform xl:scale-125 no-view">
             <a href="#" className="no-underline text-white text-sm md:text-base">{text}</a>
         </div>
     )

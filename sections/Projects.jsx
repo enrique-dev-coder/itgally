@@ -2,6 +2,7 @@ import ProjectInfo from "../components/ProjectInfo"
 import Button from "../components/atoms/Button"
 import ScrollPoints from "../components/ScrollPoints"
 import Arrow from "../components/atoms/Arrow"
+import { useInView } from "react-intersection-observer"
 
 const projectTexts = {
     in4aha: "This project contribute to the cross-border scale-up of tested and ready-to-use applications in health and social care",
@@ -9,9 +10,13 @@ const projectTexts = {
 }
 
 const Projects = () => {
+
+  const {ref, inView} = useInView({
+    threshold: 0.25
+  })
+
     return (
-      // md:grid md:grid-rows-5 md:h-screen
-        <section className="projects bg-[#FCF4FB] px-[2.5rem] py-[4rem] relative flex items-center lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem]">
+        <section className="projects bg-[#FCF4FB] px-[2.5rem] py-[4rem] relative flex items-center lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem]" ref={ref}>
 
           <div className="projects-title flex flex-col">
 
@@ -49,7 +54,7 @@ const Projects = () => {
             <img src="assets/Ellipse 3.png" className="w-full h-full" />
           </div>
 
-          <ScrollPoints top="30%" />
+          <ScrollPoints top="30%" projectsView={inView} />
 
         </section>
     )
