@@ -1,5 +1,5 @@
 import ScrollPoints from "../components/ScrollPoints"
-import Button from "../components/Button"
+import Button from "../components/atoms/Button"
 
 const GallSection = () => {
 

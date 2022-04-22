@@ -1,4 +1,4 @@
-import Arrow from "./Arrow"
+import Arrow from "./atoms/Arrow"
 
 const ProjectInfo = ({title, info, span}) => {
 

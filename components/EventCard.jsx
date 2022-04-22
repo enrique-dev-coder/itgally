@@ -1,4 +1,4 @@
-import Arrow from "../components/Arrow"
+import Arrow from "./atoms/Arrow"
 
 const EventCard = ({date, title, info, url}) => {
 

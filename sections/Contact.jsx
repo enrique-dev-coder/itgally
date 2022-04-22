@@ -1,6 +1,6 @@
 import GallInfo from "../components/GallInfo"
-import Arrow from "../components/Arrow"
-import Button from "../components/Button"
+import Arrow from "../components/atoms/Arrow"
+import Button from "../components/atoms/Button"
 
 const Contact = () => {
     return (

@@ -1,7 +1,7 @@
 import ProjectInfo from "../components/ProjectInfo"
-import Button from "../components/Button"
+import Button from "../components/atoms/Button"
 import ScrollPoints from "../components/ScrollPoints"
-import Arrow from "../components/Arrow"
+import Arrow from "../components/atoms/Arrow"
 
 const projectTexts = {
     in4aha: "This project contribute to the cross-border scale-up of tested and ready-to-use applications in health and social care",

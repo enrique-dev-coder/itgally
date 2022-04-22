@@ -1,6 +1,5 @@
-import Image from 'next/image'
 import ScrollPoints from "../components/ScrollPoints"
-import Button from "../components/Button"
+import Button from "../components/atoms/Button"
 import EventCard from "../components/EventCard"
 
 const Events = () => {

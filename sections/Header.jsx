@@ -1,6 +1,5 @@
 import ScrollPoints from "../components/ScrollPoints"
-import Circle from "../components/Circle"
-import Image from 'next/image'
+import Circle from "../components/atoms/Circle"
 
 const Header = () => {
 
