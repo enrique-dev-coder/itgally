@@ -52,7 +52,7 @@ const GallSection = () => {
           <img src="assets/Layer 28.png" className="w-full h-full" />
           </div>
 
-          <div className="absolute -top-[24%] -left-[35%] sm:-left-0 sm:-top-[5%] lg:-top-[10%] xl:left-[26%] xl:-top-[3%] md:left-[10%] w-[644px] h-[644px]">
+          <div className="absolute top-0 sm:-top-[24%] -left-[35%] sm:-left-0 sm:-top-[5%] lg:top-0 lg:left-[17%] xl:-top-[3%] xl:left-[25%] md:left-[10%] w-[644px] h-[644px]">
           <img src="assets/Ellipse 5.png" className="w-full h-full" />
           </div>
 

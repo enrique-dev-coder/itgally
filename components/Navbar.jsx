@@ -1,6 +1,3 @@
-import Image from 'next/image'
-
-import {useRef, useState, useEffect} from "react"
 import { useInView } from "react-intersection-observer"
 import Logo from "../components/atoms/Logo"
 
@@ -10,13 +7,9 @@ const Navbar = () => {
       threshold: 1,
     }) 
 
-    useEffect(()=> {
-      inView === true? console.log("Navbar works") : console.log("Navbar isNot working")
-    }, [inView])
-
     return (
         <nav className="border-y border-primary-violet py-[.5rem] col-span-3 bg-white flex justify-center sticky top-0 z-40 items-center" ref={ref}>
-            {inView? <Logo logoClass="h-[20px] w-[90px] relative -left-[21%]" />: ""}
+            {inView? <Logo logoClass="h-[20px] w-[80px] relative -left-[21%]" />: ""}
             <ul className={`list-none justify-center lg:flex gap-[2.25rem] mr-5 hidden ${inView? "relative -left-[3%]": "" }`}>
               <li><a href="" className="text-primary-violet">Our Network</a></li>
               <li><a href="" className="text-primary-violet">New Events</a></li>

@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         "primary-violet": "#37044E",
         "primary-white": "#FFF8FE"
+      },
+      screen: {
+        "xsm": "340px",
       }
     },
   },

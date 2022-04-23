@@ -33,7 +33,7 @@ const Projects = () => {
               <ProjectInfo title="IN4AHA" info={projectTexts.in4aha} span="span 2"/>
               <ProjectInfo title="Smartiago" info={projectTexts.smartiago} span="span 2" />
 
-              <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 hfit">
+              <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%]">
                 <h3 className="mb-2 text-[1.35rem] sm:text-[1.5rem] md:text-3xl font-bold text-[#8C1D82] mb-4">Discover the news and events from our Living Lab</h3>
                 <Button text="Scroll Down" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mR=".5rem" mL="0" display="flex" gap="8px">
                   <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
@@ -46,7 +46,7 @@ const Projects = () => {
 
           
 
-          <div className="absolute z-10 top-[62%] right-[5%] w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] sm:right-0 sm:top-[51%] lg:top-[7%] lg:right-[5%] xl:w-[259px] xl:h-[259px] xl:right-[6%] xl:top-[3%]">
+          <div className="absolute z-10 top-[62%] right-[5%] w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] sm:right-0 sm:top-[51%] lg:top-[3%] lg:right-[5%] xl:w-[259px] xl:h-[259px] xl:right-[6%] xl:-top-[6%]">
             <img src="assets/image 135.png" className="w-full h-full" />
           </div>
 

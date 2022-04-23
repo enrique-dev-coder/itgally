@@ -15,7 +15,7 @@ const Events = () => {
           <div className="flex md:items-center lg:col-span-3 lg:justify-between lg:mb-[5rem]">
             <h2 className="text-[#63257E] font-bold text-3xl">News and events</h2>
 
-            <div className="box-btn hidden lg:flex gap-[30px]">
+            <div className="box-btn hidden lg:flex gap-[30px] relative left-[6%]">
 
             <Button text="Learn More" borderColor="#8C1D82" color="#8C1D82"/>
 

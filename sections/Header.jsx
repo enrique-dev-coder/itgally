@@ -1,4 +1,3 @@
-import {useRef, useState, useEffect} from "react"
 import { useInView } from "react-intersection-observer"
 import ScrollPoints from "../components/ScrollPoints"
 import Circle from "../components/atoms/Circle"
@@ -8,16 +7,12 @@ const Header = () => {
 
     const {ref, inView} = useInView()
 
-    useEffect(()=> {
-      inView === true? console.log("It works") : console.log("Not working")
-    }, [inView])
-
     return (
         <section className="header relative grid grid-cols-2" ref={ref}>
 
           <Logo logoClass="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2"/>
 
-          <div className="absolute top-[7%] w-[216px] h-[360px] md:w-[346px] md:h-[650px] md:top-0">
+          <div className="absolute top-[7%] w-[270px] h-[550px] sm:w-[340px] sm:h-[600px] md:w-[346px] md:h-[650px] md:top-0">
           <img src="assets/_itgall LOGOS-04.png" className="w-full h-full" />
           </div>
 
