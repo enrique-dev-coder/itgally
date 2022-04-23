@@ -6,9 +6,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        rotate: "rotate 3s ease-in-out infinite"
+      },
       colors: {
         "primary-violet": "#37044E",
         "primary-white": "#FFF8FE"
+      },
+      keyframes: {
+        rotate: {
+          "0%": {transform: "rotateY(0deg)"},
+          "100%": { transform: "rotateY(360deg)"},
+
+        }
       },
       screen: {
         "xsm": "340px",

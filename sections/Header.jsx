@@ -12,7 +12,7 @@ const Header = () => {
 
           <Logo logoClass="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2"/>
 
-          <div className="absolute top-[7%] w-[270px] h-[550px] sm:w-[340px] sm:h-[600px] md:w-[346px] md:h-[650px] md:top-0">
+          <div className="absolute top-[7%] w-[270px] h-[550px] animate-rotate sm:w-[340px] sm:h-[600px] md:w-[346px] md:h-[650px] md:top-0">
           <img src="assets/_itgall LOGOS-04.png" className="w-full h-full" />
           </div>
 

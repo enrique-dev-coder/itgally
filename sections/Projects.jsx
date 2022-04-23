@@ -3,6 +3,7 @@ import Button from "../components/atoms/Button"
 import ScrollPoints from "../components/ScrollPoints"
 import Arrow from "../components/atoms/Arrow"
 import { useInView } from "react-intersection-observer"
+import FadeInElement from "../components/FadeInElement"
 
 const projectTexts = {
     in4aha: "This project contribute to the cross-border scale-up of tested and ready-to-use applications in health and social care",
@@ -16,6 +17,8 @@ const Projects = () => {
   })
 
     return (
+
+      <FadeInElement>
         <section className="projects bg-[#FCF4FB] px-[2.5rem] py-[4rem] relative flex items-center lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem]" ref={ref}>
 
           <div className="projects-title flex flex-col">
@@ -23,14 +26,14 @@ const Projects = () => {
             <div className="flex justify-between lg:justify-start">
               <h2 className="text-[#37044E] text-[1.35rem] md:text-3xl font-bold z-10">Projects</h2>
               <div className="lg:ml-[20.5rem] xl:ml-[30rem]">
-                <Button text="More Projects" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82"/>
+                <Button text="More Projects" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" />
               </div>
-              
+
             </div>
 
             <div className="projects-testimonial flex flex-col lg:grid lg:grid-cols-6 lg:mt-[6rem] mt-16 z-10">
 
-              <ProjectInfo title="IN4AHA" info={projectTexts.in4aha} span="span 2"/>
+              <ProjectInfo title="IN4AHA" info={projectTexts.in4aha} span="span 2" />
               <ProjectInfo title="Smartiago" info={projectTexts.smartiago} span="span 2" />
 
               <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%]">
@@ -39,12 +42,12 @@ const Projects = () => {
                   <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
                 </Button>
               </div>
-          </div>
+            </div>
 
 
           </div>
 
-          
+
 
           <div className="absolute z-10 top-[62%] right-[5%] w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] sm:right-0 sm:top-[51%] lg:top-[3%] lg:right-[5%] xl:w-[259px] xl:h-[259px] xl:right-[6%] xl:-top-[6%]">
             <img src="assets/image 135.png" className="w-full h-full" />
@@ -57,6 +60,8 @@ const Projects = () => {
           <ScrollPoints top="30%" projectsView={inView} />
 
         </section>
+      </FadeInElement>
+        
     )
 }
 

@@ -12,7 +12,6 @@ const GallInfo = ({title, url1, url2, text1, text2}) => {
                     <img src={url2} alt="" />
                     <a href="#" className='text-[#8C1D82] ml-[.5rem]'>{text2}</a>
                 </div>
-                {/* w-[21px] h-[21px] */}
         </div>
     )
 }

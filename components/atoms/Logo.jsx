@@ -5,7 +5,4 @@ const Logo = ({logoClass}) => {
     </div>)
 }
 
-
-{/* <div className={`${visible? "block": "hidden"} ${logoClass}`}></div> */}
-
 export default Logo

@@ -1,8 +1,6 @@
 import Circle from "../components/atoms/Circle"
 
 const ScrollPoints = ({top = "45%", headerView, gallSectionView, projectsView, eventsView}) => {
-
-    console.log(projectsView, eventsView)
     
     const scrollClass = {
         position: "absolute",
@@ -21,8 +19,5 @@ const ScrollPoints = ({top = "45%", headerView, gallSectionView, projectsView, e
           </div>
     )
 }
-
-// w-[8px] h-[7px]
-// ${headerView? "p-[.2rem] border-[1px] border-[#37044E] rounded-[50%]": "p-0 border-0"}
 
 export default ScrollPoints
