@@ -15,7 +15,7 @@ const ScrollPoints = ({top = "45%", headerView, gallSectionView, projectsView, e
             </div>
             <Circle height="7px" width="8px" bgColor="#37044E" view={gallSectionView}/>
             <Circle height="7px" width="8px" bgColor="#37044E" view={projectsView} />
-            <Circle height="7px" width="8px" bgColor="#37044E" view={eventsView}/>
+            <Circle height="7px" width="8px" bgColor="#37044E" view={eventsView} />
           </div>
     )
 }

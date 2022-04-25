@@ -2,17 +2,18 @@ import { useInView } from "react-intersection-observer"
 import ScrollPoints from "../components/ScrollPoints"
 import Circle from "../components/atoms/Circle"
 import Logo from "../components/atoms/Logo"
+import Navbar from "../components/Navbar"
 
 const Header = () => {
 
     const {ref, inView} = useInView()
 
     return (
-        <section className="header relative grid grid-cols-2" ref={ref}>
+      <section className="header relative grid grid-cols-2 overflow-hidden" ref={ref}>
 
           <Logo logoClass="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2"/>
 
-          <div className="absolute top-[7%] w-[270px] h-[550px] animate-rotate sm:w-[340px] sm:h-[600px] md:w-[346px] md:h-[650px] md:top-0">
+        <div className="absolute w-[550px] h-[550px] -left-[75%] top-[7%] animate-spin sm:-left-[44%] sm:top-[5%] sm:w-[664px] sm:h-[667px] md:top-[4%] md:-left-[29%] lg:top-[2%] lg:-left-[31%] xl:-left-[25%] 2xl:-left-[22%]">
           <img src="assets/_itgall LOGOS-04.png" className="w-full h-full" />
           </div>
 
@@ -24,9 +25,8 @@ const Header = () => {
                 <h1 className="text-3xl md:text-4xl text-primary-violet font-bold text-center">TECH FOR PEOPLE</h1>
                 <p className="text-primary-violet leading-[1.7rem] px-[3rem] text-[1.4rem] md:text-3xl text-center">YOUR LIVING LAB NETWORK</p>
               </div>
-              
-              
-              <div className="circles flex justify-center mt-16 lg:mt-5 gap-5">
+
+              <div className="circles flex justify-center mt-16 lg:mt-5 xsm:gap-5">
 
                 <div className="circle-box-left transform rotate-[21deg] pr-[1rem] xl:pr-[2rem]">
                   <Circle bgColor="#37044E" height="10px" width="10px" position="relative" left="2rem"/>
@@ -58,6 +58,8 @@ const Header = () => {
             </div>
 
           </div>
+
+          {/* <Navbar /> */}
 
           <ScrollPoints headerView={inView}/>
 

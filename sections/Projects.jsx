@@ -25,7 +25,7 @@ const Projects = () => {
 
             <div className="flex justify-between lg:justify-start">
               <h2 className="text-[#37044E] text-[1.35rem] md:text-3xl font-bold z-10">Projects</h2>
-              <div className="lg:ml-[20.5rem] xl:ml-[30rem]">
+              <div className="lg:ml-[20.5rem] xl:ml-[30rem] 2xl:ml-[36.7rem]">
                 <Button text="More Projects" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" />
               </div>
 
@@ -36,9 +36,11 @@ const Projects = () => {
               <ProjectInfo title="IN4AHA" info={projectTexts.in4aha} span="span 2" />
               <ProjectInfo title="Smartiago" info={projectTexts.smartiago} span="span 2" />
 
-              <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%]">
-                <h3 className="mb-2 text-[1.35rem] sm:text-[1.5rem] md:text-3xl font-bold text-[#8C1D82] mb-4">Discover the news and events from our Living Lab</h3>
-                <Button text="Scroll Down" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mR=".5rem" mL="0" display="flex" gap="8px">
+              <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%] 2xl:flex flex-col justify-between">
+                {/* mb-4 */}
+                <h3 className="mb-2 text-[1.35rem] sm:text-[1.5rem] md:text-3xl font-bold text-[#8C1D82]">Discover the news and events from our Living Lab</h3> 
+                {/* mR=".5rem" */}
+                <Button text="Scroll Down" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content">
                   <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
                 </Button>
               </div>

@@ -16,7 +16,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className='2xl:container 2xl:mx-auto'>
         <Header />
         <Navbar />
         <GallSection />

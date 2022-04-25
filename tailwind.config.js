@@ -20,7 +20,7 @@ module.exports = {
 
         }
       },
-      screen: {
+      screens: {
         "xsm": "340px",
       }
     },

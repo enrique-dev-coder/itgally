@@ -9,9 +9,11 @@ const GallSection = () => {
     threshold: 0.25
   })
 
+  // lg: pb - 56
+
     return (
       <FadeInElement>
-        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-5 lg:pb-56 overflow-hidden" ref={ref}>
+        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-5 overflow-hidden" ref={ref}>
 
           <div className="h-screen flex md:items-center lg:justify-center col-span-3 z-10">
 
@@ -42,19 +44,19 @@ const GallSection = () => {
             <img src="assets/Layer 32 (2).png" className="w-full h-full" />
           </div>
 
-          <div className="absolute lg:top-[65%] lg:left-[63%] w-[172px] h-[182px] hidden lg:block xl:top-[42%] xl:left-[70%]">
+          <div className="absolute lg:top-[65%] lg:left-[63%] w-[172px] h-[182px] hidden lg:block xl:left-[70%]">
             <img src="assets/Layer 27.png" className="w-full h-full" />
           </div>
 
-          <div className="absolute top-[60%] -right-[5%] lg:top-[45%] lg:left-[82%] lg:right-0 overflow-hidden w-[84px] h-[87px] xl:top-[30%]">
+          <div className="absolute top-[60%] -right-[5%] lg:top-[45%] lg:left-[82%] lg:right-0 overflow-hidden w-[84px] h-[87px] xl:top-[44%]">
           <img src="assets/Layer 29.png" className="w-full h-full" />
           </div>
 
-          <div div className="absolute top-[62%] -right-[3%] hidden lg:block w-[183px] h-[268px] xl:top-[40%]">
+          <div div className="absolute top-[62%] -right-[3%] hidden lg:block w-[183px] h-[268px]">
           <img src="assets/Layer 28.png" className="w-full h-full" />
           </div>
 
-          <div className="absolute top-0 sm:-top-[24%] -left-[35%] sm:-left-0 sm:-top-[5%] lg:top-0 lg:left-[17%] xl:-top-[3%] xl:left-[25%] md:left-[10%] w-[644px] h-[644px]">
+          <div className="absolute top-[12%] -left-[20%] sm:left-[3%] md:left-[8%] lg:left-[20%] xl:left-[26%] 2xl:left-[29%] w-[644px] h-[644px]">
           <img src="assets/Ellipse 5.png" className="w-full h-full" />
           </div>
 

@@ -1,4 +1,4 @@
-const Button = ({display, gap, text, color, borderColor, bgColor,mL, mR = "0", children}) => {
+const Button = ({display, gap, width, text, color, borderColor, bgColor,mL, mR = "0", children}) => {
 
     // mL = "1.75rem"
 
@@ -9,7 +9,8 @@ const Button = ({display, gap, text, color, borderColor, bgColor,mL, mR = "0", c
         marginLeft: mL,
         marginRight: mR,
         display,
-        gap
+        gap,
+        width
     }
 
     return (

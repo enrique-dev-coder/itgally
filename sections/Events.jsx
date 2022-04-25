@@ -12,7 +12,7 @@ const Events = () => {
 
     return (
       <FadeInElement>
-        <section className="news-and-events lg:grid lg:gap-x-[2rem] lg:grid-cols-3 px-[2.5rem] py-[4rem] relative lg:mb-[1rem] lg:pr-[4.5rem] xl:pr-[8rem] xl:pl-[4rem] " ref={ref}>
+        <section className="news-and-events lg:grid lg:gap-x-[2rem] lg:grid-cols-3 px-[2.5rem] py-[4rem] relative lg:mb-[1rem] lg:pr-[4.5rem] xl:pr-[8rem] xl:pl-[4rem] " ref={ref} id="events">
 
           <div className="flex md:items-center lg:col-span-3 lg:justify-between lg:mb-[5rem]">
             <h2 className="text-[#63257E] font-bold text-3xl">News and events</h2>
