@@ -19,7 +19,7 @@ const Projects = () => {
     return (
 
       <FadeInElement>
-        <section className="projects bg-[#FCF4FB] px-[2.5rem] py-[4rem] relative flex items-center lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem]" ref={ref}>
+        <section className="projects bg-[#FCF4FB] px-[2.5rem] py-[4rem] relative flex items-center lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem]" ref={ref} id="projects">
 
           <div className="projects-title flex flex-col">
 
@@ -37,9 +37,7 @@ const Projects = () => {
               <ProjectInfo title="Smartiago" info={projectTexts.smartiago} span="span 2" />
 
               <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%] 2xl:flex flex-col justify-between">
-                {/* mb-4 */}
                 <h3 className="mb-2 text-[1.35rem] sm:text-[1.5rem] md:text-3xl font-bold text-[#8C1D82]">Discover the news and events from our Living Lab</h3> 
-                {/* mR=".5rem" */}
                 <Button text="Scroll Down" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content">
                   <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
                 </Button>

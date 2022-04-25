@@ -9,11 +9,9 @@ const GallSection = () => {
     threshold: 0.25
   })
 
-  // lg: pb - 56
-
     return (
       <FadeInElement>
-        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-5 overflow-hidden" ref={ref}>
+        <section className="gall-section relative grid grid-cols-3 bg-primary-white pb-5 overflow-hidden" ref={ref} id="gallSection">
 
           <div className="h-screen flex md:items-center lg:justify-center col-span-3 z-10">
 

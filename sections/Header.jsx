@@ -2,14 +2,13 @@ import { useInView } from "react-intersection-observer"
 import ScrollPoints from "../components/ScrollPoints"
 import Circle from "../components/atoms/Circle"
 import Logo from "../components/atoms/Logo"
-import Navbar from "../components/Navbar"
 
 const Header = () => {
 
     const {ref, inView} = useInView()
 
     return (
-      <section className="header relative grid grid-cols-2 overflow-hidden" ref={ref}>
+      <section className="header relative grid grid-cols-2 overflow-hidden" ref={ref} id="header">
 
           <Logo logoClass="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2"/>
 
@@ -58,8 +57,6 @@ const Header = () => {
             </div>
 
           </div>
-
-          {/* <Navbar /> */}
 
           <ScrollPoints headerView={inView}/>
 
