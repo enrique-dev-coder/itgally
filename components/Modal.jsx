@@ -15,7 +15,7 @@ const Modal = () => {
                 </button>
             </Link>
             
-            <video src="assets/presentación ITGALL_2.mp4" autoPlay controls loop></video>
+            <video src="assets/presentación ITGALL_2.mp4" autoplay controls loop></video>
         </div>
     )
 }
