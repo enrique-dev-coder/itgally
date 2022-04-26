@@ -2,6 +2,7 @@ import ScrollPoints from "../components/ScrollPoints"
 import Button from "../components/atoms/Button"
 import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
+import {Link} from "react-scroll"
 
 const GallSection = () => {
 
@@ -31,7 +32,10 @@ const GallSection = () => {
 
               <div className="button-box mt-[1.5rem] lg:mt-14 flex gap-[1.5rem] justify-center">
                 <Button text="View More" borderColor="#8C1D82" color="#8C1D82"/>
-                <Button text="Watch Video" bgColor="#8C1D82" borderColor="#8C1D82" color="#FFF8FE"/>
+                
+                <Link to="header" smooth={true} duration={1000}>
+                  <Button text="Watch Video" bgColor="#8C1D82" borderColor="#8C1D82" color="#FFF8FE" modal={true} />
+                </Link>
               </div>
     
             </div>
@@ -57,8 +61,6 @@ const GallSection = () => {
           <div className="absolute top-[12%] -left-[20%] sm:left-[3%] md:left-[8%] lg:left-[20%] xl:left-[26%] 2xl:left-[29%] w-[644px] h-[644px]">
           <img src="assets/Ellipse 5.png" className="w-full h-full" />
           </div>
-
-
 
           <ScrollPoints gallSectionView={inView} />
 

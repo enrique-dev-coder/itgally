@@ -2,10 +2,18 @@ import { useInView } from "react-intersection-observer"
 import ScrollPoints from "../components/ScrollPoints"
 import Circle from "../components/atoms/Circle"
 import Logo from "../components/atoms/Logo"
+import Modal from "../components/Modal"
+import {useEffect, useState} from "react"
 
 const Header = () => {
 
     const {ref, inView} = useInView()
+
+    const [modal, setModal] = useState()
+
+    useEffect(() => {
+      JSON.parse(window.localStorage.getItem("modal")) === true? setModal(true) : setModal(false)
+    })
 
     return (
       <section className="header relative grid grid-cols-2 overflow-hidden" ref={ref} id="header">
@@ -57,6 +65,8 @@ const Header = () => {
             </div>
 
           </div>
+
+          {modal && <Modal />}
 
           <ScrollPoints headerView={inView}/>
 
