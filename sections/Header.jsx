@@ -2,25 +2,17 @@ import { useInView } from "react-intersection-observer"
 import ScrollPoints from "../components/ScrollPoints"
 import Circle from "../components/atoms/Circle"
 import Logo from "../components/atoms/Logo"
-import Modal from "../components/Modal"
-import {useEffect, useState} from "react"
 
 const Header = () => {
 
     const {ref, inView} = useInView()
-
-    const [modal, setModal] = useState()
-
-    useEffect(() => {
-      JSON.parse(window.localStorage.getItem("modal")) === true? setModal(true) : setModal(false)
-    })
 
     return (
       <section className="header relative grid grid-cols-2 overflow-hidden" ref={ref} id="header">
 
           <Logo logoClass="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2"/>
 
-        <div className="absolute w-[550px] h-[550px] -left-[75%] top-[7%] animate-spin sm:-left-[44%] sm:top-[5%] sm:w-[664px] sm:h-[667px] md:top-[4%] md:-left-[29%] lg:top-[2%] lg:-left-[31%] xl:-left-[25%] 2xl:-left-[22%]">
+        <div className="absolute w-[550px] h-[550px] -left-[75%] top-[7%] animate-spin-slow sm:-left-[44%] sm:top-[5%] sm:w-[664px] sm:h-[667px] md:top-[4%] md:-left-[29%] lg:top-[2%] lg:-left-[31%] xl:-left-[25%] 2xl:-left-[22%]">
           <img src="assets/_itgall LOGOS-04.png" className="w-full h-full" />
           </div>
 
@@ -65,8 +57,6 @@ const Header = () => {
             </div>
 
           </div>
-
-          {modal && <Modal />}
 
           <ScrollPoints headerView={inView}/>
 

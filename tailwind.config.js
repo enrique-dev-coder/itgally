@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        rotate: "rotate 3s ease-in-out infinite"
+        "spin-slow": "spin 3s linear infinite"
       },
       colors: {
         "primary-violet": "#37044E",

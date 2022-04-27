@@ -2,13 +2,16 @@ import ScrollPoints from "../components/ScrollPoints"
 import Button from "../components/atoms/Button"
 import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
-import {Link} from "react-scroll"
+import Modal from "../components/Modal"
+import {useState} from "react"
 
 const GallSection = () => {
 
   const {ref, inView} = useInView({
     threshold: 0.25
   })
+
+  const [modal, setModal] = useState(false)
 
     return (
       <FadeInElement>
@@ -28,14 +31,11 @@ const GallSection = () => {
               </p>
               </div>
 
-    
-
               <div className="button-box mt-[1.5rem] lg:mt-14 flex gap-[1.5rem] justify-center">
                 <Button text="View More" borderColor="#8C1D82" color="#8C1D82"/>
-                
-                <Link to="header" smooth={true} duration={1000}>
-                  <Button text="Watch Video" bgColor="#8C1D82" borderColor="#8C1D82" color="#FFF8FE" modal={true} />
-                </Link>
+                <button className="bg-[#8C1D82] border-[#8C1D82] text-primary-white border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7" onClick={() => setModal(true)}>
+                  Watch Video
+                </button>
               </div>
     
             </div>
@@ -63,6 +63,8 @@ const GallSection = () => {
           </div>
 
           <ScrollPoints gallSectionView={inView} />
+
+          {modal && <Modal modal={modal} setModal={setModal} />}
 
           </section>
 

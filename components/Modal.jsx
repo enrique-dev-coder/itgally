@@ -1,21 +1,16 @@
-import {Link} from "react-scroll"
-
-const Modal = () => {
-
-    const hideModal = () => {
-        window.localStorage.setItem("modal", "false")
-    }
+const Modal = ({modal, setModal}) => {
 
     return (
-        <div className={`w-4/5 p-[1rem] left-[10%] top-[20%] md:p-[2rem] lg:w-3/5 absolute lg:left-[19%] lg:top-[6%] xl:p-[4rem] flex flex-col gap-5 bg-gradient-to-r from-white/75 drop-shadow`}>
+        <div className={`w-full h-screen fixed top-0 bg-black/75 z-50 place-content-center 2xl:container ${modal? "flex" : "hidden"}`}>
 
-            <Link to="gallSection" smooth={true} duration={1000} className="ml-auto">
-                <button onClick={hideModal}>
-                    <img src="assets/Vector 205.png" alt="" />
+            <div className="w-4/5 md:w-3/5 flex flex-col gap-10 items-center justify-center">
+                <button className="text-[#8C1D82] font-bold text-[1.5rem] ml-auto" onClick={() => { setModal(false) }}>
+                    X
                 </button>
-            </Link>
-            
-            <video src="assets/presentación ITGALL_2.mp4" autoplay controls loop></video>
+
+                <video src="assets/presentación ITGALL_2.mp4" autoPlay controls loop></video>
+            </div>
+
         </div>
     )
 }
