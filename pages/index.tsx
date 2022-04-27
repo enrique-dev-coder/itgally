@@ -24,7 +24,7 @@ const Home: NextPage = () => {
         <Events />
       </main>
 
-      <Contact />
+      <Contact h3Styles="text-[#8C1D82] font-bold text-xl mb-6" pStyles="text-[#8C1D82]" aStyles="text-[#8C1D82] ml-[.5rem]"/>
     </div>
   )
 }

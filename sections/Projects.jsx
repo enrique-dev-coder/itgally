@@ -33,8 +33,25 @@ const Projects = () => {
 
             <div className="projects-testimonial flex flex-col lg:grid lg:grid-cols-6 lg:mt-[6rem] mt-16 z-10">
 
-              <ProjectInfo title="IN4AHA" info={projectTexts.in4aha} span="span 2" />
-              <ProjectInfo title="Smartiago" info={projectTexts.smartiago} span="span 2" />
+              <ProjectInfo 
+              title="IN4AHA" 
+              info={projectTexts.in4aha} 
+              span="span 2"
+              h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]" 
+              pStyles="text-primary-violet mt-4 sm:text-[1.1rem]" 
+              aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem]"
+              address="/projects/in4aha"
+              btnText="Learn More" />
+
+              <ProjectInfo 
+              title="Smartiago" 
+              info={projectTexts.smartiago} 
+              span="span 2" 
+              h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]" 
+              pStyles="text-primary-violet mt-4 sm:text-[1.1rem]" 
+              aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem]"
+              address="/projects/smartiago" 
+              btnText="Learn More"/>
 
               <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%] 2xl:flex flex-col justify-between">
                 <h3 className="mb-2 text-[1.35rem] sm:text-[1.5rem] md:text-3xl font-bold text-[#8C1D82]">Discover the news and events from our Living Lab</h3> 
@@ -50,11 +67,11 @@ const Projects = () => {
 
 
           <div className="absolute z-10 top-[62%] right-[5%] w-[100px] h-[100px] sm:w-[200px] sm:h-[200px] sm:right-0 sm:top-[51%] lg:top-[3%] lg:right-[5%] xl:w-[259px] xl:h-[259px] xl:right-[6%] xl:-top-[6%]">
-            <img src="assets/image 135.png" className="w-full h-full" />
+            <img src="/assets/image 135.png" className="w-full h-full" />
           </div>
 
           <div className="absolute -top-[10%] left-[0] w-[300px] h-[655px] xl:w-[461px] xl:h-[655px]">
-            <img src="assets/Ellipse 3.png" className="w-full h-full" />
+            <img src="/assets/Ellipse 3.png" className="w-full h-full" />
           </div>
 
           <ScrollPoints top="30%" projectsView={inView} />

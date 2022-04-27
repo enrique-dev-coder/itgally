@@ -17,10 +17,10 @@ const Navbar = () => {
               <li><a href="" className="text-primary-violet">Contact us</a></li>
             </ul>
             <div className="mr-10 block lg:hidden w-[28px] h-[23px]">
-              <img src="assets/Vector 238.png" className='w-full h-full' />
+              <img src="/assets/Vector 238.png" className='w-full h-full' />
             </div>
             <div className={`w-[27px] h-[27px] ${inView? "relative -left-[2%]": "" }`}>
-              <img src="assets/Subtract.png" className='w-full h-full' />
+              <img src="/assets/Subtract.png" className='w-full h-full' />
             </div>
           </nav>
     )

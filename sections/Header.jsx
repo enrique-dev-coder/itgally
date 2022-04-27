@@ -13,7 +13,7 @@ const Header = () => {
           <Logo logoClass="absolute w-[125px] h-[40px] top-[5%] left-[8%] md:w-[156px] md:h-[51px] md:top-0 md:pl-20 lg:w-[150px] lg:h-[50px] md:pt-1 md:col-span-2 md:pl-2"/>
 
         <div className="absolute w-[550px] h-[550px] -left-[75%] top-[7%] animate-spin-slow sm:-left-[44%] sm:top-[5%] sm:w-[664px] sm:h-[667px] md:top-[4%] md:-left-[29%] lg:top-[2%] lg:-left-[31%] xl:-left-[25%] 2xl:-left-[22%]">
-          <img src="assets/_itgall LOGOS-04.png" className="w-full h-full" />
+          <img src="/assets/_itgall LOGOS-04.png" className="w-full h-full" />
           </div>
 
           <div className="h-screen grid place-content-center col-span-2 pt-[5rem]">
@@ -45,13 +45,13 @@ const Header = () => {
                 </div>
 
                 <div className="absolute right-[0] -bottom-[5px] w-[320px] h-[220px] hidden lg:block xl:w-[490px] xl:h-[313px]">
-                  <img src="assets/image 137.png" className="w-full h-full" />
+                  <img src="/assets/image 137.png" className="w-full h-full" />
                 </div>
                 
               </div>
 
               <div className="w-[12px] h-[31px]">
-                <img src="assets/Vector 202.png" alt="" className="w-full h-full" />
+                <img src="/assets/Vector 202.png" alt="" className="w-full h-full" />
               </div>
 
             </div>

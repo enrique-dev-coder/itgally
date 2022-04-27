@@ -1,18 +1,15 @@
-import Arrow from "./atoms/Arrow"
+import BtnArrow from "./atoms/BtnArrow"
 
-const ProjectInfo = ({title, info, span}) => {
+const ProjectInfo = ({title, info, span, h2Styles, pStyles, aStyles, address = "#", btnText}) => {
 
   const spanStyle = {
     gridColumn: span
   }
   return (
     <div style={spanStyle} className="border-t-[1px] border-[#37044E] flex-1 mb-[3rem] lg:mr-[2.5rem] md:flex-initial flex flex-col justify-between lg:justify-start">
-      <h2 className="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]">{title}</h2>
-      <p className="text-primary-violet mt-4 sm:text-[1.1rem]">{info}</p>
-      <a href="#" className="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem]">
-        Learn More
-        <Arrow rotation="rotate(45deg)" />
-      </a>
+      <h2 className={`${h2Styles}`}>{title}</h2>
+      <p className={`${pStyles}`}>{info}</p>
+      <BtnArrow address={address} aStyles={aStyles} btnText={btnText} />      
     </div>
   )
 }

@@ -1,9 +1,10 @@
-const Arrow = ({rotation, width = ".7rem", height = ".7rem"}) => {
+const Arrow = ({rotation, width = ".7rem", height = ".7rem", mR}) => {
 
     const arrowRotation = {
         transform: rotation,
         width,
-        height
+        height,
+        marginRight: mR
     }
 
     return (
