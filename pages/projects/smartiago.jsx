@@ -11,7 +11,7 @@ const smartiago = () => {
 
             <SecondHeader imgURL="/assets/image 3.png" headerSize="h-[35vh] " />
 
-            <Navbar />
+            <Navbar show={false}/>
 
 
             <FadeInElement>

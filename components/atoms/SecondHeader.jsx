@@ -1,10 +1,15 @@
+import Link from 'next/link'
 import { Fragment } from "react"
 import Logo from "./Logo"
 
 const SecondHeader = ({children, text, title, imgURL, headerSize = "h-[25vh]"}) => {
     return (
         <div className={`grid relative bg-primary-white place-content-center overflow-hidden ${headerSize}`} >
-            <Logo logoClass="absolute w-[120px] h-[40px] top-[5%] left-[8%] z-10" />
+            <Link href="/">
+                <a className="cursor-pointer">
+                <Logo logoClass="absolute w-[120px] h-[40px] top-[5%] left-[8%] z-10" />
+              </a>
+            </Link>
 
             <div className={`z-10 ${imgURL && "w-[250px] h-[70px] lg:w-[350px] lg:h-[80px]"}`}>
                 {

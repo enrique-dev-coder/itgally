@@ -1,7 +1,9 @@
+import Link from 'next/link'
+import { Link as Scroll } from "react-scroll"
 import { useInView } from "react-intersection-observer"
 import Logo from "../components/atoms/Logo"
 
-const Navbar = () => {
+const Navbar = ({show = true}) => {
 
     const {ref, inView} = useInView({
       threshold: 1,
@@ -9,19 +11,40 @@ const Navbar = () => {
 
     return (
         <nav className="border-y border-primary-violet py-[.5rem] col-span-3 bg-white flex justify-center sticky top-0 z-40 items-center" ref={ref}>
-            {inView? <Logo logoClass="h-[30px] w-[100px] relative -left-[18%]" />: ""}
-            <ul className={`list-none justify-center lg:flex gap-[2.25rem] mr-5 hidden ${inView? "relative -left-[3%]": "" }`}>
-              <li><a href="" className="text-primary-violet">Our Network</a></li>
-              <li><a href="" className="text-primary-violet">New Events</a></li>
-              <li><a href="" className="text-primary-violet">Project</a></li>
+
+            {inView && show? 
+            <Scroll to="header" smooth={true} duration={1000} className="relative -left-[18%]" >
+              <Logo logoClass="h-[30px] w-[100px]" />
+            </Scroll>
+            : ""}
+
+            <ul className={`list-none justify-center gap-[2.25rem] mr-5 hidden lg:flex ${inView? "relative -left-[3%]": "" }`}>
+              <li>
+                <Link href="#">
+                  <a className="text-primary-violet">Our Network</a>
+                </Link>
+              </li>
+              <li>
+                <Link href="#">
+                  <a className="text-primary-violet">New Events</a>
+                </Link> 
+              </li>
+              <li>
+                <Link href="/projects">
+                  <a className="text-primary-violet">Project</a>
+                </Link>
+              </li>
               <li><a href="" className="text-primary-violet">Contact us</a></li>
             </ul>
+
             <div className="mr-10 block lg:hidden w-[28px] h-[23px]">
               <img src="/assets/Vector 238.png" className='w-full h-full' />
             </div>
+
             <div className={`w-[27px] h-[27px] ${inView? "relative -left-[2%]": "" }`}>
               <img src="/assets/Subtract.png" className='w-full h-full' />
             </div>
+
           </nav>
     )
 }

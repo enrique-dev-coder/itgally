@@ -10,7 +10,7 @@ const in4aha = () => {
 
             <SecondHeader imgURL="/assets/Group 22810.png" headerSize="h-[35vh] " />
 
-            <Navbar />
+            <Navbar show={false}/>
 
 
             <FadeInElement>

@@ -28,7 +28,7 @@ const projects = () => {
         </div>
       </SecondHeader>
 
-      <Navbar />
+      <Navbar show={false}/>
 
 
       <FadeInElement>
