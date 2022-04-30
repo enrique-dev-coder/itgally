@@ -19,7 +19,7 @@ const smartiago = () => {
 
                     <div className="flex flex-col">
 
-                        <p className="text-primary-violet text-[1.2rem] md:text-[1.35rem]">
+                        <p className="text-primary-violet text-[1.2rem]">
                             The living lab whose creation is promoted through a tender from <span className="font-bold">the City Hall of Santiago de Compostela</span>, will bring together an ecosystem of open innovation and technology transfer around advanced modeling, simulation and analysis systems that are developed, carrying out testing and networking actions that help incorporate R&amp;D&amp;I activities , in particular, these new technologies to the urban space to test and improve models of sustainable pedestrian mobility.
 
                             <span className="font-bold block my-[2rem]">In this line, its specific objectives will be the following:</span>

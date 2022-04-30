@@ -7,9 +7,12 @@ import Projects from "../sections/Projects"
 import Events from "../sections/Events"
 import Contact from "../sections/Contact"
 import Navbar from "../components/Navbar"
+import Network from "../sections/Network"
 
 const Home: NextPage = () => {
+
   return (
+
     <div className="flex min-h-screen flex-col py-2">
       <Head>
         <title>IT GALL</title>
@@ -20,6 +23,7 @@ const Home: NextPage = () => {
         <Header />
         <Navbar />
         <GallSection />
+        {/* <Network /> */}
         <Projects />
         <Events />
       </main>

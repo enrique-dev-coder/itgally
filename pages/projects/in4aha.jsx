@@ -18,7 +18,7 @@ const in4aha = () => {
 
                     <div className="flex flex-col">
 
-                        <p className="text-primary-violet text-[1.2rem] md:text-[1.35rem]">
+                        <p className="text-primary-violet text-[1.2rem]">
                             Innovation Networks for Active and Healthy Ageing (IN-4-AHA) is a EU-funded Coordination and Support Action (CSA) that contributes to the cross-border scale-up of tested and ready-to-use applications in health and social care. The project will bring together both the support and the demand sides as well as the end-users, engage with local and regional ecosystems, stakeholder groups and organisations. The main outcome of this cooperation is an innovation scale-up model that is validated by stakeholders and complemented by a clear implementation roadmap, an innovation impact evaluation toolkit and a strategy for long-term investments.
                         </p>
 

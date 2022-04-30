@@ -11,7 +11,7 @@ const SecondHeader = ({children, text, title, imgURL, headerSize = "h-[25vh]"}) 
               </a>
             </Link>
 
-            <div className={`z-10 ${imgURL && "w-[250px] h-[70px] lg:w-[350px] lg:h-[80px]"}`}>
+            <div className={`z-10 ${imgURL && "w-[250px] h-[70px] lg:w-[330px] lg:h-[80px]"}`}>
                 {
                     imgURL? <img src={imgURL} alt="" className="w-full h-full" />
                     : <Fragment>
