@@ -375,7 +375,6 @@ const Network = () => {
                         }
                     </div>
 
-                    {/* H-fit */}
                     {/* <Button text="All sectors" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content" height="fit-content">
                         <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
                     </Button>
