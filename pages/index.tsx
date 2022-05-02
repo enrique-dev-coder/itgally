@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <Header />
         <Navbar />
         <GallSection />
-        {/* <Network /> */}
+        <Network />
         <Projects />
         <Events />
       </main>

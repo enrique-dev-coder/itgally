@@ -1,4 +1,4 @@
-const Button = ({display, gap, width, text, color, borderColor, bgColor,mL, mR = "0", children, address = "#"}) => {
+const Button = ({display, gap, width, height ,text, color, borderColor, bgColor,mL, mR = "0", children, address = "#"}) => {
 
     const buttonClass = {
         backgroundColor: bgColor,
@@ -8,7 +8,8 @@ const Button = ({display, gap, width, text, color, borderColor, bgColor,mL, mR =
         marginRight: mR,
         display,
         gap,
-        width
+        width,
+        height
     }
 
     return (
