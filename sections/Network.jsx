@@ -1,7 +1,12 @@
 import Button from "../components/atoms/Button"
 import Arrow from "../components/atoms/Arrow"
-import NetworkText from "../components/atoms/NetworkText"
-import NetworkModal from "../components/atoms/NetworkModal"
+import Afaga from "../components/network/Afaga"
+import Ategal from "../components/network/Ategal"
+import Atendo from "../components/network/Atendo"
+import CruzRoja from "../components/network/CruzRoja"
+import Domus from "../components/network/Domus"
+import Olecer from "../components/network/Olecer"
+import Saraiva from "../components/network/Saraiva"
 import { useState, Fragment } from "react"
 
 const Network = () => {
@@ -596,57 +601,37 @@ const Network = () => {
 
                             {
                                 network.afaga &&
-                                <NetworkModal title="Afaga" >
-                                    <div className="flex flex-col col-span-1 mt-[2rem] gap-[2rem] pl-[2.5rem]">
-                                        <p>
-                                        Training center for the elderly with more than 40 years of experience in Galicia. More than 10 years testing products and services for the elderly, we are a link between companies and the elderly.
-                                        </p>
-
-                                        <div className="w-[189px] h-[101px]" >
-                                            <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
-                                        </div>
-
-                                        <p>
-                                        Paula Sande Nieto <br />
-                                        Vicepresident <br />
-
-                                        administracion@ategal.com <br />
-                                        www.ategal.com
-                                        </p>
-                                    </div>
-
-                                    <div className="h-[200px] w-[200px] bg-slate-500 col-span-1"></div>
-                                </NetworkModal>
+                                <Afaga />
                             }
 
                             {
                                 network.ategal &&
-                                <NetworkText text="ATEGAL" />
+                                <Ategal />
                             }
 
                             {
                                 network.atendo &&
-                                <NetworkText text="ATENDO" />
+                                <Atendo />
                             }
 
                             {
                                 network.cruz &&
-                                <NetworkText text="CRUZ" />
+                                <CruzRoja />
                             }
 
                             {
                                 network.domus &&
-                                <NetworkText text="DOMUS" />
+                                <Domus />
                             }
 
                             {
                                 network.olecer &&
-                                <NetworkText text="OLECER" />
+                                <Olecer />
                             }  
 
                             {
                                 network.saraiva &&
-                                <NetworkText text="SARAIVA" />
+                                <Saraiva />
                             }
                     </Fragment>
                 }
@@ -696,17 +681,17 @@ const Network = () => {
 
                             {
                                 network.afaga &&
-                                <NetworkText text="AFAGA" />
+                                <Afaga />
                             }
 
                             {
                                 network.atendo &&
-                                <NetworkText text="ATENDO" />
+                                <Atendo />
                             }
 
                             {
                                 network.domus &&
-                                <NetworkText text="DOMUS" />
+                                <Domus />
                             }
                     </Fragment>
                     
@@ -732,7 +717,7 @@ const Network = () => {
 
                             {
                                 network.domus &&
-                                <NetworkText text="DOMUS" />
+                                <Domus />
                             }
                     </Fragment>
                     
@@ -759,7 +744,7 @@ const Network = () => {
 
                             {
                                 network.domus &&
-                                <NetworkText text="DOMUS" />
+                                <Domus />
                             }
                     </Fragment>
                     
@@ -797,12 +782,12 @@ const Network = () => {
 
                             {
                                 network.olecer &&
-                                <NetworkText text="Olecer" />
+                                <Olecer />
                             }
 
                             {
                                 network.saraiva &&
-                                <NetworkText text="Saraiva" />
+                                <Saraiva />
                             }
                     </Fragment>
                 }
@@ -839,12 +824,12 @@ const Network = () => {
 
                             {
                                 network.ategal &&
-                                <NetworkText text="ATEGAL" />
+                                <Ategal />
                             }
 
                             {
                                 network.cruz &&
-                                <NetworkText text="CRUZ" />
+                                <CruzRoja />
                             }
                     </Fragment>
                     
