@@ -1,35 +1,45 @@
 import Button from "../components/atoms/Button"
 import Arrow from "../components/atoms/Arrow"
-import { useState } from "react"
+import NetworkText from "../components/atoms/NetworkText"
+import NetworkModal from "../components/atoms/NetworkModal"
+import { useState, Fragment } from "react"
 
 const Network = () => {
 
     const [city, setCity] = useState({
         barcelona: false,
-        compostela: false,
-        lugo: false,
+        galicia: false,
         madrid: false,
         pontevedra: false,
-        vigo: false
+        vigo: false,
+        allCities: true
+    })
+
+    const [network, setNetwork] = useState({
+        afaga: false,
+        ategal: false,
+        atendo: false,
+        cruz: false,
+        domus: false,
+        olecer: false,
+        saraiva: false
     })
 
     const [btnControl, setBtnControl] = useState(false)
 
-    const currentCity = null
+    let currentCity
 
     if (city.barcelona) {
         currentCity = "Barcelona"
-    } else if (city.compostela) {
-        currentCity = "Compostela"
-    } else if (city.lugo) {
-        currentCity = "Lugo"
+    }  else if (city.galicia) {
+        currentCity = "Galicia"
     } else if (city.madrid) {
         currentCity = "Madrid"
     } else if (city.pontevedra) {
         currentCity = "Pontevedra"
     } else if (city.vigo) {
         currentCity = "Vigo"
-    } else {
+    } else if (city.allCities) {
         currentCity = "All cities"
     }
 
@@ -82,14 +92,22 @@ const Network = () => {
                         setBtnControl(false)
                         setCity({
                         barcelona: true,
-                        compostela: false,
                         galicia: false,
-                        lugo: false,
                         madrid: false,
                         pontevedra: false,
-                        vigo: false
+                        vigo: false,
+                        allCities: false
+                        })
+                        setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false
+                        })
                     }
-                    )}
                     } d="M929.9 130.8l-5.6 2.4-9 4.1-0.9 1-2.6 1.8-3.3 1.4-1.3 1-1.2 1.6-2.1 3.8-1.3 1.8-1.5 1.3-3.1 1.8-1.8 0.5-3 0.3-3 0.8-0.9 0.5-0.4 0.1-1.5 0-8.7 2.6 0.2-1.5-0.2-0.3-0.3-0.2-1.5-0.1-0.4-0.4 0-0.6 0.2-0.2 1.2-0.6 0.3-0.4 0.1-0.4-0.1-0.6-0.2-0.4-1-0.7-0.9-2-0.1-1.4-0.2-0.5-1-1.1-2.3-1.3-0.6-1.1 0.4-1.7 0.1-1.3-1-0.8-2.4-1-0.4-0.8 1.4-1.9 0.4-0.8-0.3-0.5-0.5-0.1-1.2 0.1 0.7-0.9-0.9-0.6-0.8-0.2 0.2-1 0.7-0.5 2.1-0.5 0.1-0.4-1.4-3.6 0.1-4.7 0.1-0.4 0.4-0.4 0.5-0.3 0.5 0 0.5 0.2 0.8 1.1 0.4 0.2 1.2-0.3 0.4 0.1 1.1 1 0.4 0 0.4-0.3 3.1-3.6 0.1-0.6 0-0.6-0.8-2.1 0-0.7 1.2-2 0.1-1.5 0.1-0.4 0.3-0.4 0.4-0.2 1.4 0.1 0.5-0.3 0.3-0.3 0.2-0.5-0.1-0.5-0.3-0.4-0.3-0.2-0.3 0-1.1 0.5-0.2-0.1-0.2-0.2-0.1-0.5 0.1-0.4 1-0.9 0.3-0.5 0.1-0.6 0-0.6-0.1-1.1 0-0.3 0.2-0.2 0.6-0.2 0.2-0.3 0.1-0.5-0.3-1.5 0-0.5 0.4-0.6 0.5-0.3 0.2-0.4 0.2-0.5 0-0.5-0.1-0.5-0.1-0.3-1.4-0.7-0.3-0.2-0.2-0.4-0.3-2.2 0-0.5 0.1-0.3 1.3-1.6 5.7-1.1 3.1-0.7 1.1 0.3 1.6 1.1 0.6 0.1 1.3-0.3 0.6 0 0.5 0.3 0.2 0.6 0 0.7-0.1 0.4-0.6 0.8-0.3 1.5 0.1 0.2 0.9 1.2 0.2 0.4 0.2 0.7 0 1.9 0.2 0.6 0.3 0.4 0.3 0 0.8-0.1 0.3 0.1 1.2 0.9 0.2 0.1 1.3-0.5 2 0 0.2-0.1 0.5-0.5 0.5-0.2 2.2-0.1 0.3 0.3 0.3 0.9 0.6 0.6 0.9 0 1.7-0.5 1.7 2.4 0.7 0.5 1.7 0 0.9 0.6 0.7 1 0.3 1.2-0.1 1.3-0.4 0.8-2.2 2.5-0.1 0.4 0.3 0.3 0.3 0.3 0.5 0.7 0 0.6-0.9 1.4-0.8-0.1-1.4 0.9-0.5 0.1-2-1-0.2 0.1-0.3 0.5-0.5 0.8 0.2 1.2 0.5 1.2 0.7 1 0.7 0.6 0.4 0 1.1-0.4 1.8 0.1 4.9 5 4-0.8 1.4-0.9 0.7-0.1 0.8 0 2 0.8 0.9 0.9 0.3 1.2-0.1 0.3-0.4 0.5-0.2 0.3 0.1 0.5 0.8 1.7z" id="ESP5809" name="Barcelona">
                     </path>
                     {/* BARCELONA */}
@@ -131,18 +149,27 @@ const Network = () => {
 
 
                     {/* LA CORUÑA - COMPOSTELA */}
-                    <path className={`${city.compostela ? "fill-[#FFFFFF]" : "fill-[#8C1D82]"} cursor-pointer`} onClick={() => {
+                    <path className={`${city.galicia ? "fill-[#FFFFFF]" : "fill-[#8C1D82]"} cursor-pointer`} onClick={() => {
                         setBtnControl(false)
                         setCity({
-                        barcelona: false,
-                        compostela: true,
-                        galicia: false,
-                        lugo: false,
-                        madrid: false,
-                        pontevedra: false,
-                        vigo: false
+                            barcelona: false,
+                            galicia: true,
+                            madrid: false,
+                            pontevedra: false,
+                            vigo: false,
+                            allCities: false
+                        }
+                        )
+                        setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false
+                        })
                     }
-                    )}
                     } d="M465.4 4.8l-0.6 3.5 0.8 1.3-1.5 1.7-0.2 0.6 0.2 1.1-0.1 0.7-0.1 0.3-1.1 1.1-0.2 0.5 0 0.6 0.5 0.9 0.1 0.6-1.6 4.4-1.2 0.7-0.4 1.4-0.3 0.5-0.5 0.3-2.1-0.3-0.3 4-0.3 0.7-1.6 1.8-0.2 0.4-0.1 0.5 0.2 0.5 0.3 0.8 0 0.6-1.5 3.9 1.6 6-0.1 0.5-0.2 0.4-0.1 0.7 0 0.8 1.2 3.9 0 1.6-0.2 1.5-1.1 2-0.4 0.4-0.9 0.5-0.4 0.4-1.1 2-1.5 0.8-0.7 0.1-5.5-1.1-0.8 0.3-0.6 0.8-0.2 0.2-0.5 0.1-1.4-0.4-0.4 0.1-1.3 0.9-0.4-0.1-0.2-0.4-0.2-0.5-0.3-0.5-0.3-0.1-0.3 0-0.3 0.2-0.2 0.4 0 0.3 0.3 1.1 0 0.7-0.1 0.6-0.3 0.5-0.5 0.2-1.7-0.6-1.3 2-1.1 0.8-0.5 0.1-0.7-0.1-1.3-0.8-3.3 0.7-0.8 0.4-0.2 0.4-0.2 0.8-0.2 0.1-1.6-0.5-3.2 1.1-0.6 1.1-0.3 0-0.3 1-0.4 0.9-0.6 0.7-0.8 0.3-0.9-0.3-0.5-0.8-0.5-0.9-0.5-0.5-0.7 1.3-0.1 0.7 0.4 0.5-0.9 1.4-0.6 0.4-0.6-0.5 0.2-0.7-0.6 0.3-1.4 1.2 0.6 0.7-0.5 0.5-1.6 0.4-0.2 0.3-0.3 1.4-0.4 0.1-0.3 0.4-0.7 0.7-0.6-0.7-0.1-1.1-0.2-1-1-0.5-0.7-0.6 0.2-1.5 0.7-1.5 0.5-0.9 0-0.7 0.1-0.9 0.3-1.2 0.5-0.8 0.2-0.4 0.4-0.4 0.5-0.2 0.1-0.1 1.3-0.8 1.1-1.6 0.7-0.6 1.1-0.2 0.3-0.5 0.2-0.9-0.1-1-0.9-0.5-0.2 1.4-0.7 0.8-1 0.5-1.2 0.2-2.2-0.4-0.9 0.2 0.1 1-1 1.1-0.6 0.3-0.8-0.1-0.6-0.6-0.3-0.7-0.2-1-0.4-1.1 0.5 0 0.4-0.2 0.3-0.4 0.3-0.6-0.4-0.7-0.6-0.4-0.8-0.4-0.1-0.5-0.2-0.8-0.1-0.3 0.1-0.3 0.4-0.4 0.2-0.4 0-0.5 0-0.4-0.3-0.3-0.8 0-0.4-0.3-0.7-1.1-0.5-0.3 0 0.4 0.2 0.7-0.2 0.3-0.5 0.1-0.2 0-0.2-0.8-0.4-0.1-0.5 0.3-0.4 0.4-0.3 0.5-0.5 1.2-0.3 0.6-0.2-0.2-0.4-1.4-0.4-0.3 0-0.4 0.3-0.6 0.9-2.5 0.1-0.9 0.2-0.5 0.3-0.8-0.3-0.4-0.6-0.5-0.4-1.5 0.4-0.3 0.6 0 0.3-0.6 0.2-1.1 0.6-0.5 0.5-0.4 0.2-0.7 0.6 0.6 0.6 0.2 0.6-0.2 0.6-0.6 0.3-0.3 0.3-0.6 0.4-0.3 0.7-0.3 0.8-0.1 0-0.5-0.8 0.4-1 0.2-0.7 0 0-0.6-1.4 0.8-0.6-0.1-0.4-1.1 2.1-2 1.4-0.8 1.7 0.8 0.8-0.1 0.7-0.1 0.6-0.3 0.6-0.5 0.5-0.3 0.5-0.8 0.2-0.9 0.4 0 0.8 0.7 1.2-0.1 1.1-0.4 0.8-0.6-0.9 0-0.6-0.3-0.6-1.4-0.2 0-0.6-0.3-0.3-0.3 0.3-0.2 0.4-0.1 1.8-0.8 1.9-1.2 1.4-0.4 0.3-0.5 0.4-0.3 0.5-0.1 0.6 0.3 1.3 1.5 0.8 0.3 0.8 0.1 1.7 0.6 0.8 0.1 1.3-0.5 1.5-0.8 1.7-0.6 1.5 0.7 2.3-1.1 0.4-0.4 0.2-0.5 0.3-0.5 0.5-0.3 0.9-0.2 0.3-0.6 0.2-0.2 2.5-0.6 0.1 0.8 0.4 0.6 1 0.9 0.6-0.7 0.1-0.6-0.1-1.4 0.4-0.8 0.9 0.1 1.3 0.9 0.6 0.2 0.3 0.5 0.2 0.7 0.3 0.7 1 1 0.5 0.6 0.3 0.9 0.3-1 0-0.9-0.3-1.9 0-0.9 0.2-0.6 0.5-0.4 0.8-0.6-0.9-0.4-0.8-0.1-1.5 0.1-0.8-0.3-1-1.1-0.7-0.3 0.8-0.7 4.5-0.6 0.3-0.1 0.3-0.3 0.2-0.4-0.1-0.4-0.2-0.1-1 0.5-2.7 0.5 0.3-0.4 0.3-0.1-0.6-0.4-0.6 0.8-0.8 0.4-2 0 0.4-0.9 0.1-1.3 0.2-0.9 0.6 0.2 0.5-0.8-0.3-0.3-0.4-0.5-0.2-0.6 0-0.7 1 0.1 0.3-0.1 1 0.2 1.3-0.7 6.4-5 0.2 0.7 0.4 0.3 0.5 0.1-0.1-0.6 0.6-0.5-0.9-0.7-0.1-0.6 0.2-0.7 0.2-0.7 0.3-0.5 0.6-0.2 1.5 0 1.3-0.4 1.3-0.7 1.1-1 0.8-1.2 1.3 0.2 0.5 0.8 0.3 1.1 0.7 0.8-0.3 0.3-0.6-0.3-0.4 0.6-0.2 0.5 0 0.5 0.3 0.5-0.5 0.4-0.5-0.4-0.4 0.4-0.2 0.1 0 0.4 2.3 0.1 0.4-0.5-0.8-1.3 0.5-0.4 0.5 0 1.1 0.4-0.3-0.9 0.6-0.7 0.8-0.7 0.9-0.5 1.8-0.4 0.9-0.7 0.8-0.9 0.3-0.9 0.1-0.2 0.4 0.2 0.3 0.5 0.1 0.6-0.2 0.3-1 1.3 0 0.9z" id="ESP5827" name="La Coruña">
                     </path>
                     {/* LA CORUÑA - COMPOSTELA*/}
@@ -160,18 +187,27 @@ const Network = () => {
 
 
                     {/* LUGO */}
-                    <path className={`${city.lugo ? "fill-[#FFFFFF]" : "fill-[#8C1D82]"} cursor-pointer`} onClick={() => {
+                    <path className={`${city.galicia ? "fill-[#FFFFFF]" : "fill-[#8C1D82]"} cursor-pointer`} onClick={() => {
                         setBtnControl(false)
                         setCity({
-                        barcelona: false,
-                        compostela: false,
-                        galicia: false,
-                        lugo: true,
-                        madrid: false,
-                        pontevedra: false,
-                        vigo: false
+                            barcelona: false,
+                            galicia: true,
+                            madrid: false,
+                            pontevedra: false,
+                            vigo: false,
+                            allCities: false
+                        }
+                        )
+                        setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false
+                        })
                     }
-                    )}
                     } d="M494.2 20l-0.2 0.4-1.4 1.3-0.6 1-0.4 0.4-0.4 0.2-0.6 0.1-0.5-0.2-0.5 0-0.5 0.1-0.3 0.4-0.1 0.4-0.1 1.3 0.2 0.6 0.6 0.3 0.8-0.1 0.3 0.2 0.1 0.4 0.1 1.5 0.1 0.7 0.3 0.6 0.3 0.5 0.6 0.6 0.4 0.1 0.4 0.2 0.3 0.4 0.3 2.6 0.3 0.6 0.3 0.4 0.3 0.4 1 0.8 0.6 0.1 0.5 0.6 0.7 0.4 0.4 0.1 0.3 0.2-0.1 0.7-0.3 0.9 0 0.6 0.1 0.5 0.3 0.4 0.2 0.3 0.4 0.3 0.3 0.1 0.8-0.3 0.8-0.5 0.4-0.2 0.4-0.2 0.2-0.4 0.1-0.3 0.2-0.4 0.2-0.2 0.4-0.1 0.4 0.4 0.4 0.6 0.7 1.2 0.1 0.6-0.1 0.6-1.7 1.5-0.3 0.2-1.6 0.7-0.9 0-0.5 0.2-0.2 0.3-0.3 0.8-0.1 0.5-0.2 0.5-0.4 0.2-0.4 0.1-0.3 0.4-0.1 0.7 0.3 0.7 0.3 0.6 0.4 0.2 0.4-0.2 0.2-0.4 0-1.2 0.4 0 0.9 1.3 0.5 0.5 0.7 0.2 0.9 0 0.3 0.2 1.1 1 0.4 0.5 0.1 0.7 0.2 2.2-0.3 0.6-0.1 0.5-0.2 0.5-0.8 0.9-0.1 0.7 0.4 1.5 0 0.5-0.1 0.7-0.3 0.6-1.4 1.7-1 1.4-0.5 0.4-0.4 0.2-0.8-0.1-0.4 0.1-1.1 1-1.2 0.6-0.2 0.1-0.5 0.8-0.2 0.4-0.1 0.6 0.1 0.8 0.3 0.5 0.6 0.8 0.1 0.4 0 0.4-0.4 0.3-0.4 0.3-0.3 0.3-0.2 0.5 0.1 1.7-0.1 0.7-0.7 1.8-0.1 0.4 0 1.2-0.4 1.1-1.4 2.7-1.6 1.1-0.6 0.8-2.3 6.1-2.3-4.9-0.6-0.5-2.3-0.6-1.8 0.3-0.4-0.1-1.6-1.4-0.5 0.7-4.6 2.3-2.5-0.8-1.7 0.4-4.4-3-1.6 0-1.3-1.2-3.6-1.9-1.5-0.1 0.1-1.9 0-0.6-0.3-0.6-1.3-1.3 1.6-3.5 0.1-1.9 0.2-0.7 0.8-1.2 0-0.9-0.5-0.5-1.4-0.5-0.9-0.6-2.1-2.5-0.1-0.8 0.8-2.9-1.6-0.4 1.1-2 0.4-0.4 0.9-0.5 0.4-0.4 1.1-2 0.2-1.5 0-1.6-1.2-3.9 0-0.8 0.1-0.7 0.2-0.4 0.1-0.5-1.6-6 1.5-3.9 0-0.6-0.3-0.8-0.2-0.5 0.1-0.5 0.2-0.4 1.6-1.8 0.3-0.7 0.3-4 2.1 0.3 0.5-0.3 0.3-0.5 0.4-1.4 1.2-0.7 1.6-4.4-0.1-0.6-0.5-0.9 0-0.6 0.2-0.5 1.1-1.1 0.1-0.3 0.1-0.7-0.2-1.1 0.2-0.6 1.5-1.7-0.8-1.3 0.6-3.5 0.2 0.3 0.7-0.3 0.1-0.8 0.7-0.1 0.7-0.4 0.2 0.8 1 2.2-0.1 0.9 0.4-0.1 0.6-0.8 0.3-0.9 0.6 0.2 0.4-0.3 0.4-0.5 0.6-0.2 1.8 0.2 0.5 0.2 3.7 2.1 1.8 0.7 2.7 5 2.1 1-0.3 0.6-0.3 0.2 0 0.5 0.6 0.2 0.4-0.1 0.3-0.4 0.5-0.2 0.7 0 0.9 0.3 1.7 0.3 2.7-0.1 0.7-0.5 0.8 0.4 0.8 0.2 0.5 0.4 0.1 1.2-0.3 0.6-0.5 0.8-0.2 0.8 0.3 0.8z" id="ESP5832" name="Lugo">
                     </path>
                     {/* LUGO */}
@@ -183,14 +219,22 @@ const Network = () => {
                         setBtnControl(false)
                         setCity({
                         barcelona: false,
-                        compostela: false,
                         galicia: false,
-                        lugo: false,
                         madrid: true,
                         pontevedra: false,
-                        vigo: false
-                    }
-                    )}
+                        vigo: false,
+                        allCities: false
+                        })
+                        setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false
+                        })
+                }
                     } d="M615 189l0.2-1.4 0.8-0.8 1 0.2 0.8 1.8-2.8 0.2z m55.4 29.2l-0.5-0.1-0.1 0.2 0 0.6 0.3 0.8 0.3 0.8 0.3 0.3 0.2 0.4-0.1 0.4-0.2 0.5-0.5 0.4-0.6 0.6-0.9 0.3-2.2 0.1-0.1-0.6-0.2-0.2-0.8-0.5-1.8 0.6-2.7 1.4-1.8 0.4-0.5 0.1-0.5-0.1-0.9-0.6-1.5 0.7-4.2-0.2-0.6 0.5-0.5 1-0.4 0.1-1.8 0.5-0.4 0.2-0.6 0.5-0.8 0.2-0.7 0.3-0.2 0.2 0 0.9-0.1 0.3-0.4 0.2-1 0.3-0.8 0.5-0.5 0.2-0.8 0.1-0.8 0.3-0.3 0.3-0.4 0.5-0.7 0.6-0.3 0.2-0.7 0.5-0.4 0.4-0.5 0.2-0.7-0.1-1.4-0.9-0.5-0.5-0.2-0.4 0.4-0.4 0.5-0.3 2.8-0.9 0.5 0 0.2-0.2 0.7-0.8 0.3-0.2 0.8-0.3 0.7-0.6 2.1-2.2 0.6-0.3 0.3-0.1 0.7-0.5 0.6-1 0.4-1.2 0.1-0.3 0-0.9-0.2-0.3-0.5-0.4-2.1-1-0.9-0.1-0.7-0.2-0.6-0.1-1.1 0.2-0.5-0.2-0.6-0.3-0.7-1-0.3-0.3-0.3-0.1-0.8 0.2-0.4 0-0.4-0.4-0.3-0.3-0.4-0.4-2.1-0.5-1.5-0.7-2.3-0.8-0.6-0.2-0.4-0.4-0.5-0.8-0.3-0.3-0.4-0.3-1-0.4-0.4 0-0.8 0.6-0.6 0.2-0.8-0.2-0.7-0.2-1.3-1.3-0.2-0.3-0.4-0.3-0.4 0-1.1 0.7-1.1 0.2-0.5 0.4-0.2 0.3-0.4 0.6-0.3 0.6-0.3 0.3-0.6 0.5-0.5 0.1-0.6-0.7-0.7-0.3-0.6-0.7-0.4-0.7-0.1-0.4 0-0.5 0.1-0.8 0-0.4-0.2-0.3-0.5-0.4-0.3 0.1-0.5 0.9-0.2 0.4-0.3 0.4-1.4 1.4-0.2 0.5-0.4 0.4-0.6 0.5-1.4 0.6-0.6 0.3-0.4 0.4-0.2 0.3-0.4 0.3-0.6 0-0.7-0.1-1-0.7 0.6-1 0.4-2 0.6-1.1 0.2-0.4 0.1-0.4-0.1-0.5-0.2-0.7-0.1-0.5 0-0.5 0.3-0.2 0.3-0.1 0.3 0.3 0.5 0.7 0.5 0.3 0.7 0 0.5-0.2 0.5-0.3 0.3-0.6 0.4-0.8 0.2-0.6 0.2-1.7 0.2-0.3 0.4-0.5 0.5-0.3 0.6-0.1 0.8 0.3 0.6-0.2 1.2-0.1 0.5-0.2 0-0.3-0.2-0.8 0.6-2.2-0.2-0.7 0.1-1.1-0.1-0.6 0.1-0.8-0.1-1.1 0.3-0.6 0.9-0.7 0.2-0.4 0.2-0.7 0-0.8-0.3-0.8 0-0.6 0.2-0.3 0.3 0 0.2 0.2 0.4 0.7 0.3 0.3 0.7 0.2 0.9-0.1 0.8-0.4 0.9-0.3 0.5-0.3 0.1-0.5 0-0.8 0.1-1 0-0.4 0.3-1.1 1.3-1.9 0.2-0.3 1.7-2.6 0.4-0.4 0.9-0.5 0.6 0 0.5 0.1 0.3 0.2 0.4 0 1.1-0.2 0.5-0.4 0.4-0.8 0.3-0.9 0.1-0.4 0-0.9 0.1-0.4 0.5-1 0.1-0.5 0-0.4-0.1-0.8 0.2-0.9 0.6-1 0.6-0.8 0.4-0.6 0.4-0.5 0.5-0.4 3.8-1.3 0.8-0.6 0.6-0.9 0.5-0.9 0.4-0.9 0.5-0.5 0.6-0.6 1.9-1.3 0.9-0.9 0.8-1.1 0.6-0.8 0.5-0.5 1.4-0.8 2-0.5 0.2 1.1 1.7 1.6 0.5 0.8 0.7 0.7 1 0.5 0.8 0.3 0.5 2 0.6 1.8 0.1 0.8-0.2 0.6-0.3 0.7-0.4 0.9-0.3 1.4-0.4 0.8-0.3 1-0.1 0.5 0.3 0.5 0 0.6-0.2 0.3-0.6 0.5-0.3 0.5-0.3 1.7-0.3 0.9-0.3 0.6-0.3 0.4 0.1 0.4 0.3 0.2 1.3 0.4 0.3 0.4 0.3 0.6 0.1 0.6 0.1 0.8 0.1 0.4 0 0.5-0.1 0.4-0.6 0.7-0.1 0.5 0.1 0.4 0.6 0.6 0.4 0.2 0.6-0.2 0.7 0.1 0.3-0.6 0.4 0 0.3 0.5 0.7 1.1 0.5 0.6 0.4 0.3 0.4 0.1 0.5-0.3 0.3 0.1-0.3 1.2 0 1.6 0.2 0.5 0.2 0.4 0.4 0.3 0.6 0.5 0.3 0.9-0.1 0.3-0.3 0.6 0.3 0.3 0.6-0.1 0.2-0.2 0.6-0.3 0.4 0.1 0.4 0.2 0.6 0.6 1 0.9 0.1 0.3 0.1 1.7-0.1 1.6 0.2 0.4 0.3 0.3 0.4 0.1 0.5 0.2 0.6 0.5 0.6 1.1 0.2 0.7-0.2 0.9 0 0.8-0.4 1.1-0.1 0.6-0.2 0.3-0.6 0.6-0.3 0.5-0.1 1.1-0.3 1.1 0 0.6 0.1 0.8 0.3 0.5 0.3-0.1 0.4-0.3 0.5-0.7 1.2-0.8 0.4-0.1 0.5 0.3 0.4 0.8 0.4 1 0.1 0.7 0.1 0.6 0 1.1 0.4 2.4z" id="ESP5833" name="Madrid">
                     </path>
                     {/* MADRID */}
@@ -209,7 +253,27 @@ const Network = () => {
 
 
                     {/* ORENSE /// NO HAY LIVING LABS PERO ES DE GALICIA */}
-                    <path d="M493.1 79.5l2 0.1 1.9 0.4 0.5 0 0.4-0.5 0.4-0.3 0.9-0.3 0.6 0 0.4 0.2 0.8 0.6 3.2 0.9 0.5 1.3-0.1 0.4-0.1 1.1-0.1 0.5-0.2 0.4-0.5 0.7-0.3 0.1 2.2 1.9 1.5 1 0.6 0.7 0.3 0.5-0.2 0.9 0.1 0.9-0.1 0.4-0.2 0.8-0.6 0.7-0.6 1.1-0.6 0.5-0.7 0.9-0.1 0.5-0.1 0.7-0.3 0.1-0.8-0.2-0.7 0-1 0.2-0.7 0.4-0.7 0.6-1.5 1.6-0.3 0.5-0.2 0.4-0.5 1.6-0.3 0.3-0.7 0.4-0.4 0.4-1.1 1.7-0.6 0.5-0.1 0.5 0.1 0.4 0.6 0.6 0.3 0 0.9 0 0.3 0.2 0.5 0.7 0.1 0.5-0.8 1.9-0.2 0.8 0.2 0.5 0 0.7-0.4-0.2-1.1 0.7-1.5 0.7-1.4-0.6-1.4-1.2-1.4-0.9-0.7 0.1-0.7 0.5-0.7 0.5-0.3 0.3-0.1 0.9 0.3 1.9-0.1 1-1 1.3-1.4 0.9-3.2 1.1-0.8 0.1-1.6 0-0.6 0.1-0.6 0.4-1.1 1.2-0.6 0.5-0.2-0.9-0.4-1-0.6-0.8-0.6-0.2-0.4-0.1-0.7-0.5-0.3 0-0.4 0.3-0.1 0.8-0.2 0.4-0.7 0.5-0.9 0.3-1 0.2-0.7-0.1-0.8-0.4 0-0.6 0.7-1.9-2.4-0.1-0.8-0.3-1.2-0.9-0.7-0.2-1.2 0.6-2.8 0.7-1.2-0.1-0.4 0.2-0.4 0.7-0.3 0.4-1.4 0-0.3-1.8-0.1-1.6-0.9 0.4-0.2 0.6-0.2 1-0.5 0.8-0.8 0-0.7-0.1-0.6 0.3-0.6 0.6-0.4 0.7-1.5 1.5-2 0.6-3.8-0.2 0.2-1.6-0.1-0.8-0.3-0.4-1.6-0.7-0.5-1 0.1-1.1 0.4-1.1 1.7-2.6 1.3-1.2 1.3-0.9 0.7-0.6 0.5-0.7 0.1-1.1-0.4-0.9-0.7-0.6-0.8-0.4-0.9 0.1-0.8 0.4-0.7 0.2-0.6-0.5-0.1-1 0.1-2.5-0.4-0.9-0.4-0.6 1.8-1.2 0.1-2.2 0.7-2.1-3.2 0.8-0.4-0.3-1-1.2-0.3-0.6 0-0.7 0.6-2.2-0.7-0.2-0.4-0.3-1.4-2.2-0.1-0.4 0.1-1 0-0.3-0.7-1.5-0.4-1.1 0.2-3.2-0.1-0.4 1.7 0.1 2.3-2.5 1.6-0.5 1.8-1.9 1.2 1.4 3.5-0.2 2.2 0.6 0.2-0.2 0.9-1.5 0.4-0.1 1.1 0.2 1.3-0.6 1.3 1.3 0.3 0.6 0 0.6-0.1 1.9 1.5 0.1 3.6 1.9 1.3 1.2 1.6 0 4.4 3 1.7-0.4 2.5 0.8 4.6-2.3 0.5-0.7 1.6 1.4 0.4 0.1 1.8-0.3 2.3 0.6 0.6 0.5 2.3 4.9 2.3-6.1 0.6-0.8 1.6-1.1 1.4-2.7z" id="ESP5838" name="Orense">
+                    <path className={`${city.galicia ? "fill-[#FFFFFF]" : "fill-[#8C1D82]"} cursor-pointer`} onClick={() => {
+                        setBtnControl(false)
+                        setCity({
+                            barcelona: false,
+                            galicia: true,
+                            madrid: false,
+                            pontevedra: false,
+                            vigo: false,
+                            allCities: false
+                        })
+                        setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false
+                        })
+                    }
+                    } d="M493.1 79.5l2 0.1 1.9 0.4 0.5 0 0.4-0.5 0.4-0.3 0.9-0.3 0.6 0 0.4 0.2 0.8 0.6 3.2 0.9 0.5 1.3-0.1 0.4-0.1 1.1-0.1 0.5-0.2 0.4-0.5 0.7-0.3 0.1 2.2 1.9 1.5 1 0.6 0.7 0.3 0.5-0.2 0.9 0.1 0.9-0.1 0.4-0.2 0.8-0.6 0.7-0.6 1.1-0.6 0.5-0.7 0.9-0.1 0.5-0.1 0.7-0.3 0.1-0.8-0.2-0.7 0-1 0.2-0.7 0.4-0.7 0.6-1.5 1.6-0.3 0.5-0.2 0.4-0.5 1.6-0.3 0.3-0.7 0.4-0.4 0.4-1.1 1.7-0.6 0.5-0.1 0.5 0.1 0.4 0.6 0.6 0.3 0 0.9 0 0.3 0.2 0.5 0.7 0.1 0.5-0.8 1.9-0.2 0.8 0.2 0.5 0 0.7-0.4-0.2-1.1 0.7-1.5 0.7-1.4-0.6-1.4-1.2-1.4-0.9-0.7 0.1-0.7 0.5-0.7 0.5-0.3 0.3-0.1 0.9 0.3 1.9-0.1 1-1 1.3-1.4 0.9-3.2 1.1-0.8 0.1-1.6 0-0.6 0.1-0.6 0.4-1.1 1.2-0.6 0.5-0.2-0.9-0.4-1-0.6-0.8-0.6-0.2-0.4-0.1-0.7-0.5-0.3 0-0.4 0.3-0.1 0.8-0.2 0.4-0.7 0.5-0.9 0.3-1 0.2-0.7-0.1-0.8-0.4 0-0.6 0.7-1.9-2.4-0.1-0.8-0.3-1.2-0.9-0.7-0.2-1.2 0.6-2.8 0.7-1.2-0.1-0.4 0.2-0.4 0.7-0.3 0.4-1.4 0-0.3-1.8-0.1-1.6-0.9 0.4-0.2 0.6-0.2 1-0.5 0.8-0.8 0-0.7-0.1-0.6 0.3-0.6 0.6-0.4 0.7-1.5 1.5-2 0.6-3.8-0.2 0.2-1.6-0.1-0.8-0.3-0.4-1.6-0.7-0.5-1 0.1-1.1 0.4-1.1 1.7-2.6 1.3-1.2 1.3-0.9 0.7-0.6 0.5-0.7 0.1-1.1-0.4-0.9-0.7-0.6-0.8-0.4-0.9 0.1-0.8 0.4-0.7 0.2-0.6-0.5-0.1-1 0.1-2.5-0.4-0.9-0.4-0.6 1.8-1.2 0.1-2.2 0.7-2.1-3.2 0.8-0.4-0.3-1-1.2-0.3-0.6 0-0.7 0.6-2.2-0.7-0.2-0.4-0.3-1.4-2.2-0.1-0.4 0.1-1 0-0.3-0.7-1.5-0.4-1.1 0.2-3.2-0.1-0.4 1.7 0.1 2.3-2.5 1.6-0.5 1.8-1.9 1.2 1.4 3.5-0.2 2.2 0.6 0.2-0.2 0.9-1.5 0.4-0.1 1.1 0.2 1.3-0.6 1.3 1.3 0.3 0.6 0 0.6-0.1 1.9 1.5 0.1 3.6 1.9 1.3 1.2 1.6 0 4.4 3 1.7-0.4 2.5 0.8 4.6-2.3 0.5-0.7 1.6 1.4 0.4 0.1 1.8-0.3 2.3 0.6 0.6 0.5 2.3 4.9 2.3-6.1 0.6-0.8 1.6-1.1 1.4-2.7z" id="ESP5838" name="Orense">
                     </path>
                     {/* NO HAY LIVING LABS PERO ES DE GALICIA */}
 
@@ -221,18 +285,26 @@ const Network = () => {
 
 
                     {/* PONTEVEDRA / VIGO */}
-                    <path className={`${city.pontevedra || city.vigo ? "fill-[#FFFFFF]" : "fill-[#8C1D82]"} cursor-pointer`} onClick={() => {
+                    <path className={`${city.pontevedra || city.vigo || city.galicia? "fill-[#FFFFFF]" : "fill-[#8C1D82]"} cursor-pointer`} onClick={() => {
                         setBtnControl(false)
                         setCity({
                         barcelona: false,
-                        compostela: false,
                         galicia: false,
-                        lugo: false,
                         madrid: false,
                         pontevedra: true,
-                        vigo: false
+                        vigo: false, 
+                        allCities: false
+                        })
+                        setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false
+                        })
                     }
-                    )}
                     } d="M451.9 58.6l1.6 0.4-0.8 2.9 0.1 0.8 2.1 2.5 0.9 0.6 1.4 0.5 0.5 0.5 0 0.9-0.8 1.2-0.2 0.7-0.1 1.9-1.6 3.5-1.3 0.6-1.1-0.2-0.4 0.1-0.9 1.5-0.2 0.2-2.2-0.6-3.5 0.2-1.2-1.4-1.8 1.9-1.6 0.5-2.3 2.5-1.7-0.1 0.1 0.4-0.2 3.2 0.4 1.1 0.7 1.5 0 0.3-0.1 1 0.1 0.4 1.4 2.2 0.4 0.3 0.7 0.2-0.6 2.2 0 0.7 0.3 0.6 1 1.2 0.4 0.3 3.2-0.8-0.7 2.1-0.1 2.2-1.8 1.2-1.3 0.9-0.8 0.4-0.8 0-0.3 0.1-0.4 0.3-1.1 1-0.8 0.4-6.8 1.1-0.9 0.3-1.5 1.1-0.8 0.3-1.6 0.1-0.8 0.1-0.8 0.6-0.4 0.6-0.4 1.3-0.4 0.6-0.9 0.6-1.1 0.3-1 0.6-0.5 0.3-0.5 1-0.7 0.9-0.8 0.7-0.9 0.3-0.7 0.4-0.8 0.9-0.7 0.6-0.7-0.3 0.1-0.8-0.9-11.6 0.2-1 0.5-0.5 1.7 0 0.8-0.2 0.4-0.6-0.2-0.5-0.9-0.4-0.2-0.3 0.2-0.3 1.2-0.6 0.2-0.8 0.3-0.5 0.6-0.5 0.9-1 2.3-1.8 0.8-0.4 1.4-1.3 0.8-0.4 0.9-0.6 0.3-0.3 0.1-0.5 0-1.8 0-0.4-0.6 0-0.6 0.7-0.5 1.1-0.6 1.1-1.1 0.4-0.9 0.3-2.4 1.1-0.5 0.5-0.5 0.1-2.3-0.1-0.9 0.2 0.2-0.7 0.4-1.4 0-0.8 0.3 0 0.6 1 0.3-0.5 0-1.9-0.2-0.8 0.2-0.1 0.6-0.2 1.6 0.4 0.3-0.1 0.3-0.8 1.7-2 0.7-0.7 1.5-1 0.6-0.6 0.3-0.9-0.4 0.2-0.3 0-0.5-0.2-0.4 0.1-1.2 0.7-1.1 0.9-0.6 0.4-1 0.2-1.4 0.2-1.4-0.2-1.1-0.7-0.3-0.7-0.2-1.1-0.4-0.6-0.6-0.4-1.5-0.2-0.3-0.3 0.3-0.5 0.8-0.6 1-0.3 0.6-0.2 0.5 0.2 0.4 0.5 0 0.6-0.6 0.3 0.4 0.3 0.6 0.3 0.7 0.1 0.4-0.2 0.2-0.6-0.1-0.8 0-0.6 0.5-0.5-0.5-2.1-0.1-1 0.2-0.9 0.4-0.7 0.5-0.5 0.6-0.2 0.6-0.7 1.6-3.7 0.4-1.4 0.6-1.1 3.2-1.1 1.6 0.5 0.2-0.1 0.2-0.8 0.2-0.4 0.8-0.4 3.3-0.7 1.3 0.8 0.7 0.1 0.5-0.1 1.1-0.8 1.3-2 1.7 0.6 0.5-0.2 0.3-0.5 0.1-0.6 0-0.7-0.3-1.1 0-0.3 0.2-0.4 0.3-0.2 0.3 0 0.3 0.1 0.3 0.5 0.2 0.5 0.2 0.4 0.4 0.1 1.3-0.9 0.4-0.1 1.4 0.4 0.5-0.1 0.2-0.2 0.6-0.8 0.8-0.3 5.5 1.1 0.7-0.1 1.5-0.8z" id="ESP5840" name="Pontevedra">
                     </path>
                     {/* PONTEVEDRA */}
@@ -290,55 +362,87 @@ const Network = () => {
                                     <li className="p-[1rem] border-primary-violet border-b-[1px] px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => {
                                         setBtnControl(false)
                                         setCity({
-                                            barcelona: true,
-                                            compostela: false,
+                                            barcelona: false,
                                             galicia: false,
-                                            lugo: false,
                                             madrid: false,
                                             pontevedra: false,
-                                            vigo: false
+                                            vigo: false,
+                                            allCities: true
+                                        })
+                                        setNetwork({
+                                            afaga: false,
+                                            ategal: false,
+                                            atendo: false,
+                                            cruz: false,
+                                            domus: false,
+                                            olecer: false,
+                                            saraiva: false
+                                        })
+                                    }}>
+                                        All cities
+                                    </li>
+                                    <li className="p-[1rem] border-primary-violet border-b-[1px] px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => {
+                                        setBtnControl(false)
+                                        setCity({
+                                            barcelona: true,
+                                            galicia: false,
+                                            madrid: false,
+                                            pontevedra: false,
+                                            vigo: false,
+                                            allCities: false
+                                            })
+                                        setNetwork({
+                                            afaga: false,
+                                            ategal: false,
+                                            atendo: false,
+                                            cruz: false,
+                                            domus: false,
+                                            olecer: false,
+                                            saraiva: false
                                             })
                                         }}>
                                         Barcelona
                                     </li>
                                     <li className="p-[1rem] border-primary-violet border-b-[1px] px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => {
-                                            setBtnControl(false)
-                                            setCity({
-                                                barcelona: false,
-                                                compostela: true,
-                                                galicia: false,
-                                                lugo: false,
-                                                madrid: false,
-                                                pontevedra: false,
-                                                vigo: false
-                                            })
-                                        }}>
-                                        Compostela
-                                    </li>
-                                    <li className="p-[1rem] border-primary-violet border-b-[1px] px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => {
                                         setBtnControl(false)
                                         setCity({
                                             barcelona: false,
-                                            compostela: false,
                                             galicia: true,
-                                            lugo: true,
                                             madrid: false,
                                             pontevedra: false,
-                                            vigo: false
+                                            vigo: false,
+                                            allCities: false
+                                        })
+                                        setNetwork({
+                                            afaga: false,
+                                            ategal: false,
+                                            atendo: false,
+                                            cruz: false,
+                                            domus: false,
+                                            olecer: false,
+                                            saraiva: false
                                         })
                                     }}>
-                                        Lugo
+                                        Galicia
                                     </li>
                                     <li className="p-[1rem] border-primary-violet border-b-[1px] px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => {
                                         setBtnControl(false)
                                         setCity({
                                             barcelona: false,
-                                            compostela: false,
-                                            galicia: true,
-                                            lugo: false,
+                                            galicia: false,
                                             madrid: true,
                                             pontevedra: false,
-                                            vigo: false
+                                            vigo: false,
+                                            allCities: false
+                                        })
+                                        setNetwork({
+                                            afaga: false,
+                                            ategal: false,
+                                            atendo: false,
+                                            cruz: false,
+                                            domus: false,
+                                            olecer: false,
+                                            saraiva: false
                                         })
                                     }}>
                                         Madrid
@@ -347,12 +451,20 @@ const Network = () => {
                                         setBtnControl(false)
                                         setCity({
                                             barcelona: false,
-                                            compostela: false,
-                                            galicia: true,
-                                            lugo: false,
+                                            galicia: false,
                                             madrid: false,
                                             pontevedra: true,
-                                            vigo: false
+                                            vigo: false,
+                                            allCities: false
+                                        })
+                                        setNetwork({
+                                            afaga: false,
+                                            ategal: false,
+                                            atendo: false,
+                                            cruz: false,
+                                            domus: false,
+                                            olecer: false,
+                                            saraiva: false
                                         })
                                     }}>
                                         Pontevedra
@@ -361,12 +473,20 @@ const Network = () => {
                                         setBtnControl(false)
                                         setCity({
                                             barcelona: false,
-                                            compostela: false,
-                                            galicia: true,
-                                            lugo: false,
+                                            galicia: false,
                                             madrid: false,
                                             pontevedra: false,
-                                            vigo: true
+                                            vigo: true,
+                                            allCities: false
+                                        })
+                                        setNetwork({
+                                            afaga: false,
+                                            ategal: false,
+                                            atendo: false,
+                                            cruz: false,
+                                            domus: false,
+                                            olecer: false,
+                                            saraiva: false
                                         })
                                     }}>
                                         Vigo
@@ -375,14 +495,360 @@ const Network = () => {
                         }
                     </div>
 
-                    {/* <Button text="All sectors" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content" height="fit-content">
-                        <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
-                    </Button>
+                    <div className="flex flex-col">
+                        <button className="flex items-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-fit border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">
+                            <span>All Sectors</span>
+                            <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
+                        </button>
+                    </div>
 
-                    <Button text="Networks" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content" height="fit-content">
-                        <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
-                    </Button> */}
                 </div>
+
+                {/* ALL CITIES */}{
+                    city.allCities &&
+                    <Fragment>
+                            <div className={`flex gap-3 items-center`} >
+                                <div className="w-[189px] h-[101px]" onClick={() => setNetwork({
+                                    afaga: true,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[148px] h-[69px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: true,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[143px] h-[39px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: true,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-atendo.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[148px] h-[69px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: true,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-cruz.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[138px] h-[76px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: true,
+                                    olecer: false,
+                                    saraiva: false
+                                })}>
+                                    <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[157px] h-[72px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: true,
+                                    saraiva: false
+                                })}>
+                                    <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[149px] h-[70px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: true
+                                })}>
+                                    <img src="/assets/logo-saraiva.png" alt="" className="w-full h-full" />
+                                </div>
+
+                            </div>
+
+                            {
+                                network.afaga &&
+                                <NetworkModal title="Afaga" >
+                                    <div className="flex flex-col col-span-1 mt-[2rem] gap-[2rem] pl-[2.5rem]">
+                                        <p>
+                                        Training center for the elderly with more than 40 years of experience in Galicia. More than 10 years testing products and services for the elderly, we are a link between companies and the elderly.
+                                        </p>
+
+                                        <div className="w-[189px] h-[101px]" >
+                                            <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
+                                        </div>
+
+                                        <p>
+                                        Paula Sande Nieto <br />
+                                        Vicepresident <br />
+
+                                        administracion@ategal.com <br />
+                                        www.ategal.com
+                                        </p>
+                                    </div>
+
+                                    <div className="h-[200px] w-[200px] bg-slate-500 col-span-1"></div>
+                                </NetworkModal>
+                            }
+
+                            {
+                                network.ategal &&
+                                <NetworkText text="ATEGAL" />
+                            }
+
+                            {
+                                network.atendo &&
+                                <NetworkText text="ATENDO" />
+                            }
+
+                            {
+                                network.cruz &&
+                                <NetworkText text="CRUZ" />
+                            }
+
+                            {
+                                network.domus &&
+                                <NetworkText text="DOMUS" />
+                            }
+
+                            {
+                                network.olecer &&
+                                <NetworkText text="OLECER" />
+                            }  
+
+                            {
+                                network.saraiva &&
+                                <NetworkText text="SARAIVA" />
+                            }
+                    </Fragment>
+                }
+                
+                {/* VIGO */}
+                {
+                    city.vigo &&
+                    <Fragment>
+                            <div className={`flex gap-3 items-center`}>
+
+                                <div className="w-[189px] h-[101px]" onClick={() => setNetwork({
+                                    afaga: true,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[143px] h-[39px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: true,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-atendo.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[138px] h-[76px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: true,
+                                    olecer: false,
+                                    saraiva: false
+                                })}>
+                                    <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
+                                </div>
+                            </div>
+
+                            {
+                                network.afaga &&
+                                <NetworkText text="AFAGA" />
+                            }
+
+                            {
+                                network.atendo &&
+                                <NetworkText text="ATENDO" />
+                            }
+
+                            {
+                                network.domus &&
+                                <NetworkText text="DOMUS" />
+                            }
+                    </Fragment>
+                    
+                }
+
+                {/* BARCELONA */}
+                {
+                    city.barcelona &&
+                    <Fragment>
+                            <div className={`flex gap-3 items-center`}>
+                                <div className="w-[138px] h-[76px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: true,
+                                    olecer: false,
+                                    saraiva: false
+                                })}>
+                                    <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
+                                </div>
+                            </div>
+
+                            {
+                                network.domus &&
+                                <NetworkText text="DOMUS" />
+                            }
+                    </Fragment>
+                    
+                    
+                }
+
+                {/* MADRID */}
+                {
+                    city.madrid &&
+                    <Fragment>
+                        <div className={`flex gap-3 items-center`} >
+                                <div className="w-[138px] h-[76px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: true,
+                                    olecer: false,
+                                    saraiva: false
+                                })}>
+                                    <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
+                                </div>
+                        </div>
+
+                            {
+                                network.domus &&
+                                <NetworkText text="DOMUS" />
+                            }
+                    </Fragment>
+                    
+                }
+
+                {/* PONTEVEDRA */}
+                {
+                    city.pontevedra &&
+                    <Fragment>
+                            <div className={`flex gap-3 items-center`} >
+                                <div className="w-[157px] h-[72px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: true,
+                                    saraiva: false
+                                })}>
+                                    <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[149px] h-[70px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: true
+                                })}>
+                                    <img src="/assets/logo-saraiva.png" alt="" className="w-full h-full" />
+                                </div>
+                            </div>
+
+                            {
+                                network.olecer &&
+                                <NetworkText text="Olecer" />
+                            }
+
+                            {
+                                network.saraiva &&
+                                <NetworkText text="Saraiva" />
+                            }
+                    </Fragment>
+                }
+
+                {/* GALICIA */}
+                {
+                    city.galicia &&
+                    <Fragment>
+                            <div className={`flex gap-3 items-center`}>
+                                <div className="w-[148px] h-[69px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: true,
+                                    atendo: false,
+                                    cruz: false,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
+                                </div>
+
+                                <div className="w-[148px] h-[69px]" onClick={() => setNetwork({
+                                    afaga: false,
+                                    ategal: false,
+                                    atendo: false,
+                                    cruz: true,
+                                    domus: false,
+                                    olecer: false,
+                                    saraiva: false
+                                })} >
+                                    <img src="/assets/logo-cruz.png" alt="" className="w-full h-full" />
+                                </div>
+                            </div>
+
+                            {
+                                network.ategal &&
+                                <NetworkText text="ATEGAL" />
+                            }
+
+                            {
+                                network.cruz &&
+                                <NetworkText text="CRUZ" />
+                            }
+                    </Fragment>
+                    
+                }
             </div>
         </div>
         
