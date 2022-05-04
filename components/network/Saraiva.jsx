@@ -21,7 +21,7 @@ const Saraiva = () => {
                 </p>
             </div>
 
-            {/* <video src="/assets/network/saraiva.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video> */}
+            <video src="/assets/network/saraiva.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video>
 
             <p className="block lg:hidden col-span-2 text-primary-violet px-[2.5rem]">
                 Lucia Saborido Piñeiro <br />
