@@ -1,7 +1,7 @@
 import Circle from "../components/atoms/Circle"
 import {Link} from "react-scroll"
 
-const ScrollPoints = ({top = "45%", headerView, gallSectionView, projectsView, eventsView}) => {
+const ScrollPoints = ({top = "45%", headerView, gallSectionView, networkView, projectsView, eventsView}) => {
     
     const scrollClass = {
         position: "absolute",
@@ -20,6 +20,10 @@ const ScrollPoints = ({top = "45%", headerView, gallSectionView, projectsView, e
             
             <Link to="gallSection" smooth={true} duration={1000}>
                 <Circle height="7px" width="8px" bgColor="#37044E" view={gallSectionView} />
+            </Link>
+
+            <Link to="network" smooth={true} duration={1000}>
+                <Circle height="7px" width="8px" bgColor="#37044E" view={networkView} />
             </Link>
             
             <Link to="projects" smooth={true} duration={1000}>

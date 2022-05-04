@@ -1,4 +1,4 @@
-const Button = ({display, gap, width, height ,text, color, borderColor, bgColor,mL, mR = "0", children, address = "#"}) => {
+const Button = ({display, gap, width, height ,text, color, borderColor, bgColor,mL, mR = "0", children, address = "#", moreStyles}) => {
 
     const buttonClass = {
         backgroundColor: bgColor,
@@ -13,7 +13,7 @@ const Button = ({display, gap, width, height ,text, color, borderColor, bgColor,
     }
 
     return (
-        <button style={buttonClass} className={` ${display === "flex"? "items-center": ""} border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer`}>
+        <button style={buttonClass} className={` ${display === "flex"? "items-center": ""} border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer ${moreStyles} `}>
             <a href={address}>{text}</a>
             {children}
         </button>
