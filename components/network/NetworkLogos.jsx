@@ -168,8 +168,8 @@ const NetworkLogos = ({city, network, setNetwork}) => {
             {
                 city.coruna &&
                 <Fragment>
-                        <div className={`flex gap-3 items-center`}>
-                            <div className="w-[135px] h-[40px]" onClick={() => setNetwork({
+                        <div className={`flex gap-3 items-center cursor-pointer`}>
+                            <div className="w-[135px] h-[40px] cursor-pointer" onClick={() => setNetwork({
                                 afaga: false,
                                 ategal: false,
                                 atendo: false,
@@ -196,7 +196,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 <Fragment>
                     <div className={`flex gap-3 items-center`}>
 
-                        <div className="w-[189px] h-[101px]" onClick={() => setNetwork({
+                        <div className="w-[189px] h-[101px] cursor-pointer" onClick={() => setNetwork({
                             afaga: true,
                             ategal: false,
                             atendo: false,
@@ -209,7 +209,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[143px] h-[39px]" onClick={() => setNetwork({
+                        <div className="w-[143px] h-[39px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: true,
@@ -222,7 +222,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-atendo.png" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[138px] h-[76px]" onClick={() => setNetwork({
+                        <div className="w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -259,7 +259,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.barcelona &&
                 <Fragment>
                     <div className={`flex gap-3 items-center`}>
-                        <div className="w-[138px] h-[76px]" onClick={() => setNetwork({
+                        <div className="w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -287,7 +287,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.madrid &&
                 <Fragment>
                     <div className={`flex gap-3 items-center`} >
-                        <div className="w-[138px] h-[76px]" onClick={() => setNetwork({
+                        <div className="w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -314,7 +314,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.pontevedra &&
                 <Fragment>
                     <div className={`flex gap-3 items-center`} >
-                        <div className="w-[157px] h-[72px]" onClick={() => setNetwork({
+                        <div className="w-[157px] h-[72px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -327,7 +327,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[149px] h-[70px]" onClick={() => setNetwork({
+                        <div className="w-[149px] h-[70px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -358,7 +358,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.galicia &&
                 <Fragment>
                     <div className={`flex gap-3 items-center`}>
-                        <div className="w-[148px] h-[69px]" onClick={() => setNetwork({
+                        <div className="w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: true,
                             atendo: false,
@@ -371,7 +371,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[148px] h-[69px]" onClick={() => setNetwork({
+                        <div className="w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,

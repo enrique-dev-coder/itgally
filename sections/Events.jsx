@@ -3,6 +3,7 @@ import Button from "../components/atoms/Button"
 import EventCard from "../components/EventCard"
 import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
+// import {Link} from "react-scroll"
 
 const Events = () => {
 

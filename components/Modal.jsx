@@ -8,7 +8,7 @@ const Modal = ({modal, setModal}) => {
                     X
                 </button>
 
-                <video src="assets/presentación ITGALL_2.mp4" autoPlay controls loop></video>
+                <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651768781/itgall/presentaci%C3%B3n_ITGALL_2_arkcwu.mp4" autoPlay controls loop></video>
             </div>
 
         </div>

@@ -39,7 +39,7 @@ const Domus = () => {
                 </p>
             </div>
 
-            <video src="/assets/network/domus.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video>
+            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767255/itgall/domus_jjhchq.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video>
 
             <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[138px] h-[76px]" >
                 <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />

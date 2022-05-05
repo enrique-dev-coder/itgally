@@ -4,6 +4,7 @@ import ScrollPoints from "../components/ScrollPoints"
 import Arrow from "../components/atoms/Arrow"
 import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
+import {Link} from "react-scroll"
 
 const projectTexts = {
     in4aha: "This project contribute to the cross-border scale-up of tested and ready-to-use applications in health and social care",
@@ -55,9 +56,11 @@ const Projects = () => {
 
               <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%] 2xl:flex flex-col justify-between">
                 <h3 className="mb-2 text-[1.35rem] sm:text-[1.5rem] md:text-3xl font-bold text-[#8C1D82]">Discover the news and events from our Living Lab</h3> 
-                <Button text="Scroll Down" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content">
-                  <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
-                </Button>
+                <Link to="events" smooth={true} duration={1000}>
+                  <Button text="Scroll Down" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content">
+                    <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
+                  </Button>
+                </Link>
               </div>
             </div>
 

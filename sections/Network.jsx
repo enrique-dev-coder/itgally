@@ -2,6 +2,7 @@ import ScrollPoints from "../components/ScrollPoints"
 import { useInView } from "react-intersection-observer"
 import Button from "../components/atoms/Button"
 import Arrow from "../components/atoms/Arrow"
+import FadeInElement from "../components/FadeInElement"
 import NetworkLogos from "../components/network/NetworkLogos"
 import NetworkBtn from "../components/network/NetworkBtn"
 import NetworkMap from "../components/network/NetworkMap"
@@ -54,7 +55,8 @@ const Network = () => {
     }
 
     return (
-        <div className="px-[2.5rem] py-[4rem] lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem] relative" ref={ref} id="network">
+        <FadeInElement>
+            <div className="px-[2.5rem] py-[4rem] lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem] relative" ref={ref} id="network">
 
             <div className="flex flex-col mb-[2rem]">
 
@@ -83,7 +85,7 @@ const Network = () => {
 
                 <div className="flex gap-5">
 
-                    <div className="flex flex-col">
+                    <div className="flex flex-col relative z-30">
                         <button className="flex items-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-fit border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => setBtnControl(true)}>
                             <span>{currentCity}</span>
                             <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
@@ -97,7 +99,6 @@ const Network = () => {
                     <div className="flex flex-col">
                         <button className="flex items-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-fit border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">
                             <span>All Sectors</span>
-                            <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
                         </button>
                     </div>
 
@@ -110,6 +111,8 @@ const Network = () => {
 
             <ScrollPoints networkView={inView} top="25%"/>
         </div>
+        </FadeInElement>
+        
         
     )
 }
