@@ -32,7 +32,7 @@ const Navbar = ({show = true}) => {
               </li>
               <li>
                 <Link href="#">
-                  <a className="text-primary-violet hover:text-[#8C1D82]">New Events</a>
+                  <a className="text-primary-violet hover:text-[#8C1D82]">New &amp; Events</a>
                 </Link> 
               </li>
               <li>
@@ -40,9 +40,11 @@ const Navbar = ({show = true}) => {
                   <a className="text-primary-violet hover:text-[#8C1D82]">Project</a>
                 </Link>
               </li>
-                <Scroll to="contact" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
-                  Contact us
-                </Scroll>
+              <li>
+                <Link href="/contact" className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                  <a className="text-primary-violet hover:text-[#8C1D82]">Contact us</a>
+                </Link> 
+              </li>
             </ul>
 
             <div className={`mr-10 block lg:hidden w-[28px] cursor-pointer`} onClick={() => setMobileMenu(!mobileMenu)}>
@@ -63,7 +65,7 @@ const Navbar = ({show = true}) => {
               </li>
               <li className='p-[1rem] border-primary-violet border-b-[1px]'>
                 <Link href="#">
-                  <a className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">New Events</a>
+                  <a className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">New &amp; Events</a>
                 </Link>
               </li>
               <li className='p-[1rem] border-primary-violet border-b-[1px]'>
@@ -72,9 +74,9 @@ const Navbar = ({show = true}) => {
                 </Link>
               </li>
               <li className='p-[1rem] border-primary-violet border-b-[1px]'>
-                <Scroll to="contact" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
-                  Contact us
-                </Scroll>
+                <Link href="/contact" className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                  <a className="text-primary-violet hover:text-[#8C1D82]">Contact us</a>
+                </Link>
               </li>
             </ul>
 

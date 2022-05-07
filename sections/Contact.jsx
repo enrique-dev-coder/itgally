@@ -1,5 +1,6 @@
+import Link from 'next/link'
+import { Link as Scroll } from "react-scroll"
 import GallInfo from "../components/GallInfo"
-import Arrow from "../components/atoms/Arrow"
 import Button from "../components/atoms/Button"
 import Logo from "../components/atoms/Logo"
 import FadeInElement from "../components/FadeInElement"
@@ -11,18 +12,30 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                 <div className="footer-nav hidden lg:flex w-full border-b-[1px] border-[#63257E] border-primary-violet mb-12 lg:mb-[2rem]">
                     <ul className="flex gap-6 ml-auto">
                         <li>
-                            <a href="" className='text-primary-violet flex items-center gap-[5px]'>Our Network <Arrow width=".5rem" height=".5rem" rotation="rotate(134deg)" /></a></li>
-                        <li> <a href="" className='text-primary-violet'>News &amp; events</a> </li>
-                        <li> <a href="" className='text-primary-violet'>Project</a></li>
+                            <Scroll to="network" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                                Our Network
+                            </Scroll>
+                        </li>
+                        <li>
+                            <Link href="#">
+                                <a className="text-primary-violet hover:text-[#8C1D82]">New &amp; Events</a>
+                            </Link> 
+                        </li>
+                        <li>
+                            <Link href="/projects" className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                                <a className="text-primary-violet hover:text-[#8C1D82]">Project</a>
+                            </Link>
+                        </li>
                     </ul>
-                    <Button bgColor="#8C1D82" color="#FFF8FE" mL="auto" text="Contact us" />
+
+                    <Link href="/contact">
+                        <a className="bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Contact us</a>
+                    </Link>
+
                 </div>
 
                 <div className="flex justify-between lg:mt-[1rem] lg:mr-[2rem]">
                     <Logo logoClass="w-[100px] h-[40px] xl:w-[150px] xl:h-[50px]" />
-                    <div className="w-[28px] h-[23px] md:hidden">
-                        <img src="/assets/Vector 238.png" className="w-full h-full mt-[.5rem]" />
-                    </div>
                 </div>
 
                 <div className="flex flex-col md:justify-between lg:flex-row lg:mt-[1rem] lg:flex-1 lg:justify-around">

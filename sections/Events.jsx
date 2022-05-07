@@ -3,6 +3,7 @@ import Button from "../components/atoms/Button"
 import EventCard from "../components/EventCard"
 import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
+import Link from 'next/link'
 // import {Link} from "react-scroll"
 
 const Events = () => {
@@ -22,7 +23,9 @@ const Events = () => {
 
               <Button text="Learn More" borderColor="#8C1D82" color="#8C1D82" />
 
-              <Button text="Contact us" bgColor="#8C1D82" borderColor="#8C1D82" color="#FFF8FE" />
+              <Link href="/contact">
+                  <a className="bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Contact us</a>
+              </Link>
 
             </div>
 
@@ -36,7 +39,9 @@ const Events = () => {
 
             <Button text="Learn More" borderColor="#8C1D82" color="#8C1D82" />
 
-            <Button text="Contact us" bgColor="#8C1D82" borderColor="#8C1D82" color="#FFF8FE" />
+            <Link href="/contact">
+              <a className="bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Contact us</a>
+            </Link>
 
           </div>
 
