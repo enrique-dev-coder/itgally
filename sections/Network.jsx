@@ -81,7 +81,7 @@ const Network = () => {
             </div>
 
             <div className="flex flex-col gap-8 mt-[1.5rem]">
-                <h2 className="">Discover Living Labs</h2>
+                <h2 className="text-primary-violet">Discover ITGALL Living Labs</h2>
 
                 <div className="flex gap-5">
 

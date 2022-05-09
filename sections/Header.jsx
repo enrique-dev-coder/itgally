@@ -2,6 +2,7 @@ import { useInView } from "react-intersection-observer"
 import ScrollPoints from "../components/ScrollPoints"
 import Circle from "../components/atoms/Circle"
 import Logo from "../components/atoms/Logo"
+import {Link} from "react-scroll"
 
 const Header = () => {
 
@@ -34,8 +35,12 @@ const Header = () => {
                 </div>
 
                 <div className="circle-box flex xl:gap-[20px]">
-                  <Circle text="ABOUT US" bgColor="#37044E" height="100px" width="100px" position="relative" left=".2rem" />
-                  <Circle text="OUR OFFER" bgColor="#FFD000" height="100px" width="100px"/>
+                  <Link to="gallSection" smooth={true} duration={1000}>
+                    <Circle text="ABOUT US" bgColor="#37044E" height="100px" width="100px" position="relative" left=".2rem" />
+                  </Link>
+                  <Link to="network" smooth={true} duration={1000}>
+                    <Circle text="OUR OFFER" bgColor="#FFD000" height="100px" width="100px"/>
+                  </Link>
                 </div>
 
                 <div className="circle-box-right pt-[5rem] pl-[1rem] rotate-[21deg] xl:ml-[10px]">

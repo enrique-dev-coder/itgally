@@ -20,7 +20,7 @@ const Navbar = ({show = true}) => {
 
             {inView && show? 
             <Scroll to="header" smooth={true} duration={1000} className="relative -left-[18%]" >
-              <Logo logoClass="h-[30px] w-[100px]" />
+              <Logo logoClass="h-[40px] w-[125px] lg:w-[150px] lg:h-[48px]" />
             </Scroll>
             : ""}
 
@@ -50,7 +50,7 @@ const Navbar = ({show = true}) => {
             <div className={`mr-10 block lg:hidden w-[28px] cursor-pointer`} onClick={() => setMobileMenu(!mobileMenu)}>
             {mobileMenu? 
               <button className={`text-[#8C1D82] font-bold text-[1.5rem]`}>
-                X
+                x
               </button>
               :<img src="/assets/Vector 238.png" className='w-full h-full' />
             }
