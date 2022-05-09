@@ -32,30 +32,30 @@ const contact = () => {
             <h3 className='text-primary-violet text-2xl font-bold mb-[.5rem]'>How can we help you?</h3>
 
             <label>Name <span className='text-red-500'>*</span></label>
-            <input type="text" name="" id="" placeholder='Eluney Posadas' className='block w-full border outline-0 p-[0.4rem]' />
+            <input type="text" name="name" id="name" placeholder='Eluney Posadas' className='block w-full border outline-0 p-[0.4rem]' />
 
             <div className="flex gap-5 flex-col lg:flex-row">
               <label className='w-full lg:w-1/2'>Work position <span className='text-red-500'>*</span>
-              <input type="text" name="" id="" placeholder='Diseñador' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
+              <input type="text" name="work" id="work" placeholder='Diseñador' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
               </label>
 
               <label className='w-full lg:w-1/2'>Mail <span className='text-red-500'>*</span>
-              <input type="text" name="" id="" placeholder='eluneyposadas@empresa.com' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
+              <input type="text" name="mail" id="mail" placeholder='eluneyposadas@empresa.com' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
               </label>
             </div>
 
             <div className="flex gap-5 flex-col lg:flex-row">
               <label className='w-full lg:w-1/2'>City
-              <input type="text" name="" id="" placeholder='Galicia' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
+              <input type="text" name="city" id="city" placeholder='Galicia' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
               </label>
 
               <label className='w-full lg:w-1/2'>Phone
-              <input type="text" name="" id="" placeholder='6058685275' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
+              <input type="text" name="phone" id="phone" placeholder='6058685275' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
               </label>
             </div>
 
             <label>Message <span className='text-red-500'>*</span></label>
-            <textarea name="" id="" cols="30" rows="5" className='outline-0 border p-[0.4rem]'></textarea>
+            <textarea name="" id="message" cols="30" rows="5" className='outline-0 border p-[0.4rem]'></textarea>
 
 
           </form>
