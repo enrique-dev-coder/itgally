@@ -13,7 +13,7 @@ const Atendo = () => {
                 </p>
 
                 <div className="hidden lg:block w-[143px] h-[39px]" >
-                    <img src="/assets/logo-atendo.png" alt="" className="w-full h-full" />
+                    <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
                 </div>
 
                 <p className="hidden lg:block text-primary-violet">
@@ -21,14 +21,14 @@ const Atendo = () => {
                     CEO <br />
                     <br />
                     l.barros @atendo.es <br />
-                    www.atendo.es
+                    <a href="https://www.atendo.es" target="_blank" rel="noopener noreferrer">www.atendo.es</a>
                 </p>
             </div>
 
-            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767249/itgall/Atendo_ixqp7y.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video>
+            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767249/itgall/Atendo_ixqp7y.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem]" controls autoPlay></video>
 
             <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[143px] h-[39px]" >
-                <img src="/assets/logo-atendo.png" alt="" className="w-full h-full" />
+                <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
             </div>
 
             <p className="block lg:hidden col-span-2 text-primary-violet px-[2.5rem]">
@@ -36,7 +36,7 @@ const Atendo = () => {
                 CEO <br />
                 <br />
                 l.barros @atendo.es <br />
-                www.atendo.es
+                <a href="https://www.atendo.es" target="_blank" rel="noopener noreferrer">www.atendo.es</a>
             </p>
         </NetworkModal>
     )

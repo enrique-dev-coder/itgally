@@ -17,9 +17,9 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                             </Scroll>
                         </li>
                         <li>
-                            <Link href="#">
-                                <a className="text-primary-violet hover:text-[#8C1D82]">New &amp; Events</a>
-                            </Link> 
+                            <Scroll to="events" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                                New &amp; Events
+                            </Scroll> 
                         </li>
                         <li>
                             <Link href="/projects" className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">

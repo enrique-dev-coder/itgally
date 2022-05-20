@@ -26,11 +26,11 @@ const Afaga = () => {
                     Project Manager <br />
                     <br />
                     d.juridico@afaga.com <br />
-                    www.afaga.com
+                    <a href="https://www.afaga.com" target="_blank" rel="noopener noreferrer">www.afaga.com</a>
                 </p>
             </div>
 
-            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767251/itgall/Afaga_efagdl.mov" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video>
+            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767251/itgall/Afaga_efagdl.mov" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem]" controls autoPlay></video>
 
             <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[189px] h-[101px]" >
                 <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
@@ -41,7 +41,7 @@ const Afaga = () => {
                 Project Manager <br />
                 <br />
                 d.juridico@afaga.com <br />
-                www.afaga.com
+                <a href="https://www.afaga.com" target="_blank" rel="noopener noreferrer">www.afaga.com</a>
             </p>
         </NetworkModal>
     )

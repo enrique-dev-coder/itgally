@@ -18,18 +18,18 @@ const Olecer = () => {
                     Innovation Director <br />
                     <br />
                     innovacion@olecer.com <br />
-                    www.olecer.com
+                    <a href="https://www.olecer.com" target="_blank" rel="noopener noreferrer">www.olecer.com</a>
                 </p>
             </div>
 
-            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767252/itgall/Olecer_kznvki.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video>
+            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767252/itgall/Olecer_kznvki.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem]" controls autoPlay></video>
 
             <p className="block lg:hidden col-span-2 text-primary-violet px-[2.5rem]">
                 Francisco Abelardo Lamilla Curros <br />
                 Innovation Director <br />
                 <br />
                 innovacion@olecer.com <br />
-                www.olecer.com
+                <a href="https://www.olecer.com" target="_blank" rel="noopener noreferrer">www.olecer.com</a>
             </p>
         </NetworkModal>
     )

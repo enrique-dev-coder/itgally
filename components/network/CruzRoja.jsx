@@ -29,18 +29,20 @@ const CruzRoja = () => {
 
                 <p className="hidden lg:block text-primary-violet">
 
-                    Rocio Martinez Fernandez <br />
-                    LL Manager <br />
-                    rocio.martinez@cruzroja.es <br />
+                    Trini de Lorenzo <br />
+                    Oficina Autonómica- Unidade de Innovación <br />
+                    34 981 221 000 (ext. 38504) – 678 563 241<br />
+                    delorenzo@cruzroja.es <br />
+                    Galicia. Cruz Roja Española, 1. 15002 A Coruña. <br />
                     <br />
                     Oscar Fafian Varela <br />
                     Responsable de Innovación <br />
                     osfava@cruzroja.es <br />
-                    www.cruzvermella.org <br />
+                    <a href="https://www.cruzvermella.org" target="_blank" rel="noopener noreferrer">www.cruzvermella.org</a> <br />
                 </p>
             </div>
 
-            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767245/itgall/Cruz_Roja_beokqz.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 m-auto" controls autoPlay></video>
+            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767245/itgall/Cruz_Roja_beokqz.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem]" controls autoPlay></video>
 
             <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[152px] h-[84px]" >
                 <img src="/assets/logo-cruz.png" alt="" className="w-full h-full" />
@@ -48,14 +50,15 @@ const CruzRoja = () => {
 
             <p className="block lg:hidden col-span-2 text-primary-violet px-[2.5rem]">
 
-                Rocio Martinez Fernandez <br />
-                LL Manager <br />
-                rocio.martinez@cruzroja.es <br />
+                Oficina Autonómica- Unidade de Innovación <br />
+                34 981 221 000 (ext. 38504) – 678 563 241<br />
+                delorenzo@cruzroja.es <br />
+                Galicia. Cruz Roja Española, 1. 15002 A Coruña. <br />
                 <br />
                 Oscar Fafian Varela <br />
                 Responsable de Innovación <br />
                 osfava@cruzroja.es <br />
-                www.cruzvermella.org <br />
+                <a href="https://www.cruzvermella.org" target="_blank" rel="noopener noreferrer">www.cruzvermella.org</a> <br />
             </p>
         </NetworkModal>
     )

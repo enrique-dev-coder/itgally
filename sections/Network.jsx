@@ -85,7 +85,7 @@ const Network = () => {
 
                 <div className="flex gap-5">
 
-                    <div className="flex flex-col relative z-30">
+                    <div className={`flex flex-col relative z-30 mr-[1rem] ${city.vigo && 'pr-[1rem]'}`}>
                         <button className="flex items-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-fit border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => setBtnControl(true)}>
                             <span>{currentCity}</span>
                             <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />

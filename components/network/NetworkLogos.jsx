@@ -52,7 +52,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             saraiva: false,
                             fegerec: false
                         })} >
-                            <img src="/assets/logo-atendo.png" alt="" className="w-full h-full" />
+                            <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
                         </div>
 
                             <div className="shrink-0 mx-[2rem] w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
@@ -219,7 +219,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             saraiva: false,
                             fegerec: false
                         })} >
-                            <img src="/assets/logo-atendo.png" alt="" className="w-full h-full" />
+                            <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
                         </div>
 
                         <div className="w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({

@@ -87,7 +87,7 @@ const NetworkMap = ({city, setBtnControl, setCity, setNetwork}) => {
 
 
             {/* LA CORUÑA - COMPOSTELA */}
-            <path className={`${city.coruna ? "fill-slate-800" : "fill-[#C680B3]"} hover:fill-slate-800 transition ease-in-out duration-150 cursor-pointer`} onClick={() => {
+            <path className={`${city.galicia || city.coruna ? "fill-slate-800" : "fill-[#C680B3]"} hover:fill-slate-800 transition ease-in-out duration-150 cursor-pointer`} onClick={() => {
                 setBtnControl(false)
                 setCity({
                     coruna: true,
@@ -231,7 +231,7 @@ const NetworkMap = ({city, setBtnControl, setCity, setNetwork}) => {
 
 
             {/* PONTEVEDRA / VIGO */}
-            <path className={`${city.pontevedra || city.vigo ? "fill-slate-800" : "fill-[#C680B3]"} hover:fill-slate-800 transition ease-in-out duration-150 cursor-pointer`} onClick={() => {
+            <path className={`${city.galicia || city.pontevedra || city.vigo ? "fill-slate-800" : "fill-[#C680B3]"} hover:fill-slate-800 transition ease-in-out duration-150 cursor-pointer`} onClick={() => {
                 setBtnControl(false)
                 setCity({
                     coruna: false,
