@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {Fragment} from 'react'
+import Head from 'next/head'
 import Navbar from "../../components/Navbar"
 import Contact from "../../sections/Contact"
 import SecondHeader from "../../components/atoms/SecondHeader"
@@ -7,7 +8,13 @@ import MapContact from '../../components/MapContact'
 
 const contact = () => {
   return (
-  <div className='xl:container xl:mx-auto'>
+    <Fragment>
+      <Head>
+        <title>IT GALL</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div className='xl:container xl:mx-auto'>
 
       <SecondHeader title="CONTACT US">
         <div className="absolute top-[30%] left-[20%] w-[35px] h-[35px] hidden md:block">
@@ -74,6 +81,8 @@ const contact = () => {
       aStyles="text-[#8C1D82] ml-[.5rem] text-[1.2rem] lg:text-[1rem]" 
       />
   </div>
+    </Fragment>
+  
   )
 }
 

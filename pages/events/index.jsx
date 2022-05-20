@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React, {Fragment, useState, useEffect} from 'react'
+import Head from 'next/head'
 import Navbar from "../../components/Navbar"
 import EventCard from "../../components/EventCard"
 import Contact from "../../sections/Contact"
@@ -28,7 +29,13 @@ const events = () => {
     }, [])
 
   return (
-  <div className='xl:container xl:mx-auto'>
+    <Fragment>
+      <Head>
+        <title>IT GALL</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div className='xl:container xl:mx-auto'>
 
       <SecondHeader title="News &amp; events">
         <div className="absolute top-[30%] left-[20%] w-[35px] h-[35px] hidden md:block">
@@ -68,6 +75,8 @@ const events = () => {
       aStyles="text-[#8C1D82] ml-[.5rem] text-[1.2rem] lg:text-[1rem]" 
       />
   </div>
+    </Fragment>
+  
   )
 }
 
