@@ -8,6 +8,7 @@ import NetworkBtn from "../components/network/NetworkBtn"
 import NetworkMap from "../components/network/NetworkMap"
 import Partners from "../components/partners/Partners"
 import { useState} from "react"
+import { Link as Scroll } from "react-scroll"
 
 const Network = () => {
 
@@ -64,8 +65,10 @@ const Network = () => {
 
                     <h2 className="text-primary-violet text-[1.35rem] md:text-3xl font-bold z-10">Our Network</h2>
 
-
-                    <Button text="Learn More" borderColor="#8C1D82" bgColor="#8C1D82" color="#FFF8FE" moreStyles="hidden lg:block"/>
+                    <Scroll to='map' smooth={true} duration={1000}>
+                        <Button text="Learn More" borderColor="#8C1D82" bgColor="#8C1D82" color="#FFF8FE" moreStyles="hidden lg:block"/>
+                    </Scroll>
+                    
 
                 </div>
 
@@ -83,7 +86,7 @@ const Network = () => {
             <div className="flex flex-col gap-8 mt-[1.5rem]">
                 <h2 className="text-primary-violet">Discover ITGALL Living Labs</h2>
 
-                <div className="flex gap-5">
+                <div className="flex gap-5" id='map'>
 
                     <div className={`flex flex-col relative z-30 mr-[1rem] ${city.vigo && 'pr-[1rem]'}`}>
                         <button className="flex items-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-fit border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => setBtnControl(true)}>
@@ -94,12 +97,6 @@ const Network = () => {
                             btnControl && 
                             <NetworkBtn setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />        
                         }
-                    </div>
-
-                    <div className="flex flex-col">
-                        <button className="flex items-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-fit border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">
-                            <span>All Sectors</span>
-                        </button>
                     </div>
 
                 </div>

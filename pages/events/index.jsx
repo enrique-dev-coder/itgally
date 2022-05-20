@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 import Navbar from "../../components/Navbar"
 import EventCard from "../../components/EventCard"
 import Contact from "../../sections/Contact"
@@ -7,20 +7,24 @@ import FadeInElement from "../../components/FadeInElement"
 
 const events = () => {
 
-    const apiURL = 'https://blog.itgall.tech';
-    //const apiURL = 'https://malvestida.com';
+    const apiURL = 'https://blog.itgall.tech/wp-json/wp/v2/posts';
+    
+    const [posts, setPosts] = useState()
+
+    const fetchApi = async () => {
+      const response = await fetch(apiURL)
+
+      const responseJSON = await response.json()
+
+      setPosts(responseJSON)
+      console.log(responseJSON)
+    }
 
 
     useEffect(() => {
 
-        fetch(`${apiURL}/wp-json/wp/v2/posts`)
-        .then(res => res.ok ? res.json() : Promise.reject(res))
-        .then(json => {
-            console.log(json)
-        })
-        .catch(error => {
-            console.log(error)
-        })
+        fetchApi()
+
     }, [])
 
   return (
@@ -44,23 +48,16 @@ const events = () => {
 
 
       <FadeInElement>
-        <div className="flex flex-col px-[1.5rem] py-[4rem] gap-[2rem] sm:px-[4rem] lg:flex-row 2xl:gap-[4rem] 2xl:px-[10rem]">
+        <div className="flex flex-col px-[1.5rem] py-[4rem] gap-[2rem] sm:px-[4rem] lg:grid lg:grid-cols-3 2xl:gap-[4rem] 2xl:px-[10rem]">
 
-          <EventCard 
-          date="15th July 2021" 
-          title="Projects selecting for testing under IN4AHA / Focus group" 
-          info="Developing a Decalogue of values of technologies with purpose" 
-          url="assets/Rectangle 57.png" />
-          <EventCard 
-          date="14th of May 2021" 
-          title="IN4AHA Open Call &amp; Finalists" 
-          info="Five projects to achieve active and healthy ageing were selected for testing." 
-          url="assets/Rectangle 55.png" />
-          <EventCard 
-          date="15th February 2021" 
-          title="Participation of CSG within IN4AHA" 
-          info="Kick-off of the H2020 CSA project IN-4-AHA : a result of joining the dots back in 2017." 
-          url="assets/Rectangle 53.png" />
+          { posts &&
+            posts.map(post => <EventCard 
+              title={post.title.rendered} 
+              info={post.excerpt.rendered} 
+              link={post.link}
+              display='hidden'
+              key={post.id}/>)
+          }
 
         </div>
       </FadeInElement>

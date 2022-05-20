@@ -4,7 +4,6 @@ import EventCard from "../components/EventCard"
 import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
 import Link from 'next/link'
-// import {Link} from "react-scroll"
 
 const Events = () => {
 
@@ -31,9 +30,24 @@ const Events = () => {
 
           </div>
 
-          <EventCard date="15th July 2021" title="Projects selecting for testing under IN4AHA / Focus group" info="Developing a Decalogue of values of technologies with purpose" url="assets/Rectangle 57.png" />
-          <EventCard date="14th of May 2021" title="IN4AHA Open Call &amp; Finalists" info="Five projects to achieve active and healthy ageing were selected for testing." url="assets/Rectangle 55.png" />
-          <EventCard date="15th February 2021" title="Participation of CSG within IN4AHA" info="Kick-off of the H2020 CSA project IN-4-AHA : a result of joining the dots back in 2017." url="assets/Rectangle 53.png" />
+          <EventCard 
+          date="15th July 2021" 
+          title="Projects selecting for testing under IN4AHA / Focus group" 
+          info="Developing a Decalogue of values of technologies with purpose" 
+          url="assets/Rectangle 57.png"
+          link='https://blog.itgall.tech/projects-selected-for-testing-under-in4aha-focus-group/' />
+          <EventCard 
+          date="14th of May 2021" 
+          title="IN4AHA Open Call &amp; Finalists" 
+          info="Five projects to achieve active and healthy ageing were selected for testing." 
+          url="assets/Rectangle 55.png"
+          link='https://blog.itgall.tech/in4aha-open-call-finalists/' />
+          <EventCard 
+          date="15th February 2021" 
+          title="Participation of CSG within IN4AHA" 
+          info="Kick-off of the H2020 CSA project IN-4-AHA : a result of joining the dots back in 2017." 
+          url="assets/Rectangle 53.png"
+          link='https://blog.itgall.tech/participation-of-csg-within-in4aha/' />
 
           <div className="box-btn mt-[2rem] flex justify-between lg:hidden">
 

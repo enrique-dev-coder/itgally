@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
 import Modal from "../components/Modal"
 import {useState} from "react"
+import { Link as Scroll } from "react-scroll"
 
 const GallSection = () => {
 
@@ -32,7 +33,9 @@ const GallSection = () => {
               </div>
 
               <div className="button-box mt-[1.5rem] lg:mt-14 flex gap-[1.5rem] justify-center">
-                <Button text="View More" borderColor="#8C1D82" color="#8C1D82"/>
+                <Scroll to='network' smooth={true} duration={1000}>
+                  <Button text="View More" borderColor="#8C1D82" color="#8C1D82"/>
+                </Scroll>
                 <button className="bg-[#8C1D82] border-[#8C1D82] text-primary-white border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7" onClick={() => setModal(true)}>
                   Watch Video
                 </button>

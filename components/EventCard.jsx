@@ -1,12 +1,12 @@
 import Arrow from "./atoms/Arrow"
 
-const EventCard = ({date, title, info, url}) => {
+const EventCard = ({date, title, info, url, link = `#`, display = `block`}) => {
 
     return (
         <div className="relative border-[1px] border-[#37044E] mt-[4rem] pb-[2rem] lg:h-auto lg:mt-0
 
         row-span-1 col-span-1 p-5 md:mt-16 flex flex-col justify-between z-10">
-            <div className="img-container absolute -top-[40px] -left-[1px] w-[100px] h-[100px]">
+            <div className={`img-container absolute -top-[40px] -left-[1px] w-[100px] h-[100px] ${display}`}>
               <img src={url} className="w-full h-full" />
             </div>
 
@@ -17,7 +17,7 @@ const EventCard = ({date, title, info, url}) => {
             </div>
             
 
-            <a href="#" className="font-bold text-[#37044E] mt-4 block">
+            <a href={`${link}`} target='_blank' className="font-bold text-[#37044E] mt-4 block">
               Learn More
               <Arrow rotation="rotate(45deg)" />
             </a>
