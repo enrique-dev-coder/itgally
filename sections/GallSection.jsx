@@ -36,9 +36,9 @@ const GallSection = () => {
                 <Scroll to='network' smooth={true} duration={1000}>
                   <Button text="View More" borderColor="#8C1D82" color="#8C1D82"/>
                 </Scroll>
-                <button className="bg-[#8C1D82] border-[#8C1D82] text-primary-white border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7" onClick={() => setModal(true)}>
+                <a className="bg-[#8C1D82] text-primary-white px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => setModal(true)}>
                   Watch Video
-                </button>
+                </a>
               </div>
     
             </div>
