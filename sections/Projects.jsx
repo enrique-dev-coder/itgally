@@ -4,7 +4,8 @@ import ScrollPoints from "../components/ScrollPoints"
 import Arrow from "../components/atoms/Arrow"
 import { useInView } from "react-intersection-observer"
 import FadeInElement from "../components/FadeInElement"
-import {Link} from "react-scroll"
+import Link from 'next/link'
+import { Link as Scroll } from "react-scroll"
 
 const projectTexts = {
     in4aha: "This project contribute to the cross-border scale-up of tested and ready-to-use applications in health and social care",
@@ -27,7 +28,11 @@ const Projects = () => {
             <div className="flex justify-between lg:justify-start">
               <h2 className="text-[#37044E] text-[1.35rem] md:text-3xl font-bold z-10">Projects</h2>
               <div className="lg:ml-[20.5rem] xl:ml-[30rem] 2xl:ml-[36.7rem]">
-                <Button text="More Projects" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" />
+                <Link href='/projects'>
+                  <button className="border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82]">
+                      More Projects
+                  </button>
+                </Link>
               </div>
 
             </div>
@@ -56,11 +61,11 @@ const Projects = () => {
 
               <div className="border border-[#37044E] p-8 sm:px-[2rem] sm:py-[3rem] md:col-span-2 relative -top-[12%] 2xl:flex flex-col justify-between">
                 <h3 className="mb-2 text-[1.35rem] sm:text-[1.5rem] md:text-3xl font-bold text-[#8C1D82]">Discover the news and events from our Living Lab</h3> 
-                <Link to="events" smooth={true} duration={1000}>
+                <Scroll to="events" smooth={true} duration={1000}>
                   <Button text="Scroll Down" bgColor="#FCF4FB" borderColor="#8C1D82" color="#8C1D82" mL="0" display="flex" gap="8px" width="fit-content">
                     <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
                   </Button>
-                </Link>
+                </Scroll>
               </div>
             </div>
 

@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import { Link as Scroll } from "react-scroll"
 import GallInfo from "../components/GallInfo"
-import Button from "../components/atoms/Button"
 import Logo from "../components/atoms/Logo"
 import FadeInElement from "../components/FadeInElement"
 
