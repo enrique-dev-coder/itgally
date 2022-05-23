@@ -357,8 +357,21 @@ const NetworkLogos = ({city, network, setNetwork}) => {
             {
                 city.galicia &&
                 <Fragment>
-                    <div className={`flex gap-3 items-center`}>
-                        <div className="w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
+                    <div className={`w-full flex gap-3 items-center overflow-hidden overflow-x-auto py-[1.5rem] scrollbar`} >
+                            <div className="shrink-0 mx-[2rem] w-[189px] h-[101px] cursor-pointer" onClick={() => setNetwork({
+                            afaga: true,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false,
+                            fegerec: false
+                        })} >
+                            <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
+                        </div>
+
+                            <div className="shrink-0 mx-[2rem] w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: true,
                             atendo: false,
@@ -371,19 +384,90 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
+                            <div className="shrink-0 mx-[2rem] w-[143px] h-[39px] cursor-pointer" onClick={() => setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: true,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false,
+                            fegerec: false
+                        })} >
+                            <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
+                        </div>
+
+                            <div className="shrink-0 mx-[2rem] w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
                             cruz: true,
                             domus: false,
                             olecer: false,
-                            saraiva: false,
+                            saraiva: false, 
                             fegerec: false
                         })} >
                             <img src="/assets/logo-cruz.png" alt="" className="w-full h-full" />
                         </div>
+
+                            <div className="shrink-0 mx-[2rem] w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: true,
+                            olecer: false,
+                            saraiva: false,
+                            fegerec: false
+                        })}>
+                            <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
+                        </div>
+
+                            <div className="shrink-0 mx-[2rem] w-[157px] h-[72px] cursor-pointer" onClick={() => setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: true,
+                            saraiva: false,
+                            fegerec: false
+                        })}>
+                            <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
+                        </div>
+
+                            <div className="shrink-0 mx-[2rem] w-[149px] h-[70px] cursor-pointer" onClick={() => setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: true,
+                            fegerec: false
+                        })}>
+                            <img src="/assets/logo-saraiva.png" alt="" className="w-full h-full" />
+                        </div>
+
+                            <div className="shrink-0 mx-[2rem] w-[135px] h-[40px] cursor-pointer" onClick={() => setNetwork({
+                                afaga: false,
+                                ategal: false,
+                                atendo: false,
+                                cruz: false,
+                                domus: false,
+                                olecer: false,
+                                saraiva: false,
+                                fegerec: true
+                            })} >
+                                <img src="/assets/logo-fegerec.png" alt="" className="w-full h-full" />
+                            </div>
+
                     </div>
+
+                    {
+                        network.afaga &&
+                        <Afaga />
+                    }
 
                     {
                         network.ategal &&
@@ -391,8 +475,33 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                     }
 
                     {
+                        network.atendo &&
+                        <Atendo />
+                    }
+
+                    {
                         network.cruz &&
                         <CruzRoja />
+                    }
+
+                    {
+                        network.domus &&
+                        <Domus />
+                    }
+
+                    {
+                        network.olecer &&
+                        <Olecer />
+                    }
+
+                    {
+                        network.saraiva &&
+                        <Saraiva />
+                    }
+
+                    {
+                        network.fegerec &&
+                        <Fegerec />
                     }
                 </Fragment>
             }

@@ -58,8 +58,8 @@ const Events = () => {
                 <a className="border-[#8C1D82] text-[#8C1D82] border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Learn More</a>
             </Link>
 
-            <Link href="/contact">
-              <a className="bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Contact us</a>
+            <Link href='/contact'>
+              <a className="border-[#8C1D82] bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Contact us</a>
             </Link>
 
           </div>
