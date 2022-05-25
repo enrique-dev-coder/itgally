@@ -66,8 +66,7 @@ const contact = () => {
 
             <input type="submit" 
             value="Submit" 
-            className="bg-[#8C1D82] text-[#FFF8FE] hover:contrast-50 transition w-2/5 border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" 
-            onClick={(e) => {e.preventDefault()}} />
+            className="bg-[#8C1D82] text-[#FFF8FE] hover:contrast-50 transition w-2/5 border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" />
           </form>
 
            <MapContact style="col-span-1 h-[400px] lg:h-full" />
