@@ -116,7 +116,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                         <h2 className='font-bold'>Industrial and intellectual property</h2>
                         <p>All content, text, photographs, graphics, images, icons, technology, software, links and other audiovisual and/or sound content, as well as its graphic design and source codes, are the intellectual property of the owner of the website or third parties. without it being understood that any exploitation right recognized by current legislation has been transferred to the user.</p>
 
-                        <p>The trademarks, trade names and distinctive signs are the property of FÓRUM RIES or third parties, without it being understood that access to the web page of which this legal notice is the subject attributes any right over them.</p>
+                        <p>The trademarks, trade names and distinctive signs are the property of ITGALL or third parties, without it being understood that access to the web page of which this legal notice is the subject attributes any right over them.</p>
 
                         <p className='mb-4'>Those users who make comments on the blog or social networks assign their intellectual property rights free of charge, and are subject to the conditions expressed in the "content provided by users" section.</p>
 
@@ -140,7 +140,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                        <h2 className='font-bold'>Company name: <span className='font-normal'>ASOC CLUSTER SAUDE DE GALICIA CSG</span></h2>
                        <h2 className='font-bold'>CIF: <span className="font-normal">G70308143</span></h2>
                        <h2 className='font-bold'>Registered office: <span className="font-normal">Avda. Fernando de Casas Novoa, 37, Portal A-B, 1ª | 15707 Santiago de Compostela</span></h2>
-                       <h2 className='font-bold'>Commercial name: <span className='font-normal'>FORUM RIES</span></h2>
+                       <h2 className='font-bold'>Commercial name: <span className='font-normal'>ITGALL</span></h2>
                        {/* <h2 className='font-bold'>Contact information:</h2> */}
                        <h2 className='font-bold'>Contact telephone numbers: <span className='font-normal'>602 247 149</span></h2>
                        <h2 className='font-bold'>Email address: <span className='font-normal'>info@clustersaude.com</span></h2>
@@ -150,22 +150,22 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                        <p className='mb-4'>LinkedIn: <a href=" https://www.linkedin.com/in/cluster-saúde-de-galicia-a288a9121/" className='underline text-blue-600 font-normal'>https://www.linkedin.com/in/cluster-saúde-de-galicia-a288a9121/</a></p>
                        <h2 className='font-bold'>Terms of use</h2>
 
-                       <p>The purpose of this website is to provide users and/or potential clients or clients with information regarding the activities of FÓRUM RIES and the services it offers, as well as providing information that may be of interest.</p>
-                       <p>With this web page FÓRUM RIES intends to provide a useful service, for which the suggestions of its users are welcome. But if you do not agree with any of the conditions contained in this notice, you must stop using the website. Access to it implies acceptance of them without reservation.</p>
+                       <p>The purpose of this website is to provide users and/or potential clients or clients with information regarding the activities of ITGALL and the services it offers, as well as providing information that may be of interest.</p>
+                       <p>With this web page ITGALL intends to provide a useful service, for which the suggestions of its users are welcome. But if you do not agree with any of the conditions contained in this notice, you must stop using the website. Access to it implies acceptance of them without reservation.</p>
                        <p className='mb-4'>Certain services provided through the website may contain particular conditions with specific provisions regarding the protection of personal data. It is essential to read and accept it prior to requesting the service in question.</p>
                        <h2 className="font-bold">I Access</h2>
                        <p className='mb-4'>Access is public, although there are certain parts of the website whose access is reserved for customers, through a user ID and password. Non-client users can visit the public sections of the page, never having to try to access the restricted access sections, unless it has been authorized by assigning a user ID and a password.</p>
                        <h2 className="font-bold">II Modification of the page and interruptions or errors in access</h2>
-                       <p className='mb-4'>FÓRUM RIES reserves the right to make, at any time and without the need for prior notice, modifications and updates to the information contained on the website, its configuration and presentation, and the access conditions.</p>
+                       <p className='mb-4'>ITGALL reserves the right to make, at any time and without the need for prior notice, modifications and updates to the information contained on the website, its configuration and presentation, and the access conditions.</p>
                        <h2 className="font-bold">III Contents and linked pages</h2>
-                       <p>The information contained on this website is merely informative, and in no case constitutes advice of any kind. The policy of FÓRUM RIES is to try to ensure that the contents are always up to date, but it may happen that they are not.</p>
-                       <p>The Website contains texts prepared for merely informative or informative purposes that may not reflect the current state and that refer to general situations, so its content can never be applied by the user to specific cases. The opinions expressed in them do not necessarily reflect the points of view of the owner of the website. The user must not act on the basis of the information contained in this Website without previously resorting to the corresponding consultation with the staff of FÓRUM RIES.</p>
+                       <p>The information contained on this website is merely informative, and in no case constitutes advice of any kind. The policy of ITGALL is to try to ensure that the contents are always up to date, but it may happen that they are not.</p>
+                       <p>The Website contains texts prepared for merely informative or informative purposes that may not reflect the current state and that refer to general situations, so its content can never be applied by the user to specific cases. The opinions expressed in them do not necessarily reflect the points of view of the owner of the website. The user must not act on the basis of the information contained in this Website without previously resorting to the corresponding consultation with the staff of ITGALL.</p>
                        <p>Users undertake to make appropriate use of the content and services that the owner of the website offers.</p>
-                       <p>The external links contained in this Website lead to sites managed by third parties. The owner of the website is not responsible for the content or the status of these sites. The use of external links does not imply that FORUM RIES recommends or approves the contents of the destination pages.</p>
-                       <p>The function of the links that appear on this page is exclusively to inform users and customers about the existence of other sources of information on the subject on the Internet, where they can expand or complete the data offered on this page. FÓRUM RIES will under no circumstances be responsible for the results obtained through said links.</p>
-                       <p>In any case, FÓRUM RIES does not assume responsibility derived from the contents linked from its web page, nor can it guarantee the absence of viruses, or other elements in them that may cause alterations in the computer system (hardware and software), in the documents or the files, or the data, of the user, excluding any responsibility for damages of any kind caused to the user for this reason.</p>
+                       <p>The external links contained in this Website lead to sites managed by third parties. The owner of the website is not responsible for the content or the status of these sites. The use of external links does not imply that ITGALL recommends or approves the contents of the destination pages.</p>
+                       <p>The function of the links that appear on this page is exclusively to inform users and customers about the existence of other sources of information on the subject on the Internet, where they can expand or complete the data offered on this page. ITGALL will under no circumstances be responsible for the results obtained through said links.</p>
+                       <p>In any case, ITGALL does not assume responsibility derived from the contents linked from its web page, nor can it guarantee the absence of viruses, or other elements in them that may cause alterations in the computer system (hardware and software), in the documents or the files, or the data, of the user, excluding any responsibility for damages of any kind caused to the user for this reason.</p>
                        <p>Although the links are regularly supervised so that it does not happen, in the event that any user or a third party considers that the content or services provided by the linked pages are illegal, violate values ​​or constitutional principles, or damage property or rights of the user. user or a third party, please contact immediately</p>
-                       <p>FORUM RIES said circumstance, and especially if the links consist of:</p>
+                       <p>ITGALL said circumstance, and especially if the links consist of:</p>
                        <ul className='mb-4'>
                         <li>Activities or content likely to be considered criminal in accordance with applicable regulations</li>
                         <li>Activities or content that violate intellectual or industrial property rights</li>
@@ -174,7 +174,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                        <h2 className="font-bold">IV Protection of personal data</h2>
                        <h2 className="font-bold">Introduction</h2>
                        <p>The personal data linked to this website respect the requirements of the General Data Protection Regulation and current legislation and regulations regarding the protection of personal data.</p>
-                       <p className='mb-4'>FÓRUM RIES, owner of the website, will process the personal data that is collected through this website in compliance with the regulations of the General Data Protection Regulation and the current Spanish regulations on the protection of personal data, thus, the remission of data by the interested parties is absolutely voluntary and is duly announced.</p>
+                       <p className='mb-4'>ITGALL, owner of the website, will process the personal data that is collected through this website in compliance with the regulations of the General Data Protection Regulation and the current Spanish regulations on the protection of personal data, thus, the remission of data by the interested parties is absolutely voluntary and is duly announced.</p>
                        <h2 className="font-bold">Purposes</h2>
                        <p className='mb-4'>In particular, the data that is provided through the web will be treated for the management of the contact or the query made, and, where appropriate, if a request or order occurs, the management of the same, administrative, accounting and fiscal, as well as the history file.</p>
                        <h2 className="font-bold">Legitimation of the treatment</h2>
@@ -194,18 +194,18 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                         <li>Telephone: 901 100 099</li>
                         <li>Electronic headquarters: <a href="https://sedeagpd.gob.es/sede-electronica-web/" className='underline text-blue-600'>https://sedeagpd.gob.es/sede-electronica-web/</a></li>
                         <li>Ways through which personal data is collected. Treatment purposes contact forms</li>
-                        <li>The personal data collected will be subject to automated processing and incorporated into the corresponding files owned by FÓRUM RIES.</li>
+                        <li>The personal data collected will be subject to automated processing and incorporated into the corresponding files owned by ITGALL.</li>
                        </ul>
                        <h2 className="font-bold">Data collected by the web server</h2>
                        <ul>
                         <li>Browser Version</li>
                         <li>Operating System Version</li>
-                        <li>IP adress</li>
+                        <li>IP address</li>
                         <li>User interface</li>
                         <li>Browser language</li>
-                        <li>The personal data collected by the web server will be subject to automated processing and incorporated into the corresponding files owned by FÓRUM RIES.</li>
+                        <li>The personal data collected by the web server will be subject to automated processing and incorporated into the corresponding files owned by ITGALL.</li>
                        </ul>
-                       <h2 className="font-bold">traditional media</h2>
+                       <h2 className="font-bold">Traditional media</h2>
                        <p>Likewise, you can provide us with your data by telephone, email and other means of communication indicated in the contact section.</p>
                        <p>The purpose of processing this data will be solely to provide you with the information or services you request.</p>
                        <p className='mb-4'>Certain services provided through the website may contain particular conditions with specific provisions regarding the protection of personal data. It is essential to read and accept it prior to requesting the service in question.</p>
@@ -221,7 +221,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                        <p>Whoever sends a comment is responsible for providing lawful content and is responsible for the possible responsibilities that may arise for any reason, including possible compensation. By way of example but not limited to not using them to: engage in illicit activities or activities contrary to good faith and public order, disseminate content or propaganda of a racist, xenophobic, pornographic nature, advocating terrorism or attacking human rights; that may cause damage to the physical and logical systems of the entity, its suppliers or third parties, introduce or spread computer viruses or any other physical or logical systems that are likely to cause the aforementioned damage; attempt to access and modify or manipulate the messages of other users; violation of the right to data protection.</p>
                        <p className='mb-4'>If the user includes personal data, they must comply with data protection regulations. Regarding yours, you can exercise the rights set forth in the previous section.</p>
                        <h2 className="font-bold">Obligation of Secrecy and Confidentiality</h2>
-                       <p className='mb-4'>The staff and volunteers of FÓRUM RIES who have any kind of intervention in the actions provided to users, are committed not to disclose or make use of the information they have accessed by reason of their position. The information provided by the user will, in any case, be considered confidential, and may not be used for purposes other than those related to the owner of the website. We are committed to complying with the obligation of secrecy of personal data and the duty to keep them confidential and we will adopt the necessary measures to prevent their alteration, loss, treatment or unauthorized access, taking into account at all times the status of the technology.</p>
+                       <p className='mb-4'>The staff and volunteers of ITGALL who have any kind of intervention in the actions provided to users, are committed not to disclose or make use of the information they have accessed by reason of their position. The information provided by the user will, in any case, be considered confidential, and may not be used for purposes other than those related to the owner of the website. We are committed to complying with the obligation of secrecy of personal data and the duty to keep them confidential and we will adopt the necessary measures to prevent their alteration, loss, treatment or unauthorized access, taking into account at all times the status of the technology.</p>
                     </div>
                 }
             </footer>
