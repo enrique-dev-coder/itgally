@@ -86,19 +86,19 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
 
                 <div className="flex flex-col lg:flex-row w-full border-t border-t-[#FFD000] pt-8 text-[#8C1D82] gap-14 mb-8">
                     
-                    <p  className={`hover:opacity-75 cursor-default ${avisos && 'opacity-75'}`}
+                    <p  className={`hover:opacity-75 cursor-default ${cookies && 'opacity-75'}`}
                         onClick={() => politicsDispatch({
-                            type: types.avisos
+                            type: types.cookies
                         })}>
-                    Políticas de privacidad de avisos legales
+                    Privacy and cookie policies
                     </p>
 
-                    <p  className={`hover:opacity-75 cursor-default ${cookies && 'opacity-75'}`}
+                    <p  className={`hover:opacity-75 cursor-default ${avisos && 'opacity-75'}`}
                         onClick={() => 
                             politicsDispatch({
-                                type: types.cookies
+                                type: types.avisos
                             })}>
-                    Política de cookies
+                    Legal notices
                     </p>
 
                 </div>
