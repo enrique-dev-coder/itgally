@@ -17,7 +17,7 @@ const EventCard = ({date, title, info, url, link = `#`, display = `block`}) => {
             </div>
             
 
-            <a href={`${link}`} target='_blank' className="font-bold text-[#37044E] mt-4 block">
+            <a href={`${link}`} target='_blank' className="font-bold text-[#37044E] mt-4 block hover:opacity-75">
               Learn More
               <Arrow rotation="rotate(45deg)" />
             </a>

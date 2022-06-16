@@ -21,12 +21,12 @@ const Events = () => {
             <div className="box-btn hidden lg:flex gap-[30px] relative left-[6%]">
 
               <Link href='/events'>
-                <a className="border-[#8C1D82] text-[#8C1D82] border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Learn More</a>
+                <a className="border-[#8C1D82] text-[#8C1D82] border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 hover:opacity-75">Learn More</a>
               </Link>
               
 
               <Link href="/contact">
-                  <a className="bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Contact us</a>
+                  <a className="bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 hover:opacity-75">Contact us</a>
               </Link>
 
             </div>
@@ -55,11 +55,11 @@ const Events = () => {
           <div className="box-btn mt-[2rem] flex justify-between lg:hidden">
 
             <Link href='/events'>
-                <a className="border-[#8C1D82] text-[#8C1D82] border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Learn More</a>
+                <a className="border-[#8C1D82] text-[#8C1D82] border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 hover:opacity-75">Learn More</a>
             </Link>
 
             <Link href='/contact'>
-              <a className="border-[#8C1D82] bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer">Contact us</a>
+              <a className="border-[#8C1D82] bg-[#8C1D82] text-[#FFF8FE] ml-auto border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 hover:opacity-75">Contact us</a>
             </Link>
 
           </div>

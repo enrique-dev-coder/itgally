@@ -29,7 +29,7 @@ const Projects = () => {
               <h2 className="text-[#37044E] text-[1.35rem] md:text-3xl font-bold z-10">Projects</h2>
               <div className="lg:ml-[20.5rem] xl:ml-[30rem] 2xl:ml-[36.7rem]">
                 <Link href='/projects'>
-                  <button className="border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82]">
+                  <button className="border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 hover:opacity-75 bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82]">
                       More Projects
                   </button>
                 </Link>
@@ -45,7 +45,7 @@ const Projects = () => {
               span="span 2"
               h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]" 
               pStyles="text-primary-violet mt-4 sm:text-[1.1rem]" 
-              aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem]"
+              aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem] hover:opacity-75"
               address="/projects/in4aha"
               btnText="Learn More" />
 
@@ -55,7 +55,7 @@ const Projects = () => {
               span="span 2" 
               h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]" 
               pStyles="text-primary-violet mt-4 sm:text-[1.1rem]" 
-              aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem]"
+              aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem] hover:opacity-75"
               address="/projects/smartiago" 
               btnText="Learn More"/>
 

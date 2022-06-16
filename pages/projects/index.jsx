@@ -46,7 +46,7 @@ const projects = () => {
             info={projectTexts.in4aha}
             h2Styles="font-bold mt-4 text-[#37044E] text-[1.3rem]"
             pStyles="text-primary-violet mt-4 text-[1.2rem]"
-            aStyles="font-bold text-[#37044E] mt-4 block text-[1.2rem]"
+            aStyles="font-bold text-[#37044E] mt-4 block text-[1.2rem] hover:opacity-75"
             address="projects/in4aha"
             btnText="Learn More" />
 
@@ -55,7 +55,7 @@ const projects = () => {
             info={projectTexts.smartiago}
             h2Styles="font-bold mt-4 text-[#37044E] text-[1.3rem]"
             pStyles="text-primary-violet mt-4 text-[1.2rem]"
-            aStyles="font-bold text-[#37044E] mt-4 block text-[1.2rem]" 
+            aStyles="font-bold text-[#37044E] mt-4 block text-[1.2rem] hover:opacity-75" 
             address="projects/smartiago"
             btnText="Learn More"/>
 

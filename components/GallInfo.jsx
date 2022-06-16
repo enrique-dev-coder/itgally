@@ -6,12 +6,12 @@ const GallInfo = ({title, url1, url2, text1, text2, aStyles}) => {
 
                 <div className="flex mb-6 w-full h-[23px]">
                     <img src={url1} alt="" />
-                    <a href="#" className={aStyles}>{text1}</a>
+                    <p className={aStyles}>{text1}</p>
                 </div>
 
                 <div className="flex w-full h-[23px]">
                     <img src={url2} alt="" />
-                    <a href="#" className={aStyles}>{text2}</a>
+                    <p className={aStyles}>{text2}</p>
                 </div>
         </div>
     )
