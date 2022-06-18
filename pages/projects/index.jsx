@@ -44,18 +44,18 @@ const projects = () => {
           <ProjectInfo
             title="IN4AHA"
             info={projectTexts.in4aha}
-            h2Styles="font-bold mt-4 text-[#37044E] text-[1.3rem]"
-            pStyles="text-primary-violet mt-4 text-[1.2rem]"
-            aStyles="font-bold text-[#37044E] mt-4 block text-[1.2rem] hover:opacity-75"
+            h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]"
+            pStyles="text-primary-violet mt-4 sm:text-[1.1rem]"
+            aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem] hover:opacity-75"
             address="projects/in4aha"
             btnText="Learn More" />
 
           <ProjectInfo
             title="Smartiago"
             info={projectTexts.smartiago}
-            h2Styles="font-bold mt-4 text-[#37044E] text-[1.3rem]"
-            pStyles="text-primary-violet mt-4 text-[1.2rem]"
-            aStyles="font-bold text-[#37044E] mt-4 block text-[1.2rem] hover:opacity-75" 
+            h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]"
+            pStyles="text-primary-violet mt-4 sm:text-[1.1rem]"
+            aStyles="font-bold text-[#37044E] mt-4 block sm:text-[1.1rem] hover:opacity-75" 
             address="projects/smartiago"
             btnText="Learn More"/>
 
@@ -63,9 +63,9 @@ const projects = () => {
       </FadeInElement>
 
       <Contact 
-      h3Styles="text-[#8C1D82] font-bold text-[1.3rem] mb-6" 
-      pStyles="text-[#8C1D82] text-[1.2rem]" 
-      aStyles="text-[#8C1D82] ml-[.5rem] text-[1.2rem] lg:text-[1rem]" 
+      h3Styles="text-[#8C1D82] font-bold text-xl mb-6" 
+      pStyles="text-[#8C1D82]" 
+      aStyles="text-[#8C1D82] ml-[.5rem]" 
       />
   </div>
 

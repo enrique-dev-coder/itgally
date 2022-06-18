@@ -22,7 +22,7 @@ const Olecer = () => {
                 </p>
             </div>
 
-            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767252/itgall/Olecer_kznvki.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem]" controls autoPlay></video>
+            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767252/itgall/Olecer_kznvki.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem] mx-auto" controls autoPlay></video>
 
             <p className="block lg:hidden col-span-2 text-primary-violet px-[2.5rem]">
                 Francisco Abelardo Lamilla Curros <br />

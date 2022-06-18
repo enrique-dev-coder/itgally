@@ -75,13 +75,15 @@ const contact = () => {
       </FadeInElement>
 
       <Contact 
-      h3Styles="text-[#8C1D82] font-bold text-[1.3rem] mb-6" 
-      pStyles="text-[#8C1D82] text-[1.2rem]" 
-      aStyles="text-[#8C1D82] ml-[.5rem] text-[1.2rem] lg:text-[1rem]" 
+      h3Styles="text-[#8C1D82] font-bold text-xl mb-6" 
+      pStyles="text-[#8C1D82]" 
+      aStyles="text-[#8C1D82] ml-[.5rem]" 
       />
   </div>
     </Fragment>
-  
+  //text-[1.3rem] h3
+  //text-[1.2rem] p
+  //text-[1.2rem] lg:text-[1rem] a
   )
 }
 

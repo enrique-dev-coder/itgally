@@ -20,7 +20,7 @@ const Fegerec = () => {
                 </p>
             </div>
 
-            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767244/itgall/Fegerec_jx8fy6.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem]" controls autoPlay></video>
+            <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767244/itgall/Fegerec_jx8fy6.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem] mx-auto" controls autoPlay></video>
 
             <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[135px] h-[40px]" >
                 <img src="/assets/logo-fegerec.png" alt="" className="w-full h-full" />
