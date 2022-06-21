@@ -79,7 +79,8 @@ const Network = () => {
                 </div>
             </div>
 
-            <div className="mapadiv w-full h-[200px] sm:h-[250px] md:w-4/5 lg:h-[300px] mr-auto relative opacity-75 overflow-hidden">
+            {/* ml-[2%] md:w-4/5 w-full*/}
+            <div className="mapadiv w-4/5 ml-auto mr-[2%] h-[200px] sm:h-[250px] lg:h-[300px] md:mr-auto relative opacity-75 overflow-hidden">
                 <NetworkMap city={city} setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />
             </div>
 

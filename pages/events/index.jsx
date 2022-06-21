@@ -19,6 +19,11 @@ const events = () => {
 
       setPosts(responseJSON)
       console.log(responseJSON)
+
+      responseJSON.map(res => {
+        console.log(res.title.rendered.replace('&#038;', '&'))
+        console.log(res.excerpt.rendered.replace('<p>', ''))
+      })
     }
 
 
@@ -59,8 +64,8 @@ const events = () => {
 
           { posts &&
             posts.map(post => <EventCard 
-              title={post.title.rendered} 
-              info={post.excerpt.rendered} 
+              title={post.title.rendered.replace('&#038;', '&')} 
+              info={post.excerpt.rendered.replace('<p>', '').replace('[&hellip;]</p>', '').replace('&#038;', '&')} 
               link={post.link}
               display='hidden'
               key={post.id}/>)
