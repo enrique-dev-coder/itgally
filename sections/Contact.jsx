@@ -42,7 +42,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
 
     return (
         <FadeInElement>
-            <footer className="flex flex-col lg:flex-wrap lg:flex-row p-12 border-t-[1px] border-[#63257E] lg:border-t-0 xl:p-[4rem] 2xl:container 2xl:mx-auto" id="contact">
+            <footer className="flex flex-col lg:flex-wrap lg:flex-row p-[8%] sm:p-12 border-t-[1px] border-[#63257E] lg:border-t-0 xl:p-[4rem] 2xl:container 2xl:mx-auto" id="contact">
                 <div className="footer-nav hidden lg:flex w-full border-b-[1px] border-[#63257E] border-primary-violet mb-12 lg:mb-[2rem]">
                     <ul className="flex gap-6 ml-auto">
                         <li>
