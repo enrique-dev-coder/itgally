@@ -9,7 +9,7 @@ const Olecer = () => {
 
                 </p>
 
-                <div className="w-[157px] h-[72px]" >
+                <div className="w-[136px] h-[64px]" >
                     <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
                 </div>
 

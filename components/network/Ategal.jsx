@@ -8,7 +8,7 @@ const Ategal = () => {
                     Training center for the elderly with more than 40 years of experience in Galicia. More than 10 years testing products and services for the elderly, we are a link between companies and the elderly.
                 </p>
 
-                <div className="hidden lg:block w-[148px] h-[69px]" >
+                <div className="hidden lg:block w-[129px] h-[61px]" >
                     <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
                 </div>
 
@@ -23,7 +23,7 @@ const Ategal = () => {
 
             <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767246/itgall/ategal_ujclfb.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem] mx-auto" controls autoPlay></video>
 
-            <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[148px] h-[69px]" >
+            <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[129px] h-[61px]" >
                 <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
             </div>
 

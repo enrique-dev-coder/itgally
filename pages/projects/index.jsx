@@ -39,7 +39,7 @@ const projects = () => {
 
 
       <FadeInElement>
-        <div className="flex flex-col px-[1.5rem] py-[4rem] gap-[2rem] sm:px-[4rem] lg:flex-row 2xl:gap-[4rem] 2xl:px-[10rem]">
+        <div className="flex flex-col px-[1.5rem] pt-[82px] pb-[12px] gap-[2rem] sm:px-[4rem] lg:flex-row 2xl:gap-[4rem] 2xl:px-[10rem]">
 
           <ProjectInfo
             title="IN4AHA"

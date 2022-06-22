@@ -69,7 +69,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                 </div>
 
                 <div className="flex justify-between lg:mt-[1rem] lg:mr-[2rem]">
-                    <Logo logoClass="w-[100px] h-[40px] xl:w-[150px] xl:h-[50px]" />
+                    <Logo logoClass="w-[156px] h-[51px]" />
                 </div>
 
                 <div className="flex flex-col md:justify-between lg:flex-row lg:mt-[1rem] lg:flex-1 lg:justify-around mb-8">

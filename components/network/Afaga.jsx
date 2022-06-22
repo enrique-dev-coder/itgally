@@ -17,7 +17,7 @@ const Afaga = () => {
                     At AFAGA Alzheimer we believe that intervention in people with dementia requires the involvement of all of society as a whole in order to improve their quality of life and that of their environment. To this end, we make available to the research community a significant sample of people with dementia categorized following current scientific standards and our human team to test and develop new intervention solutions.
                 </p>
 
-                <div className="hidden lg:block w-[189px] h-[101px]" >
+                <div className="hidden lg:block w-[120px] h-[64px]" >
                     <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
                 </div>
 
@@ -32,7 +32,7 @@ const Afaga = () => {
 
             <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767251/itgall/Afaga_efagdl.mov" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem] mx-auto" controls autoPlay></video>
 
-            <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[189px] h-[101px]" >
+            <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[120px] h-[64px]" >
                 <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
             </div>
 

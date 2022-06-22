@@ -57,7 +57,7 @@ const Network = () => {
 
     return (
         <FadeInElement>
-            <div className="px-[2.5rem] py-[4rem] lg:pr-[4rem] lg:pl-[2rem] xl:pr-[8rem] xl:pl-[4rem] relative" ref={ref} id="network">
+            <div className="px-[2.5rem] py-[4rem] lg:pr-[4rem] lg:pl-[2rem] xl:pl-[4rem] relative" ref={ref} id="network">
 
             <div className="flex flex-col mb-[2rem]">
 

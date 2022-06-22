@@ -26,7 +26,7 @@ const Domus = () => {
 
                 </p>
 
-                <div className="hidden lg:block w-[138px] h-[76px]" >
+                <div className="hidden lg:block w-[120px] h-[66px]" >
                     <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
                 </div>
 
@@ -42,7 +42,7 @@ const Domus = () => {
 
             <video src="https://res.cloudinary.com/datsipxkz/video/upload/v1651767255/itgall/domus_jjhchq.mp4" className=" w-4/5 shadow-2xl col-span-2 lg:col-span-1 mt-[2rem] mx-auto" controls autoPlay></video>
 
-            <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[138px] h-[76px]" >
+            <div className="block lg:hidden col-span-2 ml-[2.5rem] w-[120px] h-[66px]" >
                 <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
             </div>
 

@@ -14,11 +14,10 @@ const Partners = () => {
     return (
         <div className="flex flex-col gap-8 mt-[8rem]">
             <h2 className="font-bold text-primary-violet text-[1.5rem]">Partners</h2>
+            
+            <div className={`w-full flex items-center overflow-hidden overflow-x-auto py-[1.5rem] scrollbar`} >
 
-            {/* Border snap-x */}
-            <div className={`w-full flex gap-3 items-center overflow-hidden overflow-x-auto py-[1.5rem] scrollbar`} >
-
-                <div className="shrink-0 mx-[2rem] w-[189px] h-[49px] cursor-pointer" onClick={() => setPartner({
+                <div className="shrink-0 mx-[.5rem] w-[189px] h-[49px] cursor-pointer" onClick={() => setPartner({
                     labsaude: false,
                     cebiovet: true,
                     smartiago: false,
@@ -28,7 +27,7 @@ const Partners = () => {
                     <img src="/assets/partners-cebiovet.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
 
-                <div className="shrink-0 mx-[2rem] w-[189px] h-[57px] cursor-pointer" onClick={() => setPartner({
+                <div className="shrink-0 mx-[.5rem] w-[189px] h-[57px] cursor-pointer" onClick={() => setPartner({
                     labsaude: false,
                     cebiovet: false,
                     smartiago: false,
@@ -38,7 +37,7 @@ const Partners = () => {
                     <img src="/assets/partners-dinamiza.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
 
-                <div className="shrink-0 mx-[2rem] w-[188px] h-[51px] cursor-pointer" onClick={() => setPartner({
+                <div className="shrink-0 mx-[.5rem] w-[188px] h-[51px] cursor-pointer" onClick={() => setPartner({
                     labsaude: true,
                     cebiovet: false,
                     smartiago: false,
@@ -48,7 +47,7 @@ const Partners = () => {
                     <img src="/assets/partners-laosaude.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
 
-                <div className="shrink-0 mx-[2rem] w-[187px] h-[54px] cursor-pointer" onClick={() => setPartner({
+                <div className="shrink-0 mx-[.5rem] w-[187px] h-[54px] cursor-pointer" onClick={() => setPartner({
                     labsaude: false,
                     cebiovet: false,
                     smartiago: false,
@@ -58,7 +57,7 @@ const Partners = () => {
                     <img src="/assets/partners-linknovate.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
 
-                <div className="shrink-0 mx-[2rem] w-[140px] h-[61px] cursor-pointer" onClick={() => setPartner({
+                <div className="shrink-0 mx-[.5rem] w-[140px] h-[61px] cursor-pointer" onClick={() => setPartner({
                     labsaude: false,
                     cebiovet: false,
                     smartiago: true,

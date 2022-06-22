@@ -14,7 +14,7 @@ const in4aha = () => {
 
 
             <FadeInElement>
-                <div className="grid place-content-header px-[2rem] py-[4rem] sm:px-[4rem] lg:px-[11rem] lg:pt-[8rem] lg:pb-[4rem] xl:px-[16rem]">
+                <div className="grid place-content-header px-[2rem] pt-[82px] pb-[3rem] sm:px-[4rem] lg:px-[11rem] lg:pb-[12px] xl:px-[16rem]">
 
                     <div className="flex flex-col">
 

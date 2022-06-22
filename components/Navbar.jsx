@@ -26,12 +26,19 @@ const Navbar = ({show = true}) => {
 
             <ul className={`list-none justify-center gap-[2.25rem] mr-5 hidden lg:flex ${inView? "relative -left-[3%]": "" }`}>
               <li>
-                <Scroll to="network" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
-                  Our Network
-                </Scroll>
+                {
+                  show? 
+                  <Scroll to="network" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                    Our Network
+                  </Scroll> : 
+                  <Link href='/' className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                    <a className="text-primary-violet hover:text-[#8C1D82]">Our Network</a>
+                  </Link> 
+                }
+                
               </li>
               <li>
-                <Link href='events' className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                <Link href='/events' className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
                   <a className="text-primary-violet hover:text-[#8C1D82]">New &amp; Events</a>
                 </Link> 
               </li>
@@ -59,9 +66,15 @@ const Navbar = ({show = true}) => {
             {/* MENU MOBILE. SE MUESTRA AL PRESIONAR MENU HAMBURGUESA */}
             <ul className={`list-none absolute z-40 w-full left-0 text-center top-[100%] bg-white ${mobileMenu? "block" : "hidden"} lg:hidden`}>
               <li className='p-[1rem] border-primary-violet border-y'>
-                <Scroll to="network" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
-                  Our Network
-                </Scroll>
+                {
+                  show? 
+                  <Scroll to="network" smooth={true} duration={1000} className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                    Our Network
+                  </Scroll> : 
+                  <Link href='/' className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
+                    <a className="text-primary-violet hover:text-[#8C1D82]">Our Network</a>
+                  </Link> 
+                }
               </li>
               <li className='p-[1rem] border-primary-violet border-b-[1px]'>
                 <Link href="/events">

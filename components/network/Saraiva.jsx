@@ -10,7 +10,7 @@ Our methodology is based on the PCC, housing model and significant activities an
 A key in our work is innovation and continuous improvement, which is why we participate in research projects with universities and in European projects in the field of health and ageing.
                 </p>
 
-                <div className="w-[149px] h-[70px]" >
+                <div className="w-[129px] h-[62px]" >
                     <img src="/assets/logo-saraiva.png" alt="" className="w-full h-full" />
                 </div>
 

@@ -15,8 +15,9 @@ const NetworkLogos = ({city, network, setNetwork}) => {
             {
                 city.allCities &&
                 <Fragment>
-                    <div className={`w-full flex gap-3 items-center overflow-hidden overflow-x-auto py-[1.5rem] scrollbar`} >
-                            <div className="shrink-0 mx-[2rem] w-[189px] h-[101px] cursor-pointer" onClick={() => setNetwork({
+                    {/* overflow-hidden overflow-x-auto scrollbar   w-full flex flex-wrap justify-center items-center py-[1.5rem] gap-y-4*/}
+                    <div className={`w-full flex items-center overflow-hidden overflow-x-auto py-[1.5rem] scrollbar`} >
+                        <div className="shrink-0 mx-[.5rem] w-[120px] h-[64px] cursor-pointer" onClick={() => setNetwork({
                             afaga: true,
                             ategal: false,
                             atendo: false,
@@ -29,7 +30,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] w-[129px] h-[61px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: true,
                             atendo: false,
@@ -42,7 +43,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[143px] h-[39px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] w-[123px] h-[60px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: true,
@@ -55,7 +56,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] w-[132px] h-[74px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -68,7 +69,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-cruz.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] w-[120px] h-[66px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -81,7 +82,20 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[157px] h-[72px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] w-[135px] h-[60px] cursor-pointer" onClick={() => setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false,
+                            fegerec: true
+                        })} >
+                            <img src="/assets/logo-fegerec.png" alt="" className="w-full h-[40px] mt-[.5rem]" />
+                        </div>
+
+                        <div className="shrink-0 w-[136px] h-[64px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -94,7 +108,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[149px] h-[70px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 w-[129px] h-[62px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -106,19 +120,6 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                         })}>
                             <img src="/assets/logo-saraiva.png" alt="" className="w-full h-full" />
                         </div>
-
-                            <div className="shrink-0 mx-[2rem] w-[135px] h-[40px] cursor-pointer" onClick={() => setNetwork({
-                                afaga: false,
-                                ategal: false,
-                                atendo: false,
-                                cruz: false,
-                                domus: false,
-                                olecer: false,
-                                saraiva: false,
-                                fegerec: true
-                            })} >
-                                <img src="/assets/logo-fegerec.png" alt="" className="w-full h-full" />
-                            </div>
 
                     </div>
 
@@ -169,7 +170,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.coruna &&
                 <Fragment>
                         <div className={`flex gap-3 items-center cursor-pointer`}>
-                            <div className="w-[135px] h-[40px] cursor-pointer" onClick={() => setNetwork({
+                            <div className="w-[135px] h-[60px] cursor-pointer" onClick={() => setNetwork({
                                 afaga: false,
                                 ategal: false,
                                 atendo: false,
@@ -179,7 +180,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                                 saraiva: false,
                                 fegerec: true
                             })}>
-                                <img src="/assets/logo-fegerec.png" alt="" className="w-full h-full" />
+                                <img src="/assets/logo-fegerec.png" alt="" className="w-full h-[40px] mt-[.5rem]" />
                             </div>
                         </div>
 
@@ -196,7 +197,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 <Fragment>
                     <div className={`flex gap-3 items-center`}>
 
-                        <div className="w-[189px] h-[101px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="w-[120px] h-[64px] cursor-pointer" onClick={() => setNetwork({
                             afaga: true,
                             ategal: false,
                             atendo: false,
@@ -209,7 +210,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[143px] h-[39px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="w-[123px] h-[60px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: true,
@@ -222,7 +223,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="w-[120px] h-[66px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -259,7 +260,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.barcelona &&
                 <Fragment>
                     <div className={`flex gap-3 items-center`}>
-                        <div className="w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="w-[120px] h-[66px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -287,7 +288,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.madrid &&
                 <Fragment>
                     <div className={`flex gap-3 items-center`} >
-                        <div className="w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="w-[120px] h-[66px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -314,7 +315,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.pontevedra &&
                 <Fragment>
                     <div className={`flex gap-3 items-center`} >
-                        <div className="w-[157px] h-[72px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="w-[136px] h-[64px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -327,7 +328,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
                         </div>
 
-                        <div className="w-[149px] h-[70px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="w-[129px] h-[62px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -357,8 +358,8 @@ const NetworkLogos = ({city, network, setNetwork}) => {
             {
                 city.galicia &&
                 <Fragment>
-                    <div className={`w-full flex gap-3 items-center overflow-hidden overflow-x-auto py-[1.5rem] scrollbar`} >
-                            <div className="shrink-0 mx-[2rem] w-[189px] h-[101px] cursor-pointer" onClick={() => setNetwork({
+                    <div className={`w-full flex flex-wrap justify-center items-center py-[1.5rem] gap-y-4`} >
+                        <div className="shrink-0 mx-[.5rem] self-baseline w-[120px] h-[64px] cursor-pointer" onClick={() => setNetwork({
                             afaga: true,
                             ategal: false,
                             atendo: false,
@@ -371,7 +372,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-afaga.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] self-baseline w-[129px] h-[61px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: true,
                             atendo: false,
@@ -384,7 +385,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-ategal.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[143px] h-[39px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] self-baseline w-[123px] h-[60px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: true,
@@ -397,7 +398,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-atendo.svg" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[148px] h-[69px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] self-baseline w-[132px] h-[74px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -410,7 +411,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-cruz.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[138px] h-[76px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] self-baseline w-[120px] h-[66px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -423,7 +424,20 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[157px] h-[72px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 mx-[.5rem] self-baseline w-[135px] h-[60px] cursor-pointer" onClick={() => setNetwork({
+                            afaga: false,
+                            ategal: false,
+                            atendo: false,
+                            cruz: false,
+                            domus: false,
+                            olecer: false,
+                            saraiva: false,
+                            fegerec: true
+                        })} >
+                            <img src="/assets/logo-fegerec.png" alt="" className="w-full h-[40px] mt-[.5rem]" />
+                        </div>
+
+                        <div className="shrink-0 self-baseline w-[136px] h-[64px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -436,7 +450,7 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                             <img src="/assets/logo-olecer.png" alt="" className="w-full h-full" />
                         </div>
 
-                            <div className="shrink-0 mx-[2rem] w-[149px] h-[70px] cursor-pointer" onClick={() => setNetwork({
+                        <div className="shrink-0 self-baseline w-[129px] h-[62px] cursor-pointer" onClick={() => setNetwork({
                             afaga: false,
                             ategal: false,
                             atendo: false,
@@ -448,19 +462,6 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                         })}>
                             <img src="/assets/logo-saraiva.png" alt="" className="w-full h-full" />
                         </div>
-
-                            <div className="shrink-0 mx-[2rem] w-[135px] h-[40px] cursor-pointer" onClick={() => setNetwork({
-                                afaga: false,
-                                ategal: false,
-                                atendo: false,
-                                cruz: false,
-                                domus: false,
-                                olecer: false,
-                                saraiva: false,
-                                fegerec: true
-                            })} >
-                                <img src="/assets/logo-fegerec.png" alt="" className="w-full h-full" />
-                            </div>
 
                     </div>
 
