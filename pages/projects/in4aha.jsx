@@ -8,7 +8,7 @@ const in4aha = () => {
     return (
         <div className='xl:container xl:mx-auto'>
 
-            <SecondHeader imgURL="/assets/Group 22810.png" headerSize="h-[35vh] " />
+            <SecondHeader imgURL="/assets/Group 22810.png" headerSize="h-[35vh] " pageLink='https://innovation4ageing.tehnopol.ee/' />
 
             <Navbar show={false}/>
 

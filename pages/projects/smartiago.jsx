@@ -9,7 +9,7 @@ const smartiago = () => {
     return (
         <div className='xl:container xl:mx-auto'>
 
-            <SecondHeader imgURL="/assets/smartiago-grande.png" headerSize="h-[35vh] " />
+            <SecondHeader imgURL="/assets/smartiago-grande.png" headerSize="h-[35vh] " pageLink='https://smartiago.santiagodecompostela.gal/es' />
 
             <Navbar show={false}/>
 
