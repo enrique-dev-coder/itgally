@@ -80,7 +80,8 @@ const Network = () => {
             </div>
 
             {/* ml-[2%]  w-full mr-auto md:w-4/5***/}
-            <div className="w-4/5 ml-auto mr-[2%] h-[200px] sm:h-[250px] lg:h-[300px] md:mr-auto relative opacity-75 overflow-hidden">
+            {/* h-[200px] sm:h-[250px] lg:h-[300px] */}
+            <div className="w-4/5 ml-[2%] mr-[2%] h-[200px] sm:h-[350px] md:h-[450px] lg:h-[500px] md:mr-auto relative opacity-75 overflow-hidden">
                 <NetworkMap city={city} setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />
             </div>
 
