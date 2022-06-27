@@ -17,10 +17,10 @@ const Atendo = () => {
                 </div>
 
                 <p className="hidden lg:block text-primary-violet">
-                    Luis Barrios Rios <br />
+                    Luis Barros Rios <br />
                     CEO <br />
                     <br />
-                    l.barros @atendo.es <br />
+                    l.barros@atendo.es <br />
                     <a href="https://www.atendo.es" target="_blank" rel="noopener noreferrer">www.atendo.es</a>
                 </p>
             </div>
@@ -32,10 +32,10 @@ const Atendo = () => {
             </div>
 
             <p className="block lg:hidden col-span-2 text-primary-violet px-[2.5rem]">
-                Luis Barrios Rios <br />
+                Luis Barros Rios <br />
                 CEO <br />
                 <br />
-                l.barros @atendo.es <br />
+                l.barros@atendo.es <br />
                 <a href="https://www.atendo.es" target="_blank" rel="noopener noreferrer">www.atendo.es</a>
             </p>
         </NetworkModal>
