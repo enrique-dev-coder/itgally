@@ -255,61 +255,6 @@ const NetworkLogos = ({city, network, setNetwork}) => {
 
             }
 
-            {/* BARCELONA */}
-            {
-                city.barcelona &&
-                <Fragment>
-                    <div className={`flex gap-3 items-center`}>
-                        <div className="w-[120px] h-[66px] cursor-pointer" onClick={() => setNetwork({
-                            afaga: false,
-                            ategal: false,
-                            atendo: false,
-                            cruz: false,
-                            domus: true,
-                            olecer: false,
-                            saraiva: false,
-                            fegerec: false
-                        })}>
-                            <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
-                        </div>
-                    </div>
-
-                    {
-                        network.domus &&
-                        <Domus />
-                    }
-                </Fragment>
-
-
-            }
-
-            {/* MADRID */}
-            {
-                city.madrid &&
-                <Fragment>
-                    <div className={`flex gap-3 items-center`} >
-                        <div className="w-[120px] h-[66px] cursor-pointer" onClick={() => setNetwork({
-                            afaga: false,
-                            ategal: false,
-                            atendo: false,
-                            cruz: false,
-                            domus: true,
-                            olecer: false,
-                            saraiva: false,
-                            fegerec: false
-                        })}>
-                            <img src="/assets/logo-domus.png" alt="" className="w-full h-full" />
-                        </div>
-                    </div>
-
-                    {
-                        network.domus &&
-                        <Domus />
-                    }
-                </Fragment>
-
-            }
-
             {/* PONTEVEDRA */}
             {
                 city.pontevedra &&

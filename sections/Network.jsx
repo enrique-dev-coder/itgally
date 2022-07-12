@@ -16,9 +16,7 @@ const Network = () => {
 
     const [city, setCity] = useState({
         coruna: false,
-        barcelona: false,
         galicia: false,
-        madrid: false,
         pontevedra: false,
         vigo: false,
         allCities: true
@@ -41,13 +39,9 @@ const Network = () => {
 
     if (city.coruna) {
         currentCity = "A Coruña"
-    } else if (city.barcelona) {
-        currentCity = "Barcelona"
-    }  else if (city.galicia) {
+    } else if (city.galicia) {
         currentCity = "Galicia"
-    } else if (city.madrid) {
-        currentCity = "Madrid"
-    } else if (city.pontevedra) {
+    }  else if (city.pontevedra) {
         currentCity = "Pontevedra"
     } else if (city.vigo) {
         currentCity = "Vigo"
