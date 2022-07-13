@@ -44,7 +44,7 @@ const Navbar = ({show = true}) => {
               </li>
               <li>
                 <Link href="/projects" className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">
-                  <a className="text-primary-violet hover:text-[#8C1D82]">Project</a>
+                  <a className="text-primary-violet hover:text-[#8C1D82]">Projects</a>
                 </Link>
               </li>
               <li>
@@ -83,7 +83,7 @@ const Navbar = ({show = true}) => {
               </li>
               <li className='p-[1rem] border-primary-violet border-b-[1px]'>
                 <Link href="/projects">
-                  <a className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">Project</a>
+                  <a className="text-primary-violet cursor-pointer hover:text-[#8C1D82]">Projects</a>
                 </Link>
               </li>
               <li className='p-[1rem] border-primary-violet border-b-[1px]'>

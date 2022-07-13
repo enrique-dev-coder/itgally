@@ -2,11 +2,11 @@ import NetworkModal from "../atoms/NetworkModal"
 
 const Domus = () => {
     return (
-        <NetworkModal title="Domus" modalClass="w-full border pb-[3rem] h-[450px] overflow-scroll">
+        <NetworkModal title="DomusVi" modalClass="w-full border pb-[3rem] h-[450px] overflow-scroll">
             <div className="flex flex-col col-span-2 lg:col-span-1 mt-[2rem] gap-[2rem] px-[2.5rem]">
 
                 <p className="text-primary-violet">
-                    The DomusVi Group has managed to position itself in recent years as a leader in healthcare for people, with a presence in all the communities of the Spanish geography. Its growth in the management of Centers and Services has been progressive and sustainable, currently having more than 23,000 employees.
+                    The DomusVi Group has managed to position itself in recent years as a leader in healthcare for people, with a presence in all the communities of the Spanish geography. Its growth in the management of Centers and Services has been progressive and sustainable, currently having more than 27,000 employees.
                     DomusVi offers the most specialized care for the elderly and mental health in the country. It manages more than 25,000 places in 201 residences for the elderly, care for the disabled and mental health and day care centers. In addition, it provides home care through its specialized home care units (24,305 users of the home help service and 32,774 users of the Telecare Service).
 
 

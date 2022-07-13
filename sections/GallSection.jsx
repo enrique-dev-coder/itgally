@@ -28,7 +28,7 @@ const GallSection = () => {
               </h2>
 
               <p className="text-primary-violet text-[1rem] lg:text-lg">
-                <span className="font-bold">ITGALL</span> is a Living lab network managed by SG spread along all the Galicia geography, combining capabilities for testing solutions within the <span className="font-bold">healthcare, social care</span> and <span className="font-bold">onehealth sectors</span>
+                <span className="font-bold">ITGALL</span> is a Living lab network managed by CSG spread along all the Galicia geography, combining capabilities for testing solutions within the <span className="font-bold">healthcare, social care</span> and <span className="font-bold">onehealth sectors</span>
               </p>
               </div>
 

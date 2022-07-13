@@ -51,7 +51,7 @@ const projects = () => {
             btnText="Learn More" />
 
           <ProjectInfo
-            title="Smartiago"
+            title="Smartiago-Smartway"
             info={projectTexts.smartiago}
             h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]"
             pStyles="text-primary-violet mt-4 sm:text-[1.1rem]"

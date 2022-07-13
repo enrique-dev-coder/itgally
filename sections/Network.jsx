@@ -19,6 +19,9 @@ const Network = () => {
         galicia: false,
         pontevedra: false,
         vigo: false,
+        lugo: false,
+        ourense: false,
+        santiago: false,
         allCities: true
     })
 
@@ -41,7 +44,13 @@ const Network = () => {
         currentCity = "A Coruña"
     } else if (city.galicia) {
         currentCity = "Galicia"
-    }  else if (city.pontevedra) {
+    } else if (city.ourense) {
+        currentCity = "Ourense"
+    } else if (city.santiago) {
+        currentCity = "Santiago"
+    } else if (city.lugo) {
+        currentCity = "Lugo"
+    } else if (city.pontevedra) {
         currentCity = "Pontevedra"
     } else if (city.vigo) {
         currentCity = "Vigo"
@@ -73,19 +82,17 @@ const Network = () => {
                 </div>
             </div>
 
-            {/* ml-[2%]  w-full mr-auto md:w-4/5***/}
-            {/* h-[200px] sm:h-[250px] lg:h-[300px] */}
-            <div className="w-4/5 ml-[2%] mr-[2%] h-[200px] sm:h-[350px] md:h-[450px] lg:h-[500px] md:mr-auto relative opacity-75 overflow-hidden">
+            <div className="h-[150px] relative opacity-75 overflow-hidden">
                 <NetworkMap city={city} setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />
             </div>
 
             <div className="flex flex-col gap-8 mt-[1.5rem]">
-                <h2 className="text-primary-violet">Discover ITGALL Living Labs</h2>
+                <h2 className="font-bold text-primary-violet text-[1.5rem]">Discover ITGALL Living Labs</h2>
 
                 <div className="flex gap-5" id='map'>
 
                     <div className={`flex flex-col relative z-30 mr-[1rem] ${city.vigo && 'pr-[1rem]'}`}>
-                        <button className="flex items-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-fit border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => setBtnControl(true)}>
+                        <button className="flex items-center justify-center gap-[8px] bg-[#FCF4FB] border-[#8C1D82] text-[#8C1D82] ml-0 w-[180px] border px-[1.2rem] py-[0.3rem] md:py-2 md:px-7 cursor-pointer" onClick={() => setBtnControl(true)}>
                             <span>{currentCity}</span>
                             <Arrow rotation="rotate(135deg)" width=".5rem" height=".5rem" />
                         </button>

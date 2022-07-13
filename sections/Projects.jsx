@@ -50,7 +50,7 @@ const Projects = () => {
               btnText="Learn More" />
 
               <ProjectInfo 
-              title="Smartiago" 
+              title="Smartiago-Smartway" 
               info={projectTexts.smartiago} 
               span="span 2" 
               h2Styles="font-bold mt-4 text-[#37044E] sm:font-[1.3rem]" 

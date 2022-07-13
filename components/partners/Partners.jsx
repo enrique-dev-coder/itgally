@@ -8,12 +8,13 @@ const Partners = () => {
         cebiovet: false,
         smartiago: false,
         linknovate: false,
-        dinamiza: false
+        dinamiza: false,
+        silverlogy: false
     })
 
     return (
         <div className="flex flex-col gap-8 mt-[8rem]">
-            <h2 className="font-bold text-primary-violet text-[1.5rem]">Partners</h2>
+            <h2 className="font-bold text-primary-violet text-[1.5rem]">Collaborators</h2>
             
             <div className={`w-full flex items-center overflow-hidden overflow-x-auto py-[1.5rem] scrollbar`} >
 
@@ -22,7 +23,8 @@ const Partners = () => {
                     cebiovet: true,
                     smartiago: false,
                     linknovate: false,
-                    dinamiza: false
+                    dinamiza: false,
+                    silverlogy: false
                 })} >
                     <img src="/assets/partners-cebiovet.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
@@ -32,7 +34,8 @@ const Partners = () => {
                     cebiovet: false,
                     smartiago: false,
                     linknovate: false,
-                    dinamiza: true
+                    dinamiza: true,
+                    silverlogy: false
                 })} >
                     <img src="/assets/partners-dinamiza.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
@@ -42,7 +45,8 @@ const Partners = () => {
                     cebiovet: false,
                     smartiago: false,
                     linknovate: false,
-                    dinamiza: false
+                    dinamiza: false,
+                    silverlogy: false
                 })} >
                     <img src="/assets/partners-laosaude.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
@@ -52,7 +56,8 @@ const Partners = () => {
                     cebiovet: false,
                     smartiago: false,
                     linknovate: true,
-                    dinamiza: false
+                    dinamiza: false,
+                    silverlogy: false
                 })} >
                     <img src="/assets/partners-linknovate.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
@@ -62,9 +67,21 @@ const Partners = () => {
                     cebiovet: false,
                     smartiago: true,
                     linknovate: false,
-                    dinamiza: false
+                    dinamiza: false,
+                    silverlogy: false
                 })} >
-                    <img src="/assets/partners-smartiago.png" alt="" className="aspect-video object-cover w-full h-full" />
+                    <img src="/assets/partners-smartiago.ai" alt="" className="aspect-video object-cover w-full h-full" />
+                </div>
+
+                <div className="shrink-0 mx-[.5rem] w-[187px] h-[54px] cursor-pointer" onClick={() => setPartner({
+                    labsaude: false,
+                    cebiovet: false,
+                    smartiago: false,
+                    linknovate: false,
+                    dinamiza: false,
+                    silverlogy: true
+                })} >
+                    <img src="/assets/Silverlogy_logo.png" alt="" className="aspect-video object-cover w-full h-full" />
                 </div>
 
             </div>
@@ -94,7 +111,10 @@ const Partners = () => {
                 <NetworkModal title="Linknovate" modalClass="w-full border pb-[3rem] h-[450px] overflow-scroll lg:overflow-hidden" >
                     <div className="flex flex-col col-span-2 lg:col-span-1 mt-[2rem] gap-[2rem] px-[2.5rem]">
                         <p className="text-primary-violet">
-                        Linknovate is a data analytics and Competitive Intelligence platform that helps you identify emerging technologies and connect with the key players behind.
+                        Linknovate brings AI to corporate innovation and facilitates internal team
+                        communication around innovation scouting and monitoring. Through a data
+                        analytics and competitive intelligence platform it helps clients identify emerging
+                        technologies and advanced technologies.
                         </p>
                         <p className="text-primary-violet">
                             Manuel Noya Mariño <br />
@@ -106,6 +126,30 @@ const Partners = () => {
 
                     <div className="w-[187px] h-[54px] mt-auto ml-auto mr-[2.5rem] col-span-2 lg:col-span-1" >
                         <img src="/assets/partners-linknovate.png" alt="" className="w-full h-full" />
+                    </div>
+                </NetworkModal>
+            }
+
+            {/* SILVERLOGY */}
+            {
+                partner.silverlogy &&
+                <NetworkModal title="Silverlogy" modalClass="w-full border pb-[3rem] h-[450px] overflow-scroll lg:overflow-hidden" >
+                    <div className="flex flex-col col-span-2 lg:col-span-1 mt-[2rem] gap-[2rem] px-[2.5rem]">
+                        <p className="text-primary-violet">
+                        Silverlogy is a start-up founded by process engineers from different industrial
+                        sectors, who have come together to develop integrated platform solutions to improve
+                        the quality of life of our elders, with the help of technology.
+                        </p>
+                        <p className="text-primary-violet">
+                            Alberto Cochón Peón <br />
+                            Digital Transformation Management <br />
+                            info@silverlogy.care <br />
+                            606959454
+                        </p>
+                    </div>
+
+                    <div className="w-[187px] h-[54px] mt-auto ml-auto mr-[2.5rem] col-span-2 lg:col-span-1" >
+                        <img src="/assets/Silverlogy_logo.png" alt="" className="aspect-video object-cover w-full h-full" />
                     </div>
                 </NetworkModal>
             }
@@ -141,7 +185,7 @@ const Partners = () => {
                     </div>
 
                     <div className="w-[140px] h-[61px] mt-auto ml-auto mr-[2.5rem] col-span-2 lg:col-span-1" >
-                        <img src="/assets/partners-smartiago.png" alt="" className=" w-full h-full" />
+                        <img src="/assets/partners-smartiago.ai" alt="" className=" w-full h-full" />
                     </div>
                 </NetworkModal>
             }
