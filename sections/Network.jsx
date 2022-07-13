@@ -64,7 +64,7 @@ const Network = () => {
 
             <div className="flex flex-col mb-[2rem]">
 
-                <div className="flex justify-between mb-[1rem]">
+                <div className="flex justify-between mb-[1.5rem]">
 
                     <h2 className="text-primary-violet text-[1.35rem] md:text-3xl font-bold z-10">Our Network</h2>
 
@@ -76,13 +76,13 @@ const Network = () => {
                 </div>
 
                 <div className="grid grid-cols-2">
-                    <p className="col-span-2 lg:col-span-1 text-primary-violet">
+                    <p className="col-span-2 text-primary-violet">
                         CSG develops a model based on clinical excellence, R&amp;D&amp;i, digital transformation and the development of technology - based products whose purposed is the well - being of the person.
                     </p>
                 </div>
             </div>
 
-            <div className="h-[150px] relative opacity-75 overflow-hidden">
+            <div className="h-[150px] md:h-[260px] relative opacity-75 overflow-hidden">
                 <NetworkMap city={city} setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />
             </div>
 

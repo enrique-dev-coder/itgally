@@ -17,7 +17,7 @@ const smartiago = () => {
 
             <div className='xl:container xl:mx-auto'>
 
-                <SecondHeader imgURL="/assets/partners-smartiago.ai" headerSize="h-[35vh] " pageLink='https://smartiago.santiagodecompostela.gal/es' />
+                <SecondHeader imgURL="/assets/partners-smartiago.png" headerSize="h-[35vh] " pageLink='https://smartiago.santiagodecompostela.gal/es' />
 
                 <Navbar show={false}/>
 

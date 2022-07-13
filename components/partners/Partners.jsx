@@ -70,10 +70,10 @@ const Partners = () => {
                     dinamiza: false,
                     silverlogy: false
                 })} >
-                    <img src="/assets/partners-smartiago.ai" alt="" className="aspect-video object-cover w-full h-full" />
+                    <img src="/assets/partners-smartiago.png" alt="" className="aspect-video w-full h-full" />
                 </div>
 
-                <div className="shrink-0 mx-[.5rem] w-[187px] h-[54px] cursor-pointer" onClick={() => setPartner({
+                <div className="shrink-0 mx-[.5rem] w-[187px] h-[68px] cursor-pointer" onClick={() => setPartner({
                     labsaude: false,
                     cebiovet: false,
                     smartiago: false,
@@ -148,7 +148,7 @@ const Partners = () => {
                         </p>
                     </div>
 
-                    <div className="w-[187px] h-[54px] mt-auto ml-auto mr-[2.5rem] col-span-2 lg:col-span-1" >
+                    <div className="w-[187px] h-[70px] mt-auto ml-auto mr-[2.5rem] col-span-2 lg:col-span-1" >
                         <img src="/assets/Silverlogy_logo.png" alt="" className="aspect-video object-cover w-full h-full" />
                     </div>
                 </NetworkModal>
@@ -185,7 +185,7 @@ const Partners = () => {
                     </div>
 
                     <div className="w-[140px] h-[61px] mt-auto ml-auto mr-[2.5rem] col-span-2 lg:col-span-1" >
-                        <img src="/assets/partners-smartiago.ai" alt="" className=" w-full h-full" />
+                        <img src="/assets/partners-smartiago.png" alt="" className=" w-full h-full" />
                     </div>
                 </NetworkModal>
             }
