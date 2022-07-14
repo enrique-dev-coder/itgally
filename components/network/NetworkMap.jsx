@@ -1,7 +1,7 @@
 const NetworkMap = ({city, setBtnControl, setCity, setNetwork}) => {
 
     return (
-        <svg className="absolute -left-[50%] sm:-left-[35%] md:-left-[55%] lg:-left-[40%] w-[700px] xl:-left-[25%] md:w-[2000px] fill-slate-300 " baseProfile="tiny" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" version="1.2" viewBox="0 0 1000 891" xmlns="http://www.w3.org/2000/svg">
+        <svg className="absolute -left-[75%] sm:-left-[10%] md:-left-[55%] lg:-left-[40%] w-[800px] xl:-left-[25%] md:w-[2000px] fill-slate-300 " baseProfile="tiny" stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" version="1.2" viewBox="0 0 1000 891" xmlns="http://www.w3.org/2000/svg">
 
             {/* LA CORUÑA / SANTIAGO */}
             <path className={`${city.galicia || city.santiago || city.coruna ? "fill-slate-800" : "fill-[#C680B3]"} hover:fill-slate-800 transition ease-in-out duration-150 cursor-pointer`} onClick={() => {

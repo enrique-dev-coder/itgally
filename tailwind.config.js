@@ -21,7 +21,7 @@ module.exports = {
         }
       },
       screens: {
-        "xsm": "340px",
+        "xrr": "400px",
       }
     },
   },

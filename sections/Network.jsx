@@ -98,7 +98,9 @@ const Network = () => {
                         </button>
                         {
                             btnControl && 
-                            <NetworkBtn setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />        
+                            <Scroll to="logo" smooth={true} duration={1000} offset={-50}>
+                                <NetworkBtn setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} /> 
+                            </Scroll>       
                         }
                     </div>
 
