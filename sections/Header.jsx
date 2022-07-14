@@ -26,7 +26,7 @@ const Header = () => {
                 <p className="text-primary-violet leading-[1.7rem] px-[3rem] text-[1.4rem] md:text-3xl text-center">YOUR LIVING LAB NETWORK</p>
               </div>
 
-              <div className="circles flex justify-center mt-16 lg:mt-5 xsm:gap-5">
+              <div className="circles flex justify-center mt-16 lg:mt-5 gap-5">
 
                 <div className="circle-box-left transform rotate-[21deg] pr-[1rem] xl:pr-[2rem]">
                   <Circle bgColor="#37044E" height="10px" width="10px" position="relative" left="2rem"/>
