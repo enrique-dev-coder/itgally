@@ -16,7 +16,10 @@ const NetworkLogos = ({city, network, setNetwork}) => {
                 city.allCities &&
                 <Fragment>
                     {/* overflow-hidden overflow-x-auto scrollbar   w-full flex flex-wrap justify-center items-center py-[1.5rem] gap-y-4*/}
-                    <div className={`w-full flex items-center overflow-hidden overflow-x-auto scrollbar py-[1.5rem]`} id='logo'>
+                    <div 
+                        className={`w-full flex items-center overflow-hidden overflow-x-auto scrollbar py-[1.5rem]`} 
+                        id='logo'
+                    >
                         <div className="shrink-0 mx-[.5rem] w-[120px] h-[64px] cursor-pointer" onClick={() => setNetwork({
                             afaga: true,
                             ategal: false,

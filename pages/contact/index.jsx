@@ -1,12 +1,29 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useRef} from 'react'
 import Head from 'next/head'
 import Navbar from "../../components/Navbar"
 import Contact from "../../sections/Contact"
 import SecondHeader from "../../components/atoms/SecondHeader"
 import FadeInElement from "../../components/FadeInElement"
 import MapContact from '../../components/MapContact'
+import emailjs from 'emailjs-com';
 
 const contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_hmz4not', 'template_de2wk4k', form.current, 'as4ZJ8-eqHWY9oy46')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    e.target.reset()
+  };
+
   return (
     <Fragment>
       <Head>
@@ -35,19 +52,33 @@ const contact = () => {
       <FadeInElement>
         <div className="grid grid-cols-1 lg:grid-cols-2 px-[1.5rem] py-[4rem] sm:px-[4rem] gap-[2rem] 2xl:gap-[4rem] 2xl:px-[10rem]">
           
-          <form className="col-span-1 flex flex-col gap-5">
+          <form ref={form} onSubmit={sendEmail} className="col-span-1 flex flex-col gap-5">
             <h3 className='text-primary-violet text-2xl font-bold mb-[.5rem]'>How can we help you?</h3>
 
             <label>Name <span className='text-red-500'>*</span></label>
-            <input type="text" name="name" id="name" placeholder='Eluney Posadas' className='block w-full border outline-0 p-[0.4rem]' />
+            <input type="text" name="from_name" id="from_name" placeholder='Eluney Posadas' className='block w-full border outline-0 p-[0.4rem]' required />
 
             <div className="flex gap-5 flex-col lg:flex-row">
+              {/* WORK POSITION */}
               <label className='w-full lg:w-1/2'>Work position <span className='text-red-500'>*</span>
-              <input type="text" name="work" id="work" placeholder='Diseñador' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
+              <input 
+                type="text" 
+                name="work" 
+                id="work" 
+                placeholder='Diseñador' 
+                className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full'
+                required />
               </label>
 
+              {/* MAIL */}
               <label className='w-full lg:w-1/2'>Mail <span className='text-red-500'>*</span>
-              <input type="text" name="mail" id="mail" placeholder='eluneyposadas@empresa.com' className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' />
+              <input 
+                type="text" 
+                name="mail" 
+                id="mail" 
+                placeholder='eluneyposadas@empresa.com' 
+                className='block lg:inline-block mt-[1.25rem] border outline-0 p-[0.4rem] w-full' 
+                required />
               </label>
             </div>
 
@@ -62,7 +93,7 @@ const contact = () => {
             </div>
 
             <label>Message <span className='text-red-500'>*</span></label>
-            <textarea name="" id="message" cols="30" rows="5" className='outline-0 border p-[0.4rem]'></textarea>
+            <textarea name="message" id="message" cols="30" rows="5" className='outline-0 border p-[0.4rem]' required></textarea>
 
             <input type="submit" 
             value="Submit" 
