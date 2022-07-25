@@ -79,7 +79,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                         <p className={pStyles}>Despacho 12 - Edificio FEUGA <br /> Rúa de Lope Gómez de Marzoa <br /> 15706 Santiago de Compostela, A Coruña <br /> Galicia, Spain</p>
                     </div>
 
-                    <GallInfo title="ITGALL its a service provide by CSG" url1="/assets/Vector (3).png" text1="Linkedin" url2="/assets/Vector (2).png" text2="CSG" aStyles={aStyles} show={true} />
+                    <GallInfo title="ITGALL its a service provided by CSG" url1="/assets/Vector (3).png" text1="Linkedin" url2="/assets/Vector (2).png" text2="CSG" aStyles={aStyles} show={true} />
 
                     <GallInfo title="Contact us" url1="/assets/Vector (1).png" text1="+34-602247149" url2="/assets/email.png" text2="gerencia@clustersaude.com" aStyles={aStyles} />
                 </div>
