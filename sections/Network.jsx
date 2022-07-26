@@ -83,7 +83,9 @@ const Network = () => {
             </div>
 
             <div className="h-[150px] md:h-[260px] relative opacity-75 overflow-hidden">
-                <NetworkMap city={city} setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />
+                <Scroll to="logo" smooth={true} duration={1000} offset={-50}>
+                    <NetworkMap city={city} setCity={setCity} setNetwork={setNetwork} setBtnControl={setBtnControl} />
+                </Scroll>
             </div>
 
             <div className="flex flex-col gap-8 mt-[1.5rem]">

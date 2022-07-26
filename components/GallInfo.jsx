@@ -24,7 +24,7 @@ const GallInfo = ({title, url1, url2, text1, text2, aStyles, show = false}) => {
                     {
                         show ?
                         <a href="https://clustersaude.com/" target='_blank' className="flex">
-                            <img src={url2} alt="" />
+                            <img src={url2} alt="" className="w-[22px] h-[23px]" />
                             <p className={aStyles}>{text2}</p>
                         </a> :
                         <Fragment>
