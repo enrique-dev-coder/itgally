@@ -16,7 +16,7 @@ const Home: NextPage = () => {
     <div className="flex min-h-screen flex-col py-2">
       <Head>
         <title>IT GALL</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Group-1-_5_.ico" />
       </Head>
 
       <main className='2xl:container 2xl:mx-auto'>

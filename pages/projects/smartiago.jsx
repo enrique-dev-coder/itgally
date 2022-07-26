@@ -12,7 +12,7 @@ const smartiago = () => {
         <Fragment>
             <Head>
                 <title>IT GALL</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="icon" href="/Group-1-_5_.ico" />
             </Head>
 
             <div className='xl:container xl:mx-auto'>
