@@ -74,14 +74,19 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
 
                 <div className="flex flex-col md:justify-between lg:flex-row lg:mt-[1rem] lg:flex-1 lg:justify-around mb-8">
 
-                    <div className="mt-[2.5rem] mb-[3rem] lg:mb-[1rem] lg:mt-0 lg:mr-[2rem] xl:mr-0">
+                    <div className="mt-[2.5rem] mb-[3rem] lg:mb-[1rem] lg:mt-0 lg:mr-[2rem] xl:mr-0 lg:w-1/3">
                         <h3 className={h3Styles}>ITGALL OFFICE</h3>
                         <p className={pStyles}>Despacho 12 - Edificio FEUGA <br /> Rúa de Lope Gómez de Marzoa <br /> 15706 Santiago de Compostela, A Coruña <br /> Galicia, Spain</p>
                     </div>
 
-                    <GallInfo title="ITGALL its a service provided by CSG" url1="/assets/Vector (3).png" text1="Linkedin" url2="/assets/Vector (2).png" text2="CSG" aStyles={aStyles} show={true} />
-
                     <GallInfo title="Contact us" url1="/assets/Vector (1).png" text1="+34-602247149" url2="/assets/email.png" text2="gerencia@clustersaude.com" aStyles={aStyles} />
+                
+                    <div className="mb-[3rem] md:border-l-[0.5px] border-[#FFD000] md:pl-[2rem] lg:mb-0 lg:mr-[2rem] xl:mr-0 flex items-center lg:w-1/3">
+                        <h3 className='text-[#8C1D82] font-bold text-xl mb-6 uppercase'>
+                            ITGALL is a service provided by CSG
+                        </h3>
+                    </div>
+
                 </div>
 
                 <div className="flex flex-col lg:flex-row w-full border-t border-t-[#FFD000] pt-8 text-[#8C1D82] gap-14 mb-8">
