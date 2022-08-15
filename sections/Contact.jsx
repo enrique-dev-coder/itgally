@@ -79,7 +79,7 @@ const Contact = ({h3Styles, pStyles, aStyles}) => {
                         <p className={pStyles}>Despacho 12 - Edificio FEUGA <br /> Rúa de Lope Gómez de Marzoa <br /> 15706 Santiago de Compostela, A Coruña <br /> Galicia, Spain</p>
                     </div>
 
-                    <GallInfo title="Contact us" url1="/assets/Vector (1).png" text1="+34-602247149" url2="/assets/email.png" text2="gerencia@clustersaude.com" aStyles={aStyles} />
+                    <GallInfo title="Contact us" url1="/assets/Vector (1).png" text1="+34-602247149" url2="/assets/email.png" text2="ask@itgall.tech" aStyles={aStyles} />
                 
                     <div className="mb-[3rem] md:border-l-[0.5px] border-[#FFD000] md:pl-[2rem] lg:mb-0 lg:mr-[2rem] xl:mr-0 flex items-center lg:w-1/3">
                         <h3 className='text-[#8C1D82] font-bold text-xl mb-6 uppercase'>
